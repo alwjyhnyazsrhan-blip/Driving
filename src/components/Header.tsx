@@ -14,8 +14,7 @@ import {
   Code,
   Radio,
   QrCode,
-  Play,
-  Laptop
+  Play
 } from 'lucide-react';
 import { SystemSettings, Order, WhatsAppConnectionState, CloudSyncState } from '../types';
 import { PWAInstallButton } from './PWAInstallButton';
@@ -36,8 +35,6 @@ interface HeaderProps {
   whatsappState?: WhatsAppConnectionState | null;
   cloudSyncState?: CloudSyncState | null;
   onOpenGuide?: () => void;
-  onOpenStandaloneHub?: () => void;
-  engineActiveBackend?: 'server' | 'standalone' | 'local_server';
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -56,8 +53,6 @@ export const Header: React.FC<HeaderProps> = ({
   whatsappState,
   cloudSyncState,
   onOpenGuide,
-  onOpenStandaloneHub,
-  engineActiveBackend,
 }) => {
   const delayedOrdersCount = orders.filter((o) => o.isDelayed).length;
 
@@ -204,32 +199,7 @@ export const Header: React.FC<HeaderProps> = ({
               </button>
             )}
 
-            {/* Standalone Mode / Local Desktop Runner */}
-            {onOpenStandaloneHub && (
-              <button
-                type="button"
-                onClick={onOpenStandaloneHub}
-                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold border shadow-2xs transition cursor-pointer ${
-                  engineActiveBackend === 'standalone'
-                    ? 'bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border-emerald-300'
-                    : engineActiveBackend === 'local_server'
-                    ? 'bg-sky-50 hover:bg-sky-100 text-sky-800 border-sky-300'
-                    : 'bg-white hover:bg-slate-50 text-slate-700 border-slate-300'
-                }`}
-                title="إعدادات العمل المستقل بدون استضافة وتثبيت التطبيق والنسخ الاحتياطي"
-              >
-                <Laptop className="w-3.5 h-3.5 text-emerald-600" />
-                <span>
-                  {engineActiveBackend === 'standalone'
-                    ? 'وضع مستقل (بدون استضافة)'
-                    : engineActiveBackend === 'local_server'
-                    ? 'سيرفر جهازك المحلي'
-                    : 'تطبيق مستقل'}
-                </span>
-              </button>
-            )}
-
-            <PWAInstallButton compact onOpenStandaloneHub={onOpenStandaloneHub} />
+            <PWAInstallButton compact />
 
             {/* Settings */}
             <button

@@ -4,10 +4,9 @@ import { usePWAInstall } from '../hooks/usePWAInstall';
 
 interface PWAInstallButtonProps {
   compact?: boolean;
-  onOpenStandaloneHub?: () => void;
 }
 
-export const PWAInstallButton: React.FC<PWAInstallButtonProps> = ({ compact = false, onOpenStandaloneHub }) => {
+export const PWAInstallButton: React.FC<PWAInstallButtonProps> = ({ compact = false }) => {
   const { isInstallable, isInstalled, isIOS, install } = usePWAInstall();
   const [showIOSGuide, setShowIOSGuide] = useState(false);
 
@@ -71,20 +70,6 @@ export const PWAInstallButton: React.FC<PWAInstallButtonProps> = ({ compact = fa
           </div>
         )}
       </>
-    );
-  }
-
-  if (onOpenStandaloneHub) {
-    return (
-      <button
-        type="button"
-        onClick={onOpenStandaloneHub}
-        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-900 hover:bg-slate-800 text-white shadow-2xs transition cursor-pointer"
-        title="تثبيت التطبيق وتشغيله بدون استضافة"
-      >
-        <Download className="w-3.5 h-3.5 text-emerald-400" />
-        <span>تشغيل بدون استضافة</span>
-      </button>
     );
   }
 

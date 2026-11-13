@@ -12,7 +12,6 @@ import { WhatsAppTestModal } from './components/WhatsAppTestModal';
 import { QuickWhatsAppModal } from './components/QuickWhatsAppModal';
 import { GuideWalkthroughModal } from './components/GuideWalkthroughModal';
 import { OfflineIndicator } from './components/OfflineIndicator';
-import { StandaloneAppModal } from './components/StandaloneAppModal';
 import { getEngineConfig, subscribeEngineConfig } from './services/apiBridge';
 import { Order, Courier, SystemSettings, AlertLog, WhatsAppConnectionState, CloudSyncState } from './types';
 import { Bell, CheckCircle2, AlertTriangle, X } from 'lucide-react';
@@ -60,8 +59,6 @@ export default function App() {
   const [isWhatsAppModalOpen, setIsWhatsAppModalOpen] = useState(false);
   const [isQuickWhatsAppOpen, setIsQuickWhatsAppOpen] = useState(false);
   const [isGuideOpen, setIsGuideOpen] = useState(false);
-  const [isStandaloneModalOpen, setIsStandaloneModalOpen] = useState(false);
-  const [engineConfig, setEngineConfig] = useState(() => getEngineConfig());
 
   const showToast = (text: string, type: 'success' | 'alert' = 'success') => {
     setToastMessage({ text, type });
@@ -191,7 +188,6 @@ export default function App() {
   useEffect(() => {
     let prevBackend = getEngineConfig().activeBackend;
     const unsubscribe = subscribeEngineConfig((cfg) => {
-      setEngineConfig(cfg);
       if (cfg.activeBackend !== prevBackend) {
         prevBackend = cfg.activeBackend;
         fetchData(true);
@@ -481,8 +477,6 @@ export default function App() {
         whatsappState={whatsappState}
         cloudSyncState={cloudSyncState}
         onOpenGuide={() => setIsGuideOpen(true)}
-        onOpenStandaloneHub={() => setIsStandaloneModalOpen(true)}
-        engineActiveBackend={engineConfig.activeBackend}
       />
 
       {/* Main Content Area */}
@@ -598,12 +592,6 @@ export default function App() {
         onOpenWhatsApp={() => setIsWhatsAppModalOpen(true)}
         onOpenSettings={() => setIsSettingsOpen(true)}
         onOpenCouriers={() => setCurrentTab('couriers')}
-      />
-
-      <StandaloneAppModal
-        isOpen={isStandaloneModalOpen}
-        onClose={() => setIsStandaloneModalOpen(false)}
-        onDataChanged={() => fetchData(false)}
       />
 
       <OfflineIndicator />
