@@ -585,33 +585,46 @@ async function sendWhatsAppDirect(phone: string, text: string): Promise<{ succes
   const cleanPhone = formatPhoneForWhatsApp(phone);
   const waLink = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(text)}`;
 
-  // 1. If custom WhatsApp Webhook URL is configured, forward message to it
+  // 1. If custom WhatsApp Webhook URL / Meta Cloud API is configured, forward message to it
   if (settings.webhookUrl && typeof settings.webhookUrl === 'string' && settings.webhookUrl.trim().startsWith('http')) {
+    const targetUrl = settings.webhookUrl.trim();
+    const isMetaCloudApi = targetUrl.includes('graph.facebook.com');
     try {
       const webhookHeaders: Record<string, string> = { 'Content-Type': 'application/json' };
       if (settings.webhookApiKey) {
         webhookHeaders['Authorization'] = `Bearer ${settings.webhookApiKey}`;
-        webhookHeaders['x-api-key'] = settings.webhookApiKey;
+        if (!isMetaCloudApi) {
+          webhookHeaders['x-api-key'] = settings.webhookApiKey;
+        }
       }
-      fetch(settings.webhookUrl.trim(), {
+      const webhookPayload = isMetaCloudApi
+        ? {
+            messaging_product: 'whatsapp',
+            recipient_type: 'individual',
+            to: cleanPhone,
+            type: 'text',
+            text: { preview_url: false, body: text },
+          }
+        : {
+            phone: cleanPhone,
+            to: cleanPhone,
+            number: cleanPhone,
+            chatId: `${cleanPhone}@c.us`,
+            message: text,
+            body: text,
+            text: text,
+            timestamp: new Date().toISOString(),
+            riyadhTime: getRiyadhTimeString(),
+            apiKey: settings.webhookApiKey || undefined,
+          };
+      fetch(targetUrl, {
         method: 'POST',
         headers: webhookHeaders,
-        body: JSON.stringify({
-          phone: cleanPhone,
-          to: cleanPhone,
-          number: cleanPhone,
-          chatId: `${cleanPhone}@c.us`,
-          message: text,
-          body: text,
-          text: text,
-          timestamp: new Date().toISOString(),
-          riyadhTime: getRiyadhTimeString(),
-          apiKey: settings.webhookApiKey || undefined,
-        }),
+        body: JSON.stringify(webhookPayload),
       }).catch((wErr) => {
         console.warn(`[WhatsApp Webhook Forward Warning] ${wErr?.message}`);
       });
-      console.log(`[WhatsApp Webhook] 🚀 تم توجيه التنبيه إلى رابط الويب هوك: ${settings.webhookUrl}`);
+      console.log(`[WhatsApp Webhook] 🚀 تم توجيه التنبيه إلى رابط الإرسال الآلي: ${targetUrl}`);
     } catch (err: any) {
       console.warn(`[WhatsApp Webhook Error] ${err?.message}`);
     }

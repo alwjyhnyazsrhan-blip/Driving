@@ -975,10 +975,10 @@ export const WhatsAppTestModal: React.FC<WhatsAppTestModalProps> = ({
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-900">
                   <Globe className="w-4 h-4 text-indigo-600" />
-                  <span>3. رابط الواتساب (Webhook / Gateway URL)</span>
+                  <span>3. رابط الإرسال الآلي (Webhook / Meta WhatsApp Cloud API)</span>
                 </div>
                 <span className="text-[10px] text-indigo-800 bg-indigo-50 border border-indigo-200 px-2 py-0.5 rounded font-bold">
-                  اختياري
+                  إرسال تلقائي
                 </span>
               </div>
               <div className="space-y-2">
@@ -987,7 +987,7 @@ export const WhatsAppTestModal: React.FC<WhatsAppTestModalProps> = ({
                     type="url"
                     value={webhookUrl}
                     onChange={(e) => setWebhookUrl(e.target.value)}
-                    placeholder="https://api.example.com/whatsapp/send-alert"
+                    placeholder="https://graph.facebook.com/v21.0/PHONE_ID/messages أو رابط Webhook"
                     className="w-full font-mono text-xs px-3 py-2 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-400 focus:outline-none pl-8"
                     dir="ltr"
                   />
@@ -998,7 +998,7 @@ export const WhatsAppTestModal: React.FC<WhatsAppTestModalProps> = ({
                     type="password"
                     value={webhookApiKey}
                     onChange={(e) => setWebhookApiKey(e.target.value)}
-                    placeholder="مفتاح التوثيق للرابط (API Key / Bearer Token - اختياري)"
+                    placeholder="رمز التوثيق (Meta Access Token أو API Key)"
                     className="w-full font-mono text-xs px-3 py-2 bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-400 focus:outline-none pl-8"
                     dir="ltr"
                   />

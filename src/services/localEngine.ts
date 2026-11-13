@@ -486,35 +486,55 @@ function notifyBrowserDesktop(title: string, body: string) {
   } catch {}
 }
 
-async function dispatchWhatsAppStandalone(phone: string, text: string): Promise<{ success: boolean; method: string; waLink: string }> {
+async function dispatchWhatsAppStandalone(phone: string, text: string): Promise<{ success: boolean; method: string; waLink: string; error?: string }> {
   const cleanPhone = formatPhoneForWhatsApp(phone);
   const waLink = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(text)}`;
 
-  // 1. Forward to Webhook URL if configured
+  // 1. Forward to Webhook URL / Meta WhatsApp Cloud API if configured
   if (dbState.settings.webhookUrl && dbState.settings.webhookUrl.trim().startsWith('http')) {
+    const targetUrl = dbState.settings.webhookUrl.trim();
+    const isMetaCloudApi = targetUrl.includes('graph.facebook.com');
     try {
       const headers: Record<string, string> = { 'Content-Type': 'application/json' };
       if (dbState.settings.webhookApiKey) {
         headers['Authorization'] = `Bearer ${dbState.settings.webhookApiKey}`;
-        headers['x-api-key'] = dbState.settings.webhookApiKey;
+        if (!isMetaCloudApi) {
+          headers['x-api-key'] = dbState.settings.webhookApiKey;
+        }
       }
-      fetch(dbState.settings.webhookUrl.trim(), {
+      const payload = isMetaCloudApi
+        ? {
+            messaging_product: 'whatsapp',
+            recipient_type: 'individual',
+            to: cleanPhone,
+            type: 'text',
+            text: { preview_url: false, body: text },
+          }
+        : {
+            phone: cleanPhone,
+            to: cleanPhone,
+            number: cleanPhone,
+            chatId: `${cleanPhone}@c.us`,
+            message: text,
+            body: text,
+            text,
+            timestamp: new Date().toISOString(),
+            riyadhTime: getRiyadhTimeString(),
+          };
+
+      const res = await fetch(targetUrl, {
         method: 'POST',
         headers,
-        body: JSON.stringify({
-          phone: cleanPhone,
-          to: cleanPhone,
-          number: cleanPhone,
-          chatId: `${cleanPhone}@c.us`,
-          message: text,
-          body: text,
-          text,
-          timestamp: new Date().toISOString(),
-          riyadhTime: getRiyadhTimeString(),
-        }),
-      }).catch(() => {});
-      return { success: true, method: 'webhook_gateway', waLink };
-    } catch {}
+        body: JSON.stringify(payload),
+      });
+      if (res.ok) {
+        return { success: true, method: isMetaCloudApi ? 'meta_cloud_api' : 'webhook_gateway', waLink };
+      }
+      const errText = await res.text().catch(() => '');
+      return { success: false, method: 'webhook_error', waLink, error: errText || `HTTP ${res.status}` };
+    } catch (e: any) {
+      return { success: false, method: 'webhook_error', waLink, error: e?.message };
+    }
   }
 
   return { success: true, method: 'standalone_notification_and_walink', waLink };
