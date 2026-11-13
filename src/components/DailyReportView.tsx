@@ -15,7 +15,9 @@ import {
   ExternalLink,
   RotateCw,
   Sparkles,
-  Download
+  Download,
+  UserX,
+  Users
 } from 'lucide-react';
 import { DailyReportSummary, SystemSettings } from '../types';
 
@@ -101,13 +103,13 @@ export const DailyReportView: React.FC<DailyReportViewProps> = ({
       <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <h2 className="text-lg font-bold text-slate-900">تقرير الأداء والإنتاجية اليومي الشامل</h2>
+            <h2 className="text-lg font-bold text-slate-900">تقرير نهاية اليوم المختصر (بالإجماليات والمتغيبين)</h2>
             <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
               جاهز للإرسال
             </span>
           </div>
           <p className="text-xs text-slate-500 mt-1">
-            ملخص ختامي يرسل للإدارة عبر الواتساب: إجمالي طلبات كل مندوب، والمناديب الأكثر إنتاجية مقابل ضعاف الإنجاز.
+            كشف ختامي مختصر يرسل للإدارة عبر الواتساب: إجمالي الطلبات التي نفذها كل مندوب + أسماء المناديب غير المداومين (المتغيبين).
           </p>
         </div>
 
@@ -168,6 +170,105 @@ export const DailyReportView: React.FC<DailyReportViewProps> = ({
           <div className="text-xs font-semibold text-rose-600 mb-1">إجمالي التأخيرات المسجلة</div>
           <div className="text-2xl font-black text-rose-600">{report.delayedOrdersToday}</div>
           <p className="text-[11px] text-slate-400 mt-0.5">طلبات تجاوزت {settings.delayThresholdMinutes} دقيقة</p>
+        </div>
+      </div>
+
+      {/* Executive Concise End-of-Day Summary: Totals per Courier + Absent Couriers */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Total Executed Orders per Working Courier */}
+        <div className="bg-white rounded-xl border border-slate-200 p-5 space-y-4 shadow-2xs">
+          <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                <Users className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 className="font-bold text-slate-900 text-sm">إجمالي الطلبات التي نفذها كل مندوب</h3>
+                <p className="text-[11px] text-slate-500">كشف إجمالي التسليمات المنجزة اليوم للمناديب المداومين</p>
+              </div>
+            </div>
+            <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
+              {report.workingCouriersCount ?? report.allCouriers.filter((c) => !c.isAbsentToday).length} مداوم
+            </span>
+          </div>
+
+          {report.allCouriers.filter((c) => !c.isAbsentToday).length === 0 ? (
+            <p className="text-xs text-slate-500 py-4 text-center">
+              لا توجد طلبات مسجلة لأي مندوب اليوم حتى الآن.
+            </p>
+          ) : (
+            <div className="space-y-2 max-h-72 overflow-y-auto pr-1">
+              {report.allCouriers
+                .filter((c) => !c.isAbsentToday)
+                .map((c, idx) => (
+                  <div
+                    key={c.courierId}
+                    className="flex items-center justify-between px-3 py-2 rounded-lg bg-slate-50 border border-slate-200/80 text-xs"
+                  >
+                    <div className="flex items-center gap-2.5">
+                      <span className="w-6 h-6 rounded-full bg-slate-900 text-white text-[11px] font-bold flex items-center justify-center shrink-0">
+                        {idx + 1}
+                      </span>
+                      <span className="font-bold text-slate-900">{c.courierName}</span>
+                    </div>
+                    <span className="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-900 font-extrabold">
+                      {c.deliveredCount} طلب
+                    </span>
+                  </div>
+                ))}
+            </div>
+          )}
+        </div>
+
+        {/* Absent / Off-Duty Couriers */}
+        <div className="bg-white rounded-xl border border-amber-200 p-5 space-y-4 shadow-2xs">
+          <div className="flex items-center justify-between border-b border-amber-100 pb-3">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center">
+                <UserX className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 className="font-bold text-slate-900 text-sm">أسماء المناديب غير المداومين (المتغيبين)</h3>
+                <p className="text-[11px] text-amber-700 font-medium">مناديب ليس لهم أي طلب منفذ أو نشط اليوم</p>
+              </div>
+            </div>
+            <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800">
+              {report.absentCouriersCount ?? (report.absentCouriers?.length || 0)} متغيب
+            </span>
+          </div>
+
+          {(!report.absentCouriers || report.absentCouriers.length === 0) ? (
+            <p className="text-xs text-emerald-700 font-semibold py-4 text-center">
+              ممتاز! جميع المناديب المسجلين داوموا اليوم ولا يوجد غياب.
+            </p>
+          ) : (
+            <div className="space-y-2 max-h-72 overflow-y-auto pr-1">
+              {report.absentCouriers.map((c, idx) => (
+                <div
+                  key={c.courierId}
+                  className="flex items-center justify-between px-3 py-2 rounded-lg bg-amber-50/60 border border-amber-200/80 text-xs"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <span className="w-6 h-6 rounded-full bg-amber-600 text-white text-[11px] font-bold flex items-center justify-center shrink-0">
+                      {idx + 1}
+                    </span>
+                    <span className="font-bold text-slate-900">{c.courierName}</span>
+                  </div>
+                  {c.phone && (
+                    <a
+                      href={`https://wa.me/${c.phone.replace(/[^0-9]/g, '')}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-2.5 py-1 text-[11px] font-bold text-amber-900 bg-white hover:bg-amber-100 rounded border border-amber-300 flex items-center gap-1 transition"
+                    >
+                      <Phone className="w-3 h-3" />
+                      <span>تواصل</span>
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 

@@ -461,7 +461,7 @@ export const LiveOrdersView: React.FC<LiveOrdersViewProps> = ({
             const courierWaMsg = encodeURIComponent(
               isDelivered
                 ? `السلام عليكم أخي ${order.courierName}،\nبخصوص الطلب ${order.id} (مسلّم):\n• المطعم: ${order.restaurant}\n• المدة المستغرقة: ${order.elapsedMinutes} دقيقة\n• وقت الاستلام: ${order.pickupTime || '-'}\n• وقت الإشعار: ${nowSaudiTime}\nشكراً لجهودك!`
-                : `السلام عليكم أخي ${order.courierName}،\nنود تذكيرك بأن الطلب ${order.id} متأخر وتجاوز ${order.elapsedMinutes} دقيقة منذ الاستلام.\n• وقت الاستلام: ${order.pickupTime || '-'}\n• وقت التنبيه: ${nowSaudiTime}\n• المطعم: ${order.restaurant}\nيرجى سرعة التسليم والإفادة.`
+                : `☕ الله يعطيك العافية ويقويك يا رب..\nملاحظين إن الطلب رقم ${order.id} أخذ وقت أطول شوي. عسى ما شر؟ هل تواجه أي مشكلة أو ظرف في الطريق نقدر نساعدك فيه؟ طمنا عليك.`
             );
             const courierWaUrl = `https://wa.me/${cleanPhone}?text=${courierWaMsg}`;
 

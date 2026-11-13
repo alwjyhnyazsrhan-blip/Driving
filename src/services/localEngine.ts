@@ -36,6 +36,7 @@ const DEFAULT_SETTINGS: SystemSettings = {
   adminName: '',
   adminPhone2: '',
   adminName2: '',
+  autoNotifyOrderAssignment: true,
   autoAlertCourier: true,
   autoAlertAdmin: true,
   autoAlertAdmin2: true,
@@ -44,6 +45,7 @@ const DEFAULT_SETTINGS: SystemSettings = {
   antiBanMaxDelaySeconds: 10,
   autoDailyReport: true,
   dailyReportTime: '23:00',
+  lastAutoDailyReportDate: undefined,
   whatsAppProvider: 'direct_chat',
   webhookUrl: '',
   webhookApiKey: '',
@@ -342,6 +344,29 @@ function getRiyadhTimeString(date: Date = new Date()): string {
   });
 }
 
+function getRiyadhDateKey(date: Date = new Date()): string {
+  return date.toLocaleDateString('en-CA', { timeZone: 'Asia/Riyadh' });
+}
+
+function getRiyadh24HourTime(date: Date = new Date()): string {
+  return date.toLocaleTimeString('en-GB', {
+    timeZone: 'Asia/Riyadh',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  });
+}
+
+function isOrderFromToday(order: Order, todayKey: string = getRiyadhDateKey()): boolean {
+  const refIso = order.deliveryTime || order.assignedAt || order.createdAt || order.lastUpdated;
+  if (!refIso) return true;
+  const parsed = new Date(refIso);
+  if (isNaN(parsed.getTime())) return true;
+  return getRiyadhDateKey(parsed) === todayKey;
+}
+
+const notifiedOrderAssignments = new Set<string>();
+
 function findCourierForOrder(account?: string, courierName?: string, courierId?: string, courierPhone?: string): Courier | undefined {
   if (courierId) {
     const foundById = dbState.couriers.find((c) => c.id === courierId);
@@ -398,13 +423,18 @@ function applyCustomPhoneToCourier(courier: Courier, phone: string, name?: strin
   persistToBrowserStorage();
 }
 
+function buildOrderAssignmentMessage(order: Order, _courierName: string): string {
+  const riyadhNow = getRiyadhTimeString();
+  return `🌟 يا هلا يا بطل، رزقك جايك في الطريق!\nعندك طلب جديد جاهز الآن (رقم الطلب: ${order.id}). انطلق وبارك الله في جهودك، موفق يا غالي!\n⏰ وقت الطلب الحالي: ${riyadhNow}`;
+}
+
 function buildCourierMessage(order: Order, courierName: string): string {
   const isDelivered = order.isDelivered || order.status === 'delivered';
   const riyadhNow = getRiyadhTimeString();
   if (isDelivered) {
     return `السلام عليكم أخي ${courierName}،\nبخصوص الطلب ${order.id} (المسلّم):\n• المطعم: ${order.restaurant}\n• المدة المستغرقة: ${order.elapsedMinutes} دقيقة\n• وقت الاستلام: ${order.pickupTime || 'غير محدد'}\n• وقت الإشعار: ${riyadhNow}\nشكراً لجهودك!`;
   }
-  return `السلام عليكم أخي ${courierName}،\nنود تذكيرك بأن الطلب ${order.id} متأخر وتجاوز ${order.elapsedMinutes} دقيقة منذ الاستلام.\n• وقت الاستلام: ${order.pickupTime || 'غير محدد'}\n• وقت التنبيه: ${riyadhNow}\n• المطعم: ${order.restaurant}\n• العميل: ${order.customerAddress || 'الوجهة المحددة'}\nيرجى سرعة تسليم الطلب للعميل والإفادة بحالة التوصيل الحالية. شاكرين تعاونك!`;
+  return `☕ الله يعطيك العافية ويقويك يا رب..\nملاحظين إن الطلب رقم ${order.id} أخذ وقت أطول شوي. عسى ما شر؟ هل تواجه أي مشكلة أو ظرف في الطريق نقدر نساعدك فيه؟ طمنا عليك.`;
 }
 
 function buildAdminMessage(order: Order, courierName: string, activeCount: number): string {
@@ -495,10 +525,11 @@ function enqueueAlert(
   recipientName: string,
   recipientPhone: string,
   orderId: string,
-  message: string
+  message: string,
+  customCooldownKey?: string
 ) {
   if (!recipientPhone && recipientType !== 'courier') return;
-  const cooldownKey = `${orderId}_${recipientType}`;
+  const cooldownKey = customCooldownKey || `${orderId}_${recipientType}`;
   const lastSent = alertCooldownMap.get(cooldownKey) || 0;
   const cooldownMs = (dbState.settings.alertCooldownMinutes || 20) * 60 * 1000;
 
@@ -619,6 +650,37 @@ function triggerAlertsForOrder(order: Order) {
     order.alertSentToAdmin2 = true;
     order.admin2AlertTime = getRiyadhTimeString();
   }
+}
+
+function triggerAssignmentNotificationForOrder(order: Order): boolean {
+  if (dbState.settings.autoNotifyOrderAssignment === false) return false;
+  if (order.isDelivered || order.isCanceled || order.status === 'delivered' || order.status === 'cancelled') {
+    return false;
+  }
+
+  const courier = findCourierForOrder(order.locatAccount, order.courierName, order.courierId, order.courierPhone);
+  const courierName = courier ? courier.name : (order.courierName || 'المندوب');
+  const courierPhone = (courier?.isCustomPhone && courier?.phone) || courier?.phone || order.courierPhone || '';
+
+  if (courierPhone && !order.courierPhone) order.courierPhone = courierPhone;
+  if (courier) {
+    order.courierId = courier.id;
+    order.courierName = courier.name;
+  }
+  if (!courierPhone) return false;
+
+  const courierKey = courier?.id || order.locatAccount || courierPhone;
+  const assignKey = `${order.id}__${courierKey}`;
+  if (order.assignmentNotifiedToCourier || notifiedOrderAssignments.has(assignKey)) {
+    return false;
+  }
+
+  const msg = buildOrderAssignmentMessage(order, courierName);
+  enqueueAlert('courier', courierName, courierPhone, order.id, msg, `${order.id}_assignment_${courierKey}`);
+  notifiedOrderAssignments.add(assignKey);
+  order.assignmentNotifiedToCourier = true;
+  order.assignmentNotifiedTime = getRiyadhTimeString();
+  return true;
 }
 
 function checkAutomatedAlerts() {
@@ -863,6 +925,8 @@ export async function executeStandaloneLocatSync(): Promise<{
     let activeCount = 0;
     const syncedOrders: Order[] = [];
     const seenIds = new Set<string>();
+    const hadSyncedBefore = dbState.orders.length > 0 || Boolean(dbState.settings.lastCloudSyncTimestamp);
+    const todayKey = getRiyadhDateKey();
 
     rawList.forEach((item: any) => {
       const isDelivered = Boolean(item.isDelivered);
@@ -924,6 +988,12 @@ export async function executeStandaloneLocatSync(): Promise<{
       }
 
       const existing = dbState.orders.find((o) => o.id === orderId || o.id === `#${orderId}` || (item._id && o.locateMongoId === item._id));
+      const reassignedCourier = Boolean(
+        existing &&
+        matchedCourier &&
+        ((existing.courierId && existing.courierId !== matchedCourier.id) ||
+         (!existing.courierId && !existing.locatAccount))
+      );
 
       const orderRecord: Order = {
         id: orderId,
@@ -952,9 +1022,18 @@ export async function executeStandaloneLocatSync(): Promise<{
         courierAlertTime: existing?.courierAlertTime,
         adminAlertTime: existing?.adminAlertTime,
         admin2AlertTime: existing?.admin2AlertTime,
+        assignmentNotifiedToCourier: reassignedCourier ? false : Boolean(existing?.assignmentNotifiedToCourier),
+        assignmentNotifiedTime: reassignedCourier ? undefined : existing?.assignmentNotifiedTime,
         activeOrdersHeldByCourier: 1,
         lastUpdated: new Date().toISOString(),
       };
+
+      const isNewlyAssignedActive = !isDelivered && !isCanceled && !orderRecord.assignmentNotifiedToCourier && (
+        hadSyncedBefore ? (!existing || reassignedCourier) : elapsedMinutes <= 15
+      );
+      if (isNewlyAssignedActive) {
+        triggerAssignmentNotificationForOrder(orderRecord);
+      }
 
       if (!isDelivered && !isCanceled && ((isDelayed && !orderRecord.alertSentToCourier) || (orderRecord.elapsedMinutes >= (Number(dbState.settings.criticalDelayMinutes) || 45) && (!orderRecord.alertSentToAdmin || !orderRecord.alertSentToAdmin2)))) {
         triggerAlertsForOrder(orderRecord);
@@ -977,7 +1056,7 @@ export async function executeStandaloneLocatSync(): Promise<{
           normalizeArabic(c.name) === normalizeArabic(o.courierName || '')
       );
       c.activeOrdersCount = cOrders.filter((o) => o.status === 'in_transit' || o.status === 'delayed').length;
-      c.totalDeliveredToday = cOrders.filter((o) => o.status === 'delivered').length;
+      c.totalDeliveredToday = cOrders.filter((o) => o.status === 'delivered' && isOrderFromToday(o, todayKey)).length;
       c.delayedOrdersCount = cOrders.filter((o) => o.isDelayed).length;
       const done = cOrders.filter((o) => o.status === 'delivered' && o.elapsedMinutes > 0);
       if (done.length > 0) {
@@ -1036,21 +1115,45 @@ export function startStandaloneBackgroundRunners() {
     const cfg = loadEngineConfig();
     if (cfg.activeBackend === 'standalone') {
       checkAutomatedAlerts();
+      if (dbState.settings.autoDailyReport && dbState.settings.adminPhone) {
+        const todayKey = getRiyadhDateKey();
+        const targetTime = dbState.settings.dailyReportTime || '23:00';
+        if (dbState.settings.lastAutoDailyReportDate !== todayKey && getRiyadh24HourTime() >= targetTime) {
+          const summary = generateDailyReport();
+          dispatchWhatsAppStandalone(dbState.settings.adminPhone, summary.whatsappFormattedText).catch(() => {});
+          if (dbState.settings.adminPhone2 && dbState.settings.autoAlertAdmin2) {
+            dispatchWhatsAppStandalone(dbState.settings.adminPhone2, summary.whatsappFormattedText).catch(() => {});
+          }
+          dbState.settings.lastAutoDailyReportDate = todayKey;
+          persistToBrowserStorage();
+        }
+      }
     }
   }, 25000);
 }
 
 function generateDailyReport(): DailyReportSummary {
   const today = new Date().toLocaleDateString('ar-SA', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  const todayKey = getRiyadhDateKey();
+
   const courierStats: CourierPerformanceItem[] = dbState.couriers.map((c) => {
-    const activeForC = dbState.orders.filter((o) => {
+    const courierOrders = dbState.orders.filter((o) => {
+      if (o.courierId && o.courierId === c.id) return true;
       const match = findCourierForOrder(o.locatAccount, o.courierName, o.courierId, o.courierPhone);
       return match ? match.id === c.id : false;
     });
+    const activeForC = courierOrders.filter((o) => !o.isDelivered && !o.isCanceled && o.status !== 'delivered' && o.status !== 'cancelled');
+    const deliveredFromOrdersToday = courierOrders.filter(
+      (o) => (o.isDelivered || o.status === 'delivered') && isOrderFromToday(o, todayKey)
+    ).length;
+
+    const totalDelivered = courierOrders.length > 0 ? deliveredFromOrdersToday : (c.totalDeliveredToday || 0);
     const delayedCurrent = activeForC.filter((o) => o.isDelayed).length;
-    const totalDelivered = c.totalDeliveredToday;
-    const totalDelayed = c.delayedOrdersCount + delayedCurrent;
+    const totalDelayed = courierOrders.length > 0
+      ? courierOrders.filter((o) => o.isDelayed && isOrderFromToday(o, todayKey)).length
+      : (c.delayedOrdersCount + delayedCurrent);
     const avgTime = c.avgDeliveryTimeMinutes || 25;
+    const isAbsentToday = c.status === 'off_duty' || (totalDelivered === 0 && activeForC.length === 0);
 
     let score = 85;
     if (totalDelivered >= 15) score += 10;
@@ -1062,11 +1165,11 @@ function generateDailyReport(): DailyReportSummary {
     score = Math.max(20, Math.min(100, score));
 
     let tier: 'top' | 'good' | 'low' = 'good';
-    let assessmentNote = 'أداء جيد ومستقر ضمن المعدل الطبيعي';
-    if (score >= 85 && totalDelivered >= 14 && totalDelayed <= 1) {
+    let assessmentNote = isAbsentToday ? 'لم ينفذ أي طلب اليوم (غير مداوم)' : 'أداء جيد ومستقر ضمن المعدل الطبيعي';
+    if (!isAbsentToday && score >= 85 && totalDelivered >= 14 && totalDelayed <= 1) {
       tier = 'top';
       assessmentNote = '🌟 مندوب متميز: إنتاجية عالية وسرعة تسليم مع انعدام التأخيرات';
-    } else if (score < 60 || totalDelayed >= 2 || (totalDelivered <= 8 && avgTime >= 35)) {
+    } else if (!isAbsentToday && (score < 60 || totalDelayed >= 2 || (totalDelivered <= 8 && avgTime >= 35))) {
       tier = 'low';
       assessmentNote = '⚠️ يحتاج متابعة: بطء ملحوظ أو تكرار تأخيرات وقلة في عدد التسليمات';
     }
@@ -1083,29 +1186,56 @@ function generateDailyReport(): DailyReportSummary {
       efficiencyScore: score,
       performanceTier: tier,
       assessmentNote,
+      isAbsentToday,
     };
   });
 
-  courierStats.sort((a, b) => b.efficiencyScore - a.efficiencyScore || b.deliveredCount - a.deliveredCount);
-  const topPerformers = courierStats.filter((c) => c.performanceTier === 'top');
-  const underPerformers = courierStats.filter((c) => c.performanceTier === 'low');
+  const workingCouriers = courierStats
+    .filter((c) => !c.isAbsentToday)
+    .sort((a, b) => b.deliveredCount - a.deliveredCount || b.activeCount - a.activeCount);
+
+  const absentCouriers = courierStats
+    .filter((c) => c.isAbsentToday)
+    .sort((a, b) => a.courierName.localeCompare(b.courierName, 'ar'));
+
+  courierStats.sort((a, b) => Number(Boolean(a.isAbsentToday)) - Number(Boolean(b.isAbsentToday)) || b.deliveredCount - a.deliveredCount || b.efficiencyScore - a.efficiencyScore);
+
+  const topPerformers = workingCouriers.filter((c) => c.performanceTier === 'top');
+  const underPerformers = workingCouriers.filter((c) => c.performanceTier === 'low');
   const totalDeliveredToday = courierStats.reduce((s, c) => s + c.deliveredCount, 0);
   const totalDelayedToday = courierStats.reduce((s, c) => s + c.delayedCount, 0);
-  const activeOrdersRightNow = dbState.orders.length;
-  const overallAvgTimeMinutes = courierStats.length > 0 ? Math.round(courierStats.reduce((s, c) => s + c.avgTime, 0) / courierStats.length) : 0;
+  const activeOrdersRightNow = dbState.orders.filter((o) => !o.isDelivered && !o.isCanceled && o.status !== 'delivered' && o.status !== 'cancelled').length;
+  const overallAvgTimeMinutes = workingCouriers.length > 0 ? Math.round(workingCouriers.reduce((s, c) => s + c.avgTime, 0) / workingCouriers.length) : 0;
   const onTimeRate =
     totalDeliveredToday + totalDelayedToday > 0
       ? Math.round((Math.max(0, totalDeliveredToday - totalDelayedToday) / (totalDeliveredToday + totalDelayedToday)) * 100)
       : 100;
 
-  let waText = `📊 *تقرير أداء مناديب لوكيت اليومي*\n📅 *التاريخ:* ${today}\n⏰ *وقت التوليد:* ${getRiyadhTimeString()}\n───────────────────────\n`;
-  waText += `• إجمالي المناديب: *${dbState.couriers.length}*\n• الطلبات المنجزة: *${totalDeliveredToday}*\n• الطلبات النشطة: *${activeOrdersRightNow}*\n• التأخيرات: *${totalDelayedToday}*\n• نسبة الالتزام بالوقت: *${onTimeRate}%*\n`;
-  if (topPerformers.length > 0) {
-    waText += `\n🌟 *الأكثر إنتاجية:*\n` + topPerformers.map((c, i) => `${i + 1}. *${c.courierName}*: ${c.deliveredCount} طلب`).join('\n');
+  let waText = `📋 *تقرير نهاية اليوم المختصر*\n📅 *التاريخ:* ${today}\n⏰ *الوقت:* ${getRiyadhTimeString()}\n───────────────────────\n`;
+  waText += `📦 *إجمالي الطلبات المنفذة اليوم:* *${totalDeliveredToday}* طلب\n`;
+  waText += `🛵 *المناديب المداومون:* *${workingCouriers.length}* | *غير المداومين:* *${absentCouriers.length}*\n───────────────────────\n\n`;
+
+  if (courierStats.length === 0) {
+    waText += `ℹ️ لم يتم تسجيل أي مندوب في لوحة التحكم بعد.\n`;
+  } else {
+    waText += `✅ *إجمالي الطلبات التي نفذها كل مندوب:*\n`;
+    if (workingCouriers.length > 0) {
+      workingCouriers.forEach((c, idx) => {
+        waText += `${idx + 1}. *${c.courierName}*: *${c.deliveredCount}* طلب\n`;
+      });
+    } else {
+      waText += `• لا توجد طلبات منفذة اليوم حتى الآن.\n`;
+    }
+    waText += `\n🚫 *أسماء المناديب غير المداومين (المتغيبين):*\n`;
+    if (absentCouriers.length > 0) {
+      absentCouriers.forEach((c, idx) => {
+        waText += `${idx + 1}. ${c.courierName}\n`;
+      });
+    } else {
+      waText += `• لا يوجد مناديب متغيبون اليوم ✅\n`;
+    }
   }
-  if (underPerformers.length > 0) {
-    waText += `\n⚠️ *بحاجة للمتابعة:*\n` + underPerformers.map((c, i) => `${i + 1}. *${c.courierName}*: تأخر ${c.delayedCount} | إنجاز ${c.deliveredCount}`).join('\n');
-  }
+  waText += `\n───────────────────────\nتم التوليد والإرسال عبر نظام متابعة لوكيت.`;
 
   return {
     date: today,
@@ -1116,6 +1246,9 @@ function generateDailyReport(): DailyReportSummary {
     activeOrdersRightNow,
     overallAvgTimeMinutes,
     onTimeRate,
+    workingCouriersCount: workingCouriers.length,
+    absentCouriersCount: absentCouriers.length,
+    absentCouriers,
     topPerformers,
     underPerformers,
     allCouriers: courierStats,
@@ -1418,21 +1551,28 @@ export async function handleLocalApiRequest(pathname: string, method: string, bo
   if (pathname === '/api/reports/send-daily' && upperMethod === 'POST') {
     const summary = generateDailyReport();
     const waLink = `https://wa.me/${formatPhoneForWhatsApp(dbState.settings.adminPhone)}?text=${encodeURIComponent(summary.whatsappFormattedText)}`;
+    if (dbState.settings.adminPhone) {
+      await dispatchWhatsAppStandalone(dbState.settings.adminPhone, summary.whatsappFormattedText).catch(() => {});
+    }
+    if (dbState.settings.adminPhone2 && dbState.settings.autoAlertAdmin2) {
+      await dispatchWhatsAppStandalone(dbState.settings.adminPhone2, summary.whatsappFormattedText).catch(() => {});
+    }
     dbState.alerts.unshift({
       id: `alt-report-${Date.now()}`,
       timestamp: new Date().toISOString(),
       recipientType: 'admin',
-      recipientName: dbState.settings.adminName,
+      recipientName: dbState.settings.adminName || 'الإدارة',
       recipientPhone: dbState.settings.adminPhone,
-      orderId: 'التقرير اليومي الشامل',
+      orderId: 'تقرير نهاية اليوم المختصر',
       elapsedMinutes: 0,
       activeOrdersCount: summary.activeOrdersRightNow,
       message: summary.whatsappFormattedText,
       status: 'sent',
       waLink,
     });
+    dbState.settings.lastAutoDailyReportDate = getRiyadhDateKey();
     persistToBrowserStorage();
-    return jsonResp({ success: true, message: 'تم تجهيز التقرير اليومي محلياً', waLink });
+    return jsonResp({ success: true, message: 'تم إرسال تقرير نهاية اليوم المختصر بنجاح', waLink });
   }
 
   if (pathname === '/api/locat/cloud-status' && upperMethod === 'GET') {
@@ -1514,11 +1654,24 @@ export async function handleLocalApiRequest(pathname: string, method: string, bo
       const matched = findCourierForOrder(incoming.locatAccount, incoming.courierName, incoming.courierId, incoming.courierPhone);
       const idx = dbState.orders.findIndex((o) => o.id === orderId);
       if (idx !== -1) {
-        dbState.orders[idx].elapsedMinutes = elapsed;
-        dbState.orders[idx].isDelayed = isDelayed;
-        dbState.orders[idx].status = isDelayed ? 'delayed' : dbState.orders[idx].status;
+        const existingOrd = dbState.orders[idx];
+        const prevCourierId = existingOrd.courierId;
+        existingOrd.elapsedMinutes = elapsed;
+        existingOrd.isDelayed = isDelayed;
+        existingOrd.status = isDelayed ? 'delayed' : existingOrd.status;
+        if (matched) {
+          existingOrd.courierId = matched.id;
+          existingOrd.courierName = matched.name;
+          existingOrd.courierPhone = matched.phone;
+          if (prevCourierId !== matched.id) {
+            existingOrd.assignmentNotifiedToCourier = false;
+          }
+        }
+        if (triggerAssignmentNotificationForOrder(existingOrd)) {
+          alertsGenerated++;
+        }
         if (isDelayed) {
-          triggerAlertsForOrder(dbState.orders[idx]);
+          triggerAlertsForOrder(existingOrd);
           alertsGenerated++;
         }
       } else {
@@ -1536,9 +1689,13 @@ export async function handleLocalApiRequest(pathname: string, method: string, bo
           isDelayed,
           alertSentToCourier: false,
           alertSentToAdmin: false,
+          assignmentNotifiedToCourier: false,
           activeOrdersHeldByCourier: incoming.activeOrdersHeldByCourier || 1,
           lastUpdated: new Date().toISOString(),
         };
+        if (triggerAssignmentNotificationForOrder(ord)) {
+          alertsGenerated++;
+        }
         if (isDelayed) {
           triggerAlertsForOrder(ord);
           alertsGenerated++;

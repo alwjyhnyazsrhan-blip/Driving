@@ -45,6 +45,7 @@ let settings: SystemSettings = {
   adminName: '', // اسم الإدارة الفعلي
   adminPhone2: '', // رقم واتساب الإدارة الثاني (تصعيد التأخير)
   adminName2: '', // اسم الإدارة الثاني
+  autoNotifyOrderAssignment: true, // إشعار واتساب فوري للمندوب فور استلام/إسناد الطلب
   autoAlertCourier: true,
   autoAlertAdmin: true,
   autoAlertAdmin2: true,
@@ -53,6 +54,7 @@ let settings: SystemSettings = {
   antiBanMaxDelaySeconds: 10,
   autoDailyReport: true,
   dailyReportTime: '23:00',
+  lastAutoDailyReportDate: undefined,
   whatsAppProvider: 'direct_chat', // direct_chat (wa.me) / webhook
   webhookUrl: '',
   webhookApiKey: '',
@@ -728,7 +730,42 @@ function getRiyadhTimeString(date: Date = new Date(), options?: Intl.DateTimeFor
   });
 }
 
-// Helper: Construct Courier Message
+function getRiyadhDateKey(date: Date = new Date()): string {
+  return date.toLocaleDateString('en-CA', { timeZone: 'Asia/Riyadh' });
+}
+
+function getRiyadh24HourTime(date: Date = new Date()): string {
+  return date.toLocaleTimeString('en-GB', {
+    timeZone: 'Asia/Riyadh',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  });
+}
+
+function isOrderFromToday(order: Order, todayKey: string = getRiyadhDateKey()): boolean {
+  const refIso = order.deliveryTime || order.assignedAt || order.createdAt || order.lastUpdated;
+  if (!refIso) return true;
+  const parsed = new Date(refIso);
+  if (isNaN(parsed.getTime())) return true;
+  return getRiyadhDateKey(parsed) === todayKey;
+}
+
+// Track notified (orderId + courier) assignments in memory so we never duplicate
+const notifiedOrderAssignments = new Set<string>();
+orders.forEach((o) => {
+  if (o.assignmentNotifiedToCourier) {
+    notifiedOrderAssignments.add(`${o.id}__${o.courierId || o.locatAccount || o.courierPhone || 'c'}`);
+  }
+});
+
+// Helper: Instant Order Assignment WhatsApp Message (تحفيزي ولطيف + رقم الطلب ووقت الطلب الحالي)
+function buildOrderAssignmentMessage(order: Order, _courierName: string): string {
+  const riyadhNow = getRiyadhTimeString();
+  return `🌟 يا هلا يا بطل، رزقك جايك في الطريق!\nعندك طلب جديد جاهز الآن (رقم الطلب: ${order.id}). انطلق وبارك الله في جهودك، موفق يا غالي!\n⏰ وقت الطلب الحالي: ${riyadhNow}`;
+}
+
+// Helper: Construct Courier Message (لطيف وبدون إزعاج عند التأخير)
 function buildCourierMessage(order: Order, courierName: string): string {
   const isDelivered = order.isDelivered || order.status === 'delivered';
   const riyadhNow = getRiyadhTimeString();
@@ -737,7 +774,7 @@ function buildCourierMessage(order: Order, courierName: string): string {
     return `السلام عليكم أخي ${courierName}،\nبخصوص الطلب ${order.id} (المسلّم):\n• المطعم: ${order.restaurant}\n• المدة المستغرقة: ${order.elapsedMinutes} دقيقة\n• وقت الاستلام: ${order.pickupTime || 'غير محدد'}\n• وقت الإشعار: ${riyadhNow}\nشكراً لجهودك!`;
   }
 
-  return `السلام عليكم أخي ${courierName}،\nنود تذكيرك بأن الطلب ${order.id} متأخر وتجاوز ${order.elapsedMinutes} دقيقة منذ الاستلام.\n• وقت الاستلام: ${order.pickupTime || 'غير محدد'}\n• وقت التنبيه: ${riyadhNow}\n• المطعم: ${order.restaurant}\n• العميل: ${order.customerAddress || 'الوجهة المحددة'}\nيرجى سرعة تسليم الطلب للعميل والإفادة بحالة التوصيل الحالية. شاكرين تعاونك!`;
+  return `☕ الله يعطيك العافية ويقويك يا رب..\nملاحظين إن الطلب رقم ${order.id} أخذ وقت أطول شوي. عسى ما شر؟ هل تواجه أي مشكلة أو ظرف في الطريق نقدر نساعدك فيه؟ طمنا عليك.`;
 }
 
 // Helper: Construct Admin Alert Message
@@ -795,11 +832,12 @@ function enqueueAlert(
   orderId: string,
   message: string,
   elapsedMinutes: number,
-  activeOrdersCount: number
+  activeOrdersCount: number,
+  customCooldownKey?: string
 ) {
   if (!recipientPhone) return;
 
-  const cooldownKey = `${orderId}_${recipientType}`;
+  const cooldownKey = customCooldownKey || `${orderId}_${recipientType}`;
   const lastSent = alertCooldownMap.get(cooldownKey) || 0;
   const cooldownMs = (settings.alertCooldownMinutes || 20) * 60 * 1000;
 
@@ -960,6 +998,52 @@ function triggerAlertsForOrder(order: Order) {
   }
 }
 
+// Helper: Trigger instant WhatsApp direct message to courier upon receiving/assigning order
+function triggerAssignmentNotificationForOrder(order: Order): boolean {
+  if (settings.autoNotifyOrderAssignment === false) return false;
+  if (order.isDelivered || order.isCanceled || order.status === 'delivered' || order.status === 'cancelled') {
+    return false;
+  }
+
+  const courier = findCourierForOrder(order.locatAccount, order.courierName, order.courierId, order.courierPhone);
+  const courierName = courier ? courier.name : (order.courierName || 'المندوب');
+  const courierPhone = (courier?.isCustomPhone && courier?.phone) || courier?.phone || order.courierPhone || '';
+  const activeCount = order.activeOrdersHeldByCourier || (courier ? courier.activeOrdersCount : 1);
+
+  if (courierPhone && !order.courierPhone) {
+    order.courierPhone = courierPhone;
+  }
+  if (courier) {
+    order.courierId = courier.id;
+    order.courierName = courier.name;
+  }
+
+  if (!courierPhone) return false;
+
+  const courierKey = courier?.id || order.locatAccount || courierPhone;
+  const assignKey = `${order.id}__${courierKey}`;
+  if (order.assignmentNotifiedToCourier || notifiedOrderAssignments.has(assignKey)) {
+    return false;
+  }
+
+  const msg = buildOrderAssignmentMessage(order, courierName);
+  enqueueAlert(
+    'courier',
+    courierName,
+    courierPhone,
+    order.id,
+    msg,
+    order.elapsedMinutes,
+    activeCount,
+    `${order.id}_assignment_${courierKey}`
+  );
+  notifiedOrderAssignments.add(assignKey);
+  order.assignmentNotifiedToCourier = true;
+  order.assignmentNotifiedTime = getRiyadhTimeString();
+  console.log(`[Instant Order Notify] 📦 تم إرسال إشعار استلام الطلب ${order.id} مباشرة للمندوب ${courierName} (${courierPhone})`);
+  return true;
+}
+
 // 24/7 Dedicated Real-Time Order Watcher & Automated Dispatch Engine
 let autoAlertsWatcherInterval: NodeJS.Timeout | null = null;
 
@@ -1072,24 +1156,33 @@ function checkAndTriggerAutomatedAlerts() {
   }
 }
 
-// Helper: Calculate Daily Report
+// Helper: Calculate Concise End-of-Day Report (إجمالي الطلبات المنفذة لكل مندوب + غير المداومين)
 function generateDailyReport(): DailyReportSummary {
   const today = new Date().toLocaleDateString('ar-SA', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-  
+  const todayKey = getRiyadhDateKey();
+
   // Aggregate stats per courier
   const courierStats: CourierPerformanceItem[] = couriers.map((c) => {
-    // Current active orders held
-    const activeForC = orders.filter((o) => {
-      const match = findCourierByLocatAccount(o.locatAccount);
+    const courierOrders = orders.filter((o) => {
+      if (o.courierId && o.courierId === c.id) return true;
+      const match = findCourierForOrder(o.locatAccount, o.courierName, o.courierId, o.courierPhone);
       return match ? match.id === c.id : false;
     });
+
+    const activeForC = courierOrders.filter((o) => !o.isDelivered && !o.isCanceled && o.status !== 'delivered' && o.status !== 'cancelled');
+    const deliveredFromOrdersToday = courierOrders.filter(
+      (o) => (o.isDelivered || o.status === 'delivered') && isOrderFromToday(o, todayKey)
+    ).length;
+
+    const totalDelivered = courierOrders.length > 0 ? deliveredFromOrdersToday : (c.totalDeliveredToday || 0);
     const delayedCurrent = activeForC.filter((o) => o.isDelayed).length;
-    const totalDelivered = c.totalDeliveredToday;
-    const totalDelayed = c.delayedOrdersCount + delayedCurrent;
+    const totalDelayed = courierOrders.length > 0
+      ? courierOrders.filter((o) => o.isDelayed && isOrderFromToday(o, todayKey)).length
+      : (c.delayedOrdersCount + delayedCurrent);
     const avgTime = c.avgDeliveryTimeMinutes || 25;
 
-    // Efficiency Score (0-100)
-    // Formula: delivery count volume vs delays and average speed
+    const isAbsentToday = c.status === 'off_duty' || (totalDelivered === 0 && activeForC.length === 0);
+
     let score = 85;
     if (totalDelivered >= 15) score += 10;
     else if (totalDelivered <= 8) score -= 15;
@@ -1103,12 +1196,12 @@ function generateDailyReport(): DailyReportSummary {
     score = Math.max(20, Math.min(100, score));
 
     let tier: 'top' | 'good' | 'low' = 'good';
-    let assessmentNote = 'أداء جيد ومستقر ضمن المعدل الطبيعي';
+    let assessmentNote = isAbsentToday ? 'لم ينفذ أي طلب اليوم (غير مداوم)' : 'أداء جيد ومستقر ضمن المعدل الطبيعي';
 
-    if (score >= 85 && totalDelivered >= 14 && totalDelayed <= 1) {
+    if (!isAbsentToday && score >= 85 && totalDelivered >= 14 && totalDelayed <= 1) {
       tier = 'top';
       assessmentNote = '🌟 مندوب متميز: إنتاجية عالية وسرعة تسليم مع انعدام التأخيرات';
-    } else if (score < 60 || totalDelayed >= 2 || (totalDelivered <= 8 && avgTime >= 35)) {
+    } else if (!isAbsentToday && (score < 60 || totalDelayed >= 2 || (totalDelivered <= 8 && avgTime >= 35))) {
       tier = 'low';
       assessmentNote = '⚠️ يحتاج متابعة: بطء ملحوظ أو تكرار تأخيرات وقلة في عدد التسليمات';
     }
@@ -1125,69 +1218,67 @@ function generateDailyReport(): DailyReportSummary {
       efficiencyScore: score,
       performanceTier: tier,
       assessmentNote,
+      isAbsentToday,
     };
   });
 
-  // Sort by score & deliveries
-  courierStats.sort((a, b) => b.efficiencyScore - a.efficiencyScore || b.deliveredCount - a.deliveredCount);
+  const workingCouriers = courierStats
+    .filter((c) => !c.isAbsentToday)
+    .sort((a, b) => b.deliveredCount - a.deliveredCount || b.activeCount - a.activeCount);
 
-  const topPerformers = courierStats.filter((c) => c.performanceTier === 'top');
-  const underPerformers = courierStats.filter((c) => c.performanceTier === 'low');
+  const absentCouriers = courierStats
+    .filter((c) => c.isAbsentToday)
+    .sort((a, b) => a.courierName.localeCompare(b.courierName, 'ar'));
+
+  // Sort allCouriers for table: working first by deliveries, then absent
+  courierStats.sort((a, b) => Number(Boolean(a.isAbsentToday)) - Number(Boolean(b.isAbsentToday)) || b.deliveredCount - a.deliveredCount || b.efficiencyScore - a.efficiencyScore);
+
+  const topPerformers = workingCouriers.filter((c) => c.performanceTier === 'top');
+  const underPerformers = workingCouriers.filter((c) => c.performanceTier === 'low');
 
   const totalDeliveredToday = courierStats.reduce((sum, c) => sum + c.deliveredCount, 0);
   const totalDelayedToday = courierStats.reduce((sum, c) => sum + c.delayedCount, 0);
-  const activeOrdersRightNow = orders.length;
-  const overallAvgTimeMinutes = courierStats.length > 0
-    ? Math.round(courierStats.reduce((sum, c) => sum + c.avgTime, 0) / courierStats.length)
+  const activeOrdersRightNow = orders.filter((o) => !o.isDelivered && !o.isCanceled && o.status !== 'delivered' && o.status !== 'cancelled').length;
+  const overallAvgTimeMinutes = workingCouriers.length > 0
+    ? Math.round(workingCouriers.reduce((sum, c) => sum + c.avgTime, 0) / workingCouriers.length)
     : 0;
 
   const onTimeRate = totalDeliveredToday + totalDelayedToday > 0
     ? Math.round((Math.max(0, totalDeliveredToday - totalDelayedToday) / (totalDeliveredToday + totalDelayedToday)) * 100)
     : 100;
 
-  // Format professional WhatsApp Text for Admin
-  let waText = `📊 *تقرير أداء مناديب لوكيت اليومي*\n`;
+  // Concise End-of-Day WhatsApp Report (بالإجماليات + المتغيبين)
+  let waText = `📋 *تقرير نهاية اليوم المختصر*\n`;
   waText += `📅 *التاريخ:* ${today}\n`;
-  waText += `⏰ *وقت التوليد:* ${getRiyadhTimeString()}\n`;
+  waText += `⏰ *الوقت:* ${getRiyadhTimeString()}\n`;
   waText += `───────────────────────\n`;
-  waText += `📈 *الملخص العام للأداء:*\n`;
-  waText += `• إجمالي المناديب المسجلين: *${couriers.length}* مندوب\n`;
-  waText += `• إجمالي الطلبات المنجزة: *${totalDeliveredToday}* طلب\n`;
-  waText += `• الطلبات النشطة حالياً: *${activeOrdersRightNow}* طلب\n`;
-  waText += `• الطلبات المتأخرة المسجلة: *${totalDelayedToday}* طلب\n`;
-  waText += `• متوسط زمن التوصيل: *${overallAvgTimeMinutes}* دقيقة\n`;
-  waText += `• نسبة التسليم في الوقت المحدد: *${onTimeRate}%*\n`;
+  waText += `📦 *إجمالي الطلبات المنفذة اليوم:* *${totalDeliveredToday}* طلب\n`;
+  waText += `🛵 *المناديب المداومون:* *${workingCouriers.length}* | *غير المداومين:* *${absentCouriers.length}*\n`;
   waText += `───────────────────────\n\n`;
 
   if (courierStats.length === 0) {
-    waText += `ℹ️ *ملاحظة:* لم يتم تسجيل أي مندوب في لوحة التحكم بعد. يرجى إضافة المناديب وحساباتهم في لوكيت لتفعيل التحليل اليومي وإشعارات التأخير.\n`;
+    waText += `ℹ️ لم يتم تسجيل أي مندوب في لوحة التحكم بعد.\n`;
   } else {
-    waText += `🌟 *المناديب الأكثر إنتاجية وتميزاً (الأعلى أداءً):*\n`;
-    if (topPerformers.length > 0) {
-      topPerformers.forEach((c, idx) => {
-        waText += `${idx + 1}. *${c.courierName}*: ${c.deliveredCount} طلب منجز | متوسط ${c.avgTime} دقيقة | تأخير: ${c.delayedCount}\n`;
+    waText += `✅ *إجمالي الطلبات التي نفذها كل مندوب:*\n`;
+    if (workingCouriers.length > 0) {
+      workingCouriers.forEach((c, idx) => {
+        waText += `${idx + 1}. *${c.courierName}*: *${c.deliveredCount}* طلب\n`;
       });
     } else {
-      waText += `• لا يوجد مناديب في فئة النخبة اليوم حتى الآن.\n`;
+      waText += `• لا توجد طلبات منفذة اليوم حتى الآن.\n`;
     }
 
-    waText += `\n⚠️ *المناديب ضعاف الإنجاز (بحاجة لتدخل ومتابعة):*\n`;
-    if (underPerformers.length > 0) {
-      underPerformers.forEach((c, idx) => {
-        waText += `${idx + 1}. *${c.courierName}*: ${c.deliveredCount} تسليم فقط | تأخر في ${c.delayedCount} طلبات | متوسط زمن: ${c.avgTime} دقيقة (${c.phone})\n`;
+    waText += `\n🚫 *أسماء المناديب غير المداومين (المتغيبين):*\n`;
+    if (absentCouriers.length > 0) {
+      absentCouriers.forEach((c, idx) => {
+        waText += `${idx + 1}. ${c.courierName}\n`;
       });
     } else {
-      waText += `• لا يوجد مناديب ضعاف الأداء اليوم.\n`;
+      waText += `• لا يوجد مناديب متغيبون اليوم ✅\n`;
     }
-
-    waText += `\n📋 *تفصيل إنجاز كافة المناديب:*\n`;
-    courierStats.forEach((c) => {
-      const tierIcon = c.performanceTier === 'top' ? '🟢' : c.performanceTier === 'low' ? '🔴' : '🟡';
-      waText += `${tierIcon} *${c.courierName}* (${c.locatAccounts[0] || 'حساب لوكيت'}): ${c.deliveredCount} طلب | تأخير: ${c.delayedCount} | متوسط: ${c.avgTime}د\n`;
-    });
   }
 
-  waText += `\n───────────────────────\nتم الإرسال آلياً عبر نظام أتمتة لوكيت الذكي.`;
+  waText += `\n───────────────────────\nتم التوليد والإرسال عبر نظام متابعة لوكيت.`;
 
   return {
     date: today,
@@ -1198,6 +1289,9 @@ function generateDailyReport(): DailyReportSummary {
     activeOrdersRightNow,
     overallAvgTimeMinutes,
     onTimeRate,
+    workingCouriersCount: workingCouriers.length,
+    absentCouriersCount: absentCouriers.length,
+    absentCouriers,
     topPerformers,
     underPerformers,
     allCouriers: courierStats,
@@ -1226,6 +1320,7 @@ app.post('/api/settings', (req: Request, res: Response) => {
     adminName: body.adminName !== undefined ? body.adminName : settings.adminName,
     adminPhone2: body.adminPhone2 !== undefined ? body.adminPhone2 : settings.adminPhone2,
     adminName2: body.adminName2 !== undefined ? body.adminName2 : settings.adminName2,
+    autoNotifyOrderAssignment: body.autoNotifyOrderAssignment !== undefined ? Boolean(body.autoNotifyOrderAssignment) : settings.autoNotifyOrderAssignment,
     autoAlertCourier: body.autoAlertCourier !== undefined ? Boolean(body.autoAlertCourier) : settings.autoAlertCourier,
     autoAlertAdmin: body.autoAlertAdmin !== undefined ? Boolean(body.autoAlertAdmin) : settings.autoAlertAdmin,
     autoAlertAdmin2: body.autoAlertAdmin2 !== undefined ? Boolean(body.autoAlertAdmin2) : settings.autoAlertAdmin2,
@@ -1568,6 +1663,7 @@ function ingestLiveOrders(liveOrders: any[], sourceName: string = 'Locat'): { co
 
     if (existingIndex !== -1) {
       const existing = orders[existingIndex];
+      const prevCourierId = existing.courierId;
       existing.elapsedMinutes = elapsedMinutes;
       existing.isDelayed = isDelayed;
       existing.status = incoming.status || (isDelayed ? 'delayed' : existing.status);
@@ -1577,9 +1673,16 @@ function ingestLiveOrders(liveOrders: any[], sourceName: string = 'Locat'): { co
         existing.courierId = matchedCourier.id;
         existing.courierName = matchedCourier.name;
         existing.courierPhone = matchedCourier.phone;
+        if (prevCourierId !== matchedCourier.id) {
+          existing.assignmentNotifiedToCourier = false;
+        }
       }
       existing.activeOrdersHeldByCourier = incoming.activeOrdersHeldByCourier || (matchedCourier ? matchedCourier.activeOrdersCount : existing.activeOrdersHeldByCourier);
       existing.lastUpdated = new Date().toISOString();
+
+      if (triggerAssignmentNotificationForOrder(existing)) {
+        alertsGenerated++;
+      }
 
       const shouldTrigger = !existing.isDelivered && !existing.isCanceled && (
         (isDelayed && !existing.alertSentToCourier) ||
@@ -1606,9 +1709,14 @@ function ingestLiveOrders(liveOrders: any[], sourceName: string = 'Locat'): { co
         isDelayed,
         alertSentToCourier: false,
         alertSentToAdmin: false,
+        assignmentNotifiedToCourier: false,
         activeOrdersHeldByCourier: incoming.activeOrdersHeldByCourier || 1,
         lastUpdated: new Date().toISOString(),
       };
+
+      if (triggerAssignmentNotificationForOrder(newOrder)) {
+        alertsGenerated++;
+      }
 
       if (isDelayed) {
         newlyDelayedCount++;
@@ -1764,19 +1872,25 @@ app.get('/api/reports/daily', (req: Request, res: Response) => {
   });
 });
 
-app.post('/api/reports/send-daily', (req: Request, res: Response) => {
+async function dispatchDailyReportNow(): Promise<{ summary: DailyReportSummary; waLink: string }> {
   const summary = generateDailyReport();
   const cleanAdminPhone = formatPhoneForWhatsApp(settings.adminPhone);
   const waLink = `https://wa.me/${cleanAdminPhone}?text=${encodeURIComponent(summary.whatsappFormattedText)}`;
 
-  // Log as admin alert
+  if (settings.adminPhone) {
+    await sendWhatsAppDirect(settings.adminPhone, summary.whatsappFormattedText).catch(() => {});
+  }
+  if (settings.adminPhone2 && settings.autoAlertAdmin2) {
+    await sendWhatsAppDirect(settings.adminPhone2, summary.whatsappFormattedText).catch(() => {});
+  }
+
   alerts.unshift({
     id: `alt-report-${Date.now()}`,
     timestamp: new Date().toISOString(),
     recipientType: 'admin',
-    recipientName: settings.adminName,
+    recipientName: settings.adminName || 'الإدارة',
     recipientPhone: settings.adminPhone,
-    orderId: 'التقرير اليومي الشامل',
+    orderId: 'تقرير نهاية اليوم المختصر',
     elapsedMinutes: 0,
     activeOrdersCount: summary.activeOrdersRightNow,
     message: summary.whatsappFormattedText,
@@ -1784,9 +1898,33 @@ app.post('/api/reports/send-daily', (req: Request, res: Response) => {
     waLink,
   });
 
+  settings.lastAutoDailyReportDate = getRiyadhDateKey();
+  saveStoreToDisk();
+
+  return { summary, waLink };
+}
+
+let dailyReportSchedulerInterval: NodeJS.Timeout | null = null;
+function setupDailyReportScheduler() {
+  if (dailyReportSchedulerInterval) clearInterval(dailyReportSchedulerInterval);
+  dailyReportSchedulerInterval = setInterval(() => {
+    if (!settings.autoDailyReport || !settings.adminPhone) return;
+    const todayKey = getRiyadhDateKey();
+    if (settings.lastAutoDailyReportDate === todayKey) return;
+    const targetTime = settings.dailyReportTime || '23:00';
+    if (getRiyadh24HourTime() >= targetTime) {
+      console.log(`[Daily Report Scheduler] 📊 إرسال تقرير نهاية اليوم المختصر تلقائياً إلى ${settings.adminPhone}`);
+      dispatchDailyReportNow().catch((e) => console.error('[Daily Report Auto-Send Error]', e));
+    }
+  }, 30 * 1000);
+}
+
+app.post('/api/reports/send-daily', async (req: Request, res: Response) => {
+  const { waLink } = await dispatchDailyReportNow();
+
   res.json({
     success: true,
-    message: 'تم تجهيز التقرير اليومي وإرساله للإدارة عبر الواتساب',
+    message: 'تم إرسال تقرير نهاية اليوم المختصر للإدارة عبر الواتساب بنجاح',
     waLink,
   });
 });
@@ -2317,6 +2455,8 @@ async function executeLocatCloudSync(): Promise<{ success: boolean; count: numbe
     let activeCount = 0;
     let alertsGenerated = 0;
     let newlyDelayedCount = 0;
+    const hadSyncedOrdersBefore = orders.length > 0 || Boolean(settings.lastCloudSyncTimestamp);
+    const todayKey = getRiyadhDateKey();
 
     const syncedOrders: Order[] = [];
     const seenOrderIds = new Set<string>();
@@ -2398,6 +2538,13 @@ async function executeLocatCloudSync(): Promise<{ success: boolean; count: numbe
       // Find previously tracked state to preserve alerts already sent
       const existing = orders.find((o) => o.id === orderId || o.id === `#${orderId}` || (item._id && o.locateMongoId === item._id));
 
+      const reassignedCourier = Boolean(
+        existing &&
+        matchedCourier &&
+        ((existing.courierId && existing.courierId !== matchedCourier.id) ||
+         (!existing.courierId && !existing.locatAccount))
+      );
+
       const orderRecord: Order = {
         id: orderId,
         locateMongoId: item._id || existing?.locateMongoId,
@@ -2425,9 +2572,19 @@ async function executeLocatCloudSync(): Promise<{ success: boolean; count: numbe
         courierAlertTime: existing?.courierAlertTime,
         adminAlertTime: existing?.adminAlertTime,
         admin2AlertTime: existing?.admin2AlertTime,
+        assignmentNotifiedToCourier: reassignedCourier ? false : Boolean(existing?.assignmentNotifiedToCourier),
+        assignmentNotifiedTime: reassignedCourier ? undefined : existing?.assignmentNotifiedTime,
         activeOrdersHeldByCourier: 1,
         lastUpdated: new Date().toISOString(),
       };
+
+      // Instant WhatsApp direct notification upon order receipt/assignment
+      const isNewlyAssignedActive = !isDelivered && !isCanceled && !orderRecord.assignmentNotifiedToCourier && (
+        hadSyncedOrdersBefore ? (!existing || reassignedCourier) : elapsedMinutes <= 15
+      );
+      if (isNewlyAssignedActive && triggerAssignmentNotificationForOrder(orderRecord)) {
+        alertsGenerated++;
+      }
 
       const shouldTriggerAlert = !isDelivered && !isCanceled && (
         (isDelayed && !orderRecord.alertSentToCourier) ||
@@ -2453,7 +2610,7 @@ async function executeLocatCloudSync(): Promise<{ success: boolean; count: numbe
       return new Date(timeB).getTime() - new Date(timeA).getTime();
     });
 
-    // Update activeOrdersCount and delivered count for all couriers
+    // Update activeOrdersCount and delivered count (for today) for all couriers
     couriers.forEach((c) => {
       const courierOrders = orders.filter((o) => {
         return o.courierId === c.id ||
@@ -2462,7 +2619,7 @@ async function executeLocatCloudSync(): Promise<{ success: boolean; count: numbe
       });
 
       c.activeOrdersCount = courierOrders.filter((o) => o.status === 'in_transit' || o.status === 'delayed').length;
-      c.totalDeliveredToday = courierOrders.filter((o) => o.status === 'delivered').length;
+      c.totalDeliveredToday = courierOrders.filter((o) => o.status === 'delivered' && isOrderFromToday(o, todayKey)).length;
       c.delayedOrdersCount = courierOrders.filter((o) => o.isDelayed).length;
 
       const completedWithTimes = courierOrders.filter((o) => o.status === 'delivered' && o.elapsedMinutes > 0);
@@ -3089,6 +3246,9 @@ async function startServer() {
 
   // Start 24/7 dedicated automated order watcher & alert dispatcher
   setupAutomatedAlertsWatcher();
+
+  // Start automated End-of-Day concise report scheduler
+  setupDailyReportScheduler();
 
   // Start 24/7 automated Puppeteer background scraper if enabled
   setupPuppeteer247Runner();

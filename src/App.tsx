@@ -27,6 +27,7 @@ export default function App() {
     adminName: '',
     adminPhone2: '',
     adminName2: '',
+    autoNotifyOrderAssignment: true,
     autoAlertCourier: true,
     autoAlertAdmin: true,
     autoAlertAdmin2: true,

@@ -42,6 +42,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const [adminName, setAdminName] = useState(settings.adminName || '');
   const [adminPhone2, setAdminPhone2] = useState(settings.adminPhone2 || '');
   const [adminName2, setAdminName2] = useState(settings.adminName2 || '');
+  const [autoNotifyOrderAssignment, setAutoNotifyOrderAssignment] = useState(settings.autoNotifyOrderAssignment ?? true);
   const [autoAlertCourier, setAutoAlertCourier] = useState(settings.autoAlertCourier ?? true);
   const [autoAlertAdmin, setAutoAlertAdmin] = useState(settings.autoAlertAdmin ?? true);
   const [autoAlertAdmin2, setAutoAlertAdmin2] = useState(settings.autoAlertAdmin2 ?? true);
@@ -82,6 +83,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
       setAdminName(settings.adminName || '');
       setAdminPhone2(settings.adminPhone2 || '');
       setAdminName2(settings.adminName2 || '');
+      setAutoNotifyOrderAssignment(settings.autoNotifyOrderAssignment ?? true);
       setAutoAlertCourier(settings.autoAlertCourier ?? true);
       setAutoAlertAdmin(settings.autoAlertAdmin ?? true);
       setAutoAlertAdmin2(settings.autoAlertAdmin2 ?? true);
@@ -277,6 +279,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
       webhookUrl: webhookUrl.trim(),
       webhookApiKey: webhookApiKey.trim(),
       whatsAppProvider,
+      autoNotifyOrderAssignment,
       autoAlertCourier,
       autoAlertAdmin,
       autoAlertAdmin2,
@@ -881,6 +884,21 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               <Bell className="w-4 h-4 text-slate-700" />
               تفعيل مسارات الإرسال التلقائي
             </h3>
+
+            <label className="flex items-center justify-between p-2.5 bg-emerald-50/70 rounded-lg border border-emerald-200 cursor-pointer hover:bg-emerald-50 transition">
+              <div>
+                <div className="font-bold text-emerald-900">إشعار واتساب فوري (دايركت) للمندوب عند استلام / إسناد الطلب</div>
+                <div className="text-[11px] text-emerald-700">
+                  يرسل رسالة واتساب مباشرة للمندوب فور إسناد الطلب تتضمن: (رقم الطلب + وقت الطلب الحالي)
+                </div>
+              </div>
+              <input
+                type="checkbox"
+                checked={autoNotifyOrderAssignment}
+                onChange={(e) => setAutoNotifyOrderAssignment(e.target.checked)}
+                className="w-4 h-4 text-emerald-600 rounded focus:ring-emerald-500"
+              />
+            </label>
 
             <label className="flex items-center justify-between p-2.5 bg-white rounded-lg border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
               <div>

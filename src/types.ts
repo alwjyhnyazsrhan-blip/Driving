@@ -52,6 +52,8 @@ export interface Order {
   alertSentToAdmin2?: boolean;
   admin2AlertTime?: string;
   lastAlertSentTimestamp?: number; // Epoch ms for cooldown check
+  assignmentNotifiedToCourier?: boolean; // Instant WhatsApp sent upon order assignment
+  assignmentNotifiedTime?: string; // Riyadh time when assignment notification was queued/sent
   activeOrdersHeldByCourier: number; // Current active count for this courier
   lastUpdated: string;
 }
@@ -63,6 +65,7 @@ export interface SystemSettings {
   adminName: string; // Management primary contact name
   adminPhone2: string; // Management secondary WhatsApp number (Escalation)
   adminName2: string; // Management secondary contact name (Escalation)
+  autoNotifyOrderAssignment?: boolean; // Instant WhatsApp direct to courier upon receiving/assigning order
   autoAlertCourier: boolean; // Automatically trigger courier WhatsApp
   autoAlertAdmin: boolean; // Automatically trigger primary admin WhatsApp
   autoAlertAdmin2: boolean; // Automatically trigger secondary admin WhatsApp upon continued delay
@@ -71,6 +74,7 @@ export interface SystemSettings {
   antiBanMaxDelaySeconds: number; // Anti-ban max pause between messages (e.g. 10s)
   autoDailyReport: boolean; // Automatic end of day report
   dailyReportTime: string; // E.g. "23:00"
+  lastAutoDailyReportDate?: string; // Riyadh YYYY-MM-DD of last auto-sent report
   whatsAppProvider: 'baileys_vps' | 'direct_chat' | 'webhook' | 'simulation';
   webhookUrl?: string;
   webhookApiKey?: string;
@@ -169,6 +173,7 @@ export interface CourierPerformanceItem {
   efficiencyScore: number; // 0-100%
   performanceTier: 'top' | 'good' | 'low';
   assessmentNote: string;
+  isAbsentToday?: boolean;
 }
 
 export interface DailyReportSummary {
@@ -180,6 +185,9 @@ export interface DailyReportSummary {
   activeOrdersRightNow: number;
   overallAvgTimeMinutes: number;
   onTimeRate: number; // percentage
+  workingCouriersCount?: number;
+  absentCouriersCount?: number;
+  absentCouriers?: CourierPerformanceItem[];
   topPerformers: CourierPerformanceItem[];
   underPerformers: CourierPerformanceItem[];
   allCouriers: CourierPerformanceItem[];
