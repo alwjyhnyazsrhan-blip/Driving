@@ -7,6 +7,8 @@ import makeWASocket, {
   useMultiFileAuthState,
   DisconnectReason,
   Browsers,
+  fetchLatestWaWebVersion,
+  fetchLatestBaileysVersion,
 } from '@whiskeysockets/baileys';
 import { 
   Courier, 
@@ -278,6 +280,36 @@ let puppeteerStatus: PuppeteerScraperStatus = {
   lastScrapedCount: 0,
 };
 
+let cachedWaVersion: { version: [number, number, number]; fetchedAt: number } | null = null;
+
+async function getLatestSafeWaVersion(forceRefresh = false): Promise<[number, number, number] | undefined> {
+  const SIX_HOURS = 6 * 60 * 60 * 1000;
+  if (!forceRefresh && cachedWaVersion && Date.now() - cachedWaVersion.fetchedAt < SIX_HOURS) {
+    return cachedWaVersion.version;
+  }
+  try {
+    const res = await Promise.race([
+      fetchLatestWaWebVersion({}),
+      new Promise<null>((resolve) => setTimeout(() => resolve(null), 5000)),
+    ]);
+    if (res && Array.isArray((res as any).version) && (res as any).version.length === 3) {
+      cachedWaVersion = { version: (res as any).version as [number, number, number], fetchedAt: Date.now() };
+      return cachedWaVersion.version;
+    }
+  } catch {}
+  try {
+    const res = await Promise.race([
+      fetchLatestBaileysVersion(),
+      new Promise<null>((resolve) => setTimeout(() => resolve(null), 5000)),
+    ]);
+    if (res && Array.isArray((res as any).version) && (res as any).version.length === 3) {
+      cachedWaVersion = { version: (res as any).version as [number, number, number], fetchedAt: Date.now() };
+      return cachedWaVersion.version;
+    }
+  } catch {}
+  return cachedWaVersion?.version;
+}
+
 // --- BAILEYS CONNECTION ENGINE & RECOVERY ---
 async function connectToWhatsApp(forceNew: boolean = false) {
   if (isInitializingBaileys) return;
@@ -304,6 +336,10 @@ async function connectToWhatsApp(forceNew: boolean = false) {
 
   // 2. If forced fresh session requested, clear auth dir and backup
   if (forceNew) {
+    whatsappState.qrDataUrl = null;
+    whatsappState.qrRaw = null;
+    whatsappState.lastError = null;
+    whatsappState.isLoggedIn = false;
     try {
       whatsappSessionBackup = {};
       if (fs.existsSync(SESSION_BACKUP_FILE)) {
@@ -334,13 +370,18 @@ async function connectToWhatsApp(forceNew: boolean = false) {
     console.log(`[Baileys Engine] الجلسة المحفوظة: ${hasExistingCreds ? '✅ توجد جلسة سابقة (استعادة تلقائية دون الحاجة لمسح QR)' : '⚠️ لا توجد جلسة سابقة (بانتظار مسح QR Code)'}`);
 
     whatsappState.status = hasExistingCreds ? 'reconnecting' : 'connecting_qr';
+    const waVersion = await getLatestSafeWaVersion(forceNew);
+    if (waVersion) {
+      console.log(`[Baileys Engine] 🌐 نسخة واتساب ويب المعتمدة: ${waVersion.join('.')}`);
+    }
 
     const makeSocket = typeof makeWASocket === 'function' ? makeWASocket : (makeWASocket as any)?.default;
     sock = makeSocket({
       auth: state,
+      ...(waVersion ? { version: waVersion } : {}),
       logger: pino({ level: 'silent' }),
       printQRInTerminal: false,
-      browser: Browsers.macOS('Desktop'),
+      browser: Browsers.ubuntu('Chrome'),
       connectTimeoutMs: 60000,
       defaultQueryTimeoutMs: 60000,
       keepAliveIntervalMs: 15000, // 15s keepAlive prevents proxies from killing idle TCP connections
@@ -367,6 +408,7 @@ async function connectToWhatsApp(forceNew: boolean = false) {
       if (qr) {
         whatsappState.status = 'connecting_qr';
         whatsappState.qrRaw = qr;
+        whatsappState.lastError = null;
         try {
           whatsappState.qrDataUrl = await QRCode.toDataURL(qr, {
             margin: 2,

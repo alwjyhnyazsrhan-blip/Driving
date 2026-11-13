@@ -20,7 +20,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.028Z"
+      "updatedAt": "2026-11-13T19:31:26.766Z"
     },
     {
       "id": "6addf40a8a96f2a1a4067b7f",
@@ -39,10 +39,10 @@
       "isCustomPhone": false,
       "status": "active",
       "activeOrdersCount": 0,
-      "totalDeliveredToday": 15,
-      "avgDeliveryTimeMinutes": 28,
+      "totalDeliveredToday": 2,
+      "avgDeliveryTimeMinutes": 29,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.028Z"
+      "updatedAt": "2026-11-13T19:31:26.766Z"
     },
     {
       "id": "6ad874cf529a50ca50aae8e2",
@@ -64,7 +64,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.029Z"
+      "updatedAt": "2026-11-13T19:31:26.766Z"
     },
     {
       "id": "6ad872b2529a50ca50aae8e0",
@@ -86,7 +86,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.029Z"
+      "updatedAt": "2026-11-13T19:31:26.766Z"
     },
     {
       "id": "6ad872b0529a50ca50aae8de",
@@ -108,7 +108,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.029Z"
+      "updatedAt": "2026-11-13T19:31:26.766Z"
     },
     {
       "id": "6ad872af529a50ca50aae8dc",
@@ -117,7 +117,7 @@
       "lastName": "سيف",
       "idNumber": "2642994640",
       "cityId": "i07AZC3Axw4=",
-      "gift": 2436.2504347826,
+      "gift": 2427.868695652165,
       "balance": 0,
       "locatAccounts": [
         "30فواد عبده قائد سيف",
@@ -126,11 +126,11 @@
       "phone": "+966533983104",
       "isCustomPhone": false,
       "status": "active",
-      "activeOrdersCount": 1,
-      "totalDeliveredToday": 24,
+      "activeOrdersCount": 0,
+      "totalDeliveredToday": 13,
       "avgDeliveryTimeMinutes": 26,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.029Z"
+      "updatedAt": "2026-11-13T19:31:26.766Z"
     },
     {
       "id": "6ad872ac529a50ca50aae8da",
@@ -152,7 +152,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.029Z"
+      "updatedAt": "2026-11-13T19:31:26.766Z"
     },
     {
       "id": "6ad872a9529a50ca50aae8d8",
@@ -174,7 +174,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.029Z"
+      "updatedAt": "2026-11-13T19:31:26.766Z"
     },
     {
       "id": "6ad872a7dc1da1f527990c1d",
@@ -196,7 +196,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.029Z"
+      "updatedAt": "2026-11-13T19:31:26.766Z"
     },
     {
       "id": "6ad872a6dc1da1f527990c1b",
@@ -205,7 +205,7 @@
       "lastName": "اقبال",
       "idNumber": "2481640759",
       "cityId": "i07AZC3Axw4=",
-      "gift": 2336.911304347811,
+      "gift": 2328.8399999999847,
       "balance": 0,
       "locatAccounts": [
         "30محمد عثمان محمد اقبال",
@@ -214,11 +214,11 @@
       "phone": "+966558285328",
       "isCustomPhone": false,
       "status": "active",
-      "activeOrdersCount": 1,
-      "totalDeliveredToday": 9,
+      "activeOrdersCount": 0,
+      "totalDeliveredToday": 7,
       "avgDeliveryTimeMinutes": 23,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.030Z"
+      "updatedAt": "2026-11-13T19:31:26.767Z"
     },
     {
       "id": "6ad872a5dc1da1f527990c19",
@@ -227,7 +227,7 @@
       "lastName": "افضل ",
       "idNumber": "2635587625",
       "cityId": "i07AZC3Axw4=",
-      "gift": 2477.227826086945,
+      "gift": 2469.1565217391185,
       "balance": 0,
       "locatAccounts": [
         "30محمد محمد ياسين افضل",
@@ -236,11 +236,11 @@
       "phone": "+966558264781",
       "isCustomPhone": false,
       "status": "active",
-      "activeOrdersCount": 1,
-      "totalDeliveredToday": 11,
-      "avgDeliveryTimeMinutes": 39,
+      "activeOrdersCount": 0,
+      "totalDeliveredToday": 7,
+      "avgDeliveryTimeMinutes": 38,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.030Z"
+      "updatedAt": "2026-11-13T19:31:26.767Z"
     },
     {
       "id": "6ad872a4529a50ca50aae8d6",
@@ -262,7 +262,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.030Z"
+      "updatedAt": "2026-11-13T19:31:26.767Z"
     },
     {
       "id": "6ad872a3529a50ca50aae8d4",
@@ -281,10 +281,10 @@
       "isCustomPhone": false,
       "status": "active",
       "activeOrdersCount": 0,
-      "totalDeliveredToday": 1,
+      "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 59,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.031Z"
+      "updatedAt": "2026-11-13T19:31:26.767Z"
     },
     {
       "id": "6ad872a1529a50ca50aae8d2",
@@ -293,7 +293,7 @@
       "lastName": "عثمان المقطري",
       "idNumber": "2622791776",
       "cityId": "i07AZC3Axw4=",
-      "gift": 2578.429565217384,
+      "gift": 2574.393913043471,
       "balance": 0,
       "locatAccounts": [
         "30محمد خالد سعيد عثمان المقطري",
@@ -302,11 +302,11 @@
       "phone": "+966504962371",
       "isCustomPhone": false,
       "status": "active",
-      "activeOrdersCount": 1,
-      "totalDeliveredToday": 9,
-      "avgDeliveryTimeMinutes": 28,
+      "activeOrdersCount": 0,
+      "totalDeliveredToday": 6,
+      "avgDeliveryTimeMinutes": 26,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.031Z"
+      "updatedAt": "2026-11-13T19:31:26.767Z"
     },
     {
       "id": "6ad872a0dc1da1f527990c17",
@@ -324,11 +324,11 @@
       "phone": "+966508460624",
       "isCustomPhone": false,
       "status": "active",
-      "activeOrdersCount": 1,
+      "activeOrdersCount": 0,
       "totalDeliveredToday": 4,
-      "avgDeliveryTimeMinutes": 28,
-      "delayedOrdersCount": 1,
-      "updatedAt": "2026-11-13T17:54:33.031Z"
+      "avgDeliveryTimeMinutes": 32,
+      "delayedOrdersCount": 0,
+      "updatedAt": "2026-11-13T19:31:26.768Z"
     },
     {
       "id": "6ad8729fdc1da1f527990c15",
@@ -350,7 +350,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.032Z"
+      "updatedAt": "2026-11-13T19:31:26.768Z"
     },
     {
       "id": "6ad8729edc1da1f527990c13",
@@ -372,7 +372,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.032Z"
+      "updatedAt": "2026-11-13T19:31:26.768Z"
     },
     {
       "id": "6ab6319c5b74e69e4650fb76",
@@ -394,7 +394,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.032Z"
+      "updatedAt": "2026-11-13T19:31:26.769Z"
     },
     {
       "id": "6ab631975b74e69e4650fb74",
@@ -416,7 +416,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.033Z"
+      "updatedAt": "2026-11-13T19:31:26.769Z"
     },
     {
       "id": "6ab6318c5b74e69e4650fb72",
@@ -434,11 +434,11 @@
       "phone": "+966573479604",
       "isCustomPhone": false,
       "status": "active",
-      "activeOrdersCount": 1,
-      "totalDeliveredToday": 4,
-      "avgDeliveryTimeMinutes": 17,
+      "activeOrdersCount": 0,
+      "totalDeliveredToday": 5,
+      "avgDeliveryTimeMinutes": 19,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.033Z"
+      "updatedAt": "2026-11-13T19:31:26.769Z"
     },
     {
       "id": "6aaa6ac238c666d294aa858d",
@@ -460,7 +460,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.033Z"
+      "updatedAt": "2026-11-13T19:31:26.770Z"
     },
     {
       "id": "6a8fe72a4835642e4be2c572",
@@ -479,10 +479,10 @@
       "isCustomPhone": false,
       "status": "active",
       "activeOrdersCount": 0,
-      "totalDeliveredToday": 22,
+      "totalDeliveredToday": 9,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.033Z"
+      "updatedAt": "2026-11-13T19:31:26.770Z"
     },
     {
       "id": "6a8fe5faf02fea3a09f02992",
@@ -504,7 +504,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.034Z"
+      "updatedAt": "2026-11-13T19:31:26.770Z"
     },
     {
       "id": "6a8fe51ef02fea3a09f02990",
@@ -526,7 +526,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.034Z"
+      "updatedAt": "2026-11-13T19:31:26.771Z"
     },
     {
       "id": "6a89c50e6ac8bc0289d4dc62",
@@ -548,7 +548,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.034Z"
+      "updatedAt": "2026-11-13T19:31:26.771Z"
     },
     {
       "id": "6a73524f125fcd6c858b92fe",
@@ -557,7 +557,7 @@
       "lastName": "الدعيس",
       "idNumber": "2627646900",
       "cityId": "i07AZC3Axw4=",
-      "gift": 1973.6817391303964,
+      "gift": 1961.574782608657,
       "balance": 0,
       "locatAccounts": [
         "30 عبدالقادر محمد شمسان الدعيس",
@@ -566,11 +566,11 @@
       "phone": "+966533674850",
       "isCustomPhone": false,
       "status": "active",
-      "activeOrdersCount": 0,
-      "totalDeliveredToday": 10,
-      "avgDeliveryTimeMinutes": 39,
+      "activeOrdersCount": 1,
+      "totalDeliveredToday": 5,
+      "avgDeliveryTimeMinutes": 37,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.035Z"
+      "updatedAt": "2026-11-13T19:31:26.771Z"
     },
     {
       "id": "6a73524e5c72355ebbc9c058",
@@ -579,7 +579,7 @@
       "lastName": "العنسي",
       "idNumber": "2504909769",
       "cityId": "i07AZC3Axw4=",
-      "gift": 2656.817391304287,
+      "gift": 2644.7104347825475,
       "balance": 0,
       "locatAccounts": [
         "30 وليد احمد فائد العنسي",
@@ -588,11 +588,11 @@
       "phone": "+966502445396",
       "isCustomPhone": false,
       "status": "active",
-      "activeOrdersCount": 0,
-      "totalDeliveredToday": 26,
-      "avgDeliveryTimeMinutes": 29,
+      "activeOrdersCount": 1,
+      "totalDeliveredToday": 14,
+      "avgDeliveryTimeMinutes": 30,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.035Z"
+      "updatedAt": "2026-11-13T19:31:26.772Z"
     },
     {
       "id": "6a73524d125fcd6c858b92fc",
@@ -601,7 +601,7 @@
       "lastName": "صابر",
       "idNumber": "2594777936",
       "cityId": "i07AZC3Axw4=",
-      "gift": 1477.786086956455,
+      "gift": 1464.7478260868897,
       "balance": 0,
       "locatAccounts": [
         "30 عادل صبحاني غلام صابر",
@@ -610,11 +610,11 @@
       "phone": "+966550237349",
       "isCustomPhone": false,
       "status": "active",
-      "activeOrdersCount": 1,
-      "totalDeliveredToday": 29,
-      "avgDeliveryTimeMinutes": 26,
+      "activeOrdersCount": 0,
+      "totalDeliveredToday": 17,
+      "avgDeliveryTimeMinutes": 28,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.035Z"
+      "updatedAt": "2026-11-13T19:31:26.772Z"
     },
     {
       "id": "6a73524c5c72355ebbc9c056",
@@ -633,10 +633,10 @@
       "isCustomPhone": false,
       "status": "active",
       "activeOrdersCount": 0,
-      "totalDeliveredToday": 32,
-      "avgDeliveryTimeMinutes": 28,
+      "totalDeliveredToday": 12,
+      "avgDeliveryTimeMinutes": 29,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.036Z"
+      "updatedAt": "2026-11-13T19:31:26.772Z"
     },
     {
       "id": "6a73524b125fcd6c858b92fa",
@@ -645,7 +645,7 @@
       "lastName": "عقلان",
       "idNumber": "2493695692",
       "cityId": "i07AZC3Axw4=",
-      "gift": 2779.683478260813,
+      "gift": 2762.9199999999432,
       "balance": 0,
       "locatAccounts": [
         "30 ناظر عبدالفتاح عبدالرحمن عقلان",
@@ -655,10 +655,10 @@
       "isCustomPhone": false,
       "status": "active",
       "activeOrdersCount": 1,
-      "totalDeliveredToday": 29,
+      "totalDeliveredToday": 18,
       "avgDeliveryTimeMinutes": 24,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.037Z"
+      "updatedAt": "2026-11-13T19:31:26.773Z"
     },
     {
       "id": "6a73524a125fcd6c858b92f8",
@@ -677,10 +677,10 @@
       "isCustomPhone": false,
       "status": "active",
       "activeOrdersCount": 0,
-      "totalDeliveredToday": 3,
-      "avgDeliveryTimeMinutes": 20,
+      "totalDeliveredToday": 0,
+      "avgDeliveryTimeMinutes": 26,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.037Z"
+      "updatedAt": "2026-11-13T19:31:26.773Z"
     },
     {
       "id": "6a735249125fcd6c858b92f6",
@@ -689,7 +689,7 @@
       "lastName": "قايد",
       "idNumber": "2562741021",
       "cityId": "i07AZC3Axw4=",
-      "gift": 1037.720869565165,
+      "gift": 1029.6495652173387,
       "balance": 0,
       "locatAccounts": [
         "30 حسام عبدالعزيز عبدالمجيد قايد",
@@ -699,10 +699,10 @@
       "isCustomPhone": false,
       "status": "active",
       "activeOrdersCount": 0,
-      "totalDeliveredToday": 14,
-      "avgDeliveryTimeMinutes": 43,
+      "totalDeliveredToday": 5,
+      "avgDeliveryTimeMinutes": 46,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.038Z"
+      "updatedAt": "2026-11-13T19:31:26.778Z"
     },
     {
       "id": "6a735246125fcd6c858b92f4",
@@ -724,7 +724,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.038Z"
+      "updatedAt": "2026-11-13T19:31:26.779Z"
     },
     {
       "id": "6a7352455c72355ebbc9c054",
@@ -746,7 +746,7 @@
       "totalDeliveredToday": 0,
       "avgDeliveryTimeMinutes": 25,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.039Z"
+      "updatedAt": "2026-11-13T19:31:26.779Z"
     },
     {
       "id": "6a7352445c72355ebbc9c052",
@@ -765,10 +765,10 @@
       "isCustomPhone": false,
       "status": "active",
       "activeOrdersCount": 0,
-      "totalDeliveredToday": 13,
-      "avgDeliveryTimeMinutes": 30,
+      "totalDeliveredToday": 2,
+      "avgDeliveryTimeMinutes": 31,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.039Z"
+      "updatedAt": "2026-11-13T19:31:26.780Z"
     },
     {
       "id": "6a7352425c72355ebbc9c050",
@@ -777,7 +777,7 @@
       "lastName": "الكهالي",
       "idNumber": "2613684485",
       "cityId": "i07AZC3Axw4=",
-      "gift": 977.3173913043325,
+      "gift": 962.7269565217239,
       "balance": 0,
       "locatAccounts": [
         "30 أحمد عبدالكريم سرحان الكهالي",
@@ -786,11 +786,11 @@
       "phone": "+966553713177",
       "isCustomPhone": false,
       "status": "active",
-      "activeOrdersCount": 0,
-      "totalDeliveredToday": 19,
+      "activeOrdersCount": 1,
+      "totalDeliveredToday": 13,
       "avgDeliveryTimeMinutes": 29,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.040Z"
+      "updatedAt": "2026-11-13T19:31:26.780Z"
     },
     {
       "id": "68d159f89639500054145386",
@@ -812,7 +812,7 @@
       "totalDeliveredToday": 3,
       "avgDeliveryTimeMinutes": 12,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.040Z"
+      "updatedAt": "2026-11-13T19:31:26.781Z"
     },
     {
       "id": "65333088c865f500544dd62c",
@@ -821,7 +821,7 @@
       "lastName": "السقاف",
       "idNumber": "2180120996",
       "cityId": "i07AZC3Axw4=",
-      "gift": 2551.0243478260527,
+      "gift": 2538.296521739096,
       "balance": 0,
       "locatAccounts": [
         "30علي عبدالله محمد السقاف",
@@ -830,14 +830,771 @@
       "phone": "+966508223362",
       "isCustomPhone": false,
       "status": "active",
-      "activeOrdersCount": 0,
-      "totalDeliveredToday": 14,
-      "avgDeliveryTimeMinutes": 23,
+      "activeOrdersCount": 1,
+      "totalDeliveredToday": 9,
+      "avgDeliveryTimeMinutes": 22,
       "delayedOrdersCount": 0,
-      "updatedAt": "2026-11-13T17:54:33.041Z"
+      "updatedAt": "2026-11-13T19:31:26.781Z"
     }
   ],
   "orders": [
+    {
+      "id": "L23311666",
+      "locateMongoId": "6af765504860e4002d650b60",
+      "locatAccount": "65333088c865f500544dd62c",
+      "courierId": "65333088c865f500544dd62c",
+      "courierName": "30علي عبدالله محمد السقاف",
+      "courierPhone": "+966508223362",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "١٠:٣٠ م",
+      "assignedAt": "2026-11-13T19:30:28.302Z",
+      "createdAt": "2026-11-13T19:30:24.583Z",
+      "isDelivered": false,
+      "isCanceled": false,
+      "elapsedMinutes": 0,
+      "status": "in_transit",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": true,
+      "assignmentNotifiedTime": "١٠:٣٠ م",
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.780Z"
+    },
+    {
+      "id": "L23311659",
+      "locateMongoId": "6af76544d683e6002e4a68cf",
+      "locatAccount": "6a7352425c72355ebbc9c050",
+      "courierId": "6a7352425c72355ebbc9c050",
+      "courierName": "30 أحمد عبدالكريم سرحان الكهالي",
+      "courierPhone": "+966553713177",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "16",
+      "paymentMethod": "Card",
+      "pickupTime": "١٠:٣١ م",
+      "assignedAt": "2026-11-13T19:31:22.315Z",
+      "createdAt": "2026-11-13T19:30:12.669Z",
+      "isDelivered": false,
+      "isCanceled": false,
+      "elapsedMinutes": 0,
+      "status": "in_transit",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": true,
+      "assignmentNotifiedTime": "١٠:٣١ م",
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.780Z"
+    },
+    {
+      "id": "L23311526",
+      "locateMongoId": "6af76475be2baf002ea1a1d0",
+      "locatAccount": "6a73524b125fcd6c858b92fa",
+      "courierId": "6a73524b125fcd6c858b92fa",
+      "courierName": "30 ناظر عبدالفتاح عبدالرحمن عقلان",
+      "courierPhone": "+966504388258",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "15",
+      "paymentMethod": "Card",
+      "pickupTime": "١٠:٢٦ م",
+      "assignedAt": "2026-11-13T19:26:49.515Z",
+      "createdAt": "2026-11-13T19:26:45.880Z",
+      "isDelivered": false,
+      "isCanceled": false,
+      "elapsedMinutes": 4,
+      "status": "in_transit",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": true,
+      "assignmentNotifiedTime": "١٠:٢٩ م",
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.781Z"
+    },
+    {
+      "id": "L23310981",
+      "locateMongoId": "6af760f4be2baf002ea19b9b",
+      "locatAccount": "6ad872a6dc1da1f527990c1b",
+      "courierId": "6ad872a6dc1da1f527990c1b",
+      "courierName": "30محمد عثمان محمد اقبال",
+      "courierPhone": "+966558285328",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "١٠:١١ م",
+      "assignedAt": "2026-11-13T19:11:54.110Z",
+      "deliveryTime": "2026-11-13T19:30:24.610Z",
+      "createdAt": "2026-11-13T19:11:48.483Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 18,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": true,
+      "assignmentNotifiedTime": "١٠:٢٩ م",
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.781Z"
+    },
+    {
+      "id": "L23310921",
+      "locateMongoId": "6af7609f979de2002ebba491",
+      "locatAccount": "6a73524f125fcd6c858b92fe",
+      "courierId": "6a73524f125fcd6c858b92fe",
+      "courierName": "30 عبدالقادر محمد شمسان الدعيس",
+      "courierPhone": "+966533674850",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "١٠:١٠ م",
+      "assignedAt": "2026-11-13T19:10:29.507Z",
+      "createdAt": "2026-11-13T19:10:23.758Z",
+      "isDelivered": false,
+      "isCanceled": false,
+      "elapsedMinutes": 20,
+      "status": "in_transit",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": true,
+      "assignmentNotifiedTime": "١٠:٢٩ م",
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.781Z"
+    },
+    {
+      "id": "L23310898",
+      "locateMongoId": "6af76077a2217d002d2bdc70",
+      "locatAccount": "6ad872a5dc1da1f527990c19",
+      "courierId": "6ad872a5dc1da1f527990c19",
+      "courierName": "30محمد محمد ياسين افضل",
+      "courierPhone": "+966558264781",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "١٠:٠٩ م",
+      "assignedAt": "2026-11-13T19:09:54.067Z",
+      "deliveryTime": "2026-11-13T19:27:11.852Z",
+      "createdAt": "2026-11-13T19:09:43.213Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 17,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.782Z"
+    },
+    {
+      "id": "L23310604",
+      "locateMongoId": "6af75eb0be2baf002ea1966c",
+      "locatAccount": "6a73524e5c72355ebbc9c058",
+      "courierId": "6a73524e5c72355ebbc9c058",
+      "courierName": "30 وليد احمد فائد العنسي",
+      "courierPhone": "+966502445396",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "١٠:٠٢ م",
+      "assignedAt": "2026-11-13T19:02:12.673Z",
+      "createdAt": "2026-11-13T19:02:08.852Z",
+      "isDelivered": false,
+      "isCanceled": false,
+      "elapsedMinutes": 29,
+      "status": "in_transit",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": true,
+      "assignmentNotifiedTime": "١٠:٢٩ م",
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.782Z"
+    },
+    {
+      "id": "L23310539",
+      "locateMongoId": "6af75e6f4860e4002d64ed2e",
+      "locatAccount": "6a735249125fcd6c858b92f6",
+      "courierId": "6a735249125fcd6c858b92f6",
+      "courierName": "30 حسام عبدالعزيز عبدالمجيد قايد",
+      "courierPhone": "+966505997240",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "١٠:٠١ م",
+      "assignedAt": "2026-11-13T19:01:06.816Z",
+      "deliveryTime": "2026-11-13T19:28:15.214Z",
+      "createdAt": "2026-11-13T19:01:03.128Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 27,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.782Z"
+    },
+    {
+      "id": "L23310501",
+      "locateMongoId": "6af75e0e13f42b002dec68de",
+      "locatAccount": "6a7352425c72355ebbc9c050",
+      "courierId": "6a7352425c72355ebbc9c050",
+      "courierName": "30 أحمد عبدالكريم سرحان الكهالي",
+      "courierPhone": "+966553713177",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "14",
+      "paymentMethod": "Card",
+      "pickupTime": "١٠:٠٠ م",
+      "assignedAt": "2026-11-13T19:00:32.890Z",
+      "deliveryTime": "2026-11-13T19:29:14.938Z",
+      "createdAt": "2026-11-13T18:59:26.128Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 28,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.782Z"
+    },
+    {
+      "id": "L23310394",
+      "locateMongoId": "6af75d6a4860e4002d64e85e",
+      "locatAccount": "6ad872af529a50ca50aae8dc",
+      "courierId": "6ad872af529a50ca50aae8dc",
+      "courierName": "30فواد عبده قائد سيف",
+      "courierPhone": "+966533983104",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:٥٧ م",
+      "assignedAt": "2026-11-13T18:57:28.238Z",
+      "deliveryTime": "2026-11-13T19:29:11.426Z",
+      "createdAt": "2026-11-13T18:56:42.364Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 31,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.782Z"
+    },
+    {
+      "id": "L23310376",
+      "locateMongoId": "6af75d57979de2002ebb9ed9",
+      "locatAccount": "6a73524b125fcd6c858b92fa",
+      "courierId": "6a73524b125fcd6c858b92fa",
+      "courierName": "30 ناظر عبدالفتاح عبدالرحمن عقلان",
+      "courierPhone": "+966504388258",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:٥٦ م",
+      "assignedAt": "2026-11-13T18:56:28.143Z",
+      "deliveryTime": "2026-11-13T19:26:00.286Z",
+      "createdAt": "2026-11-13T18:56:23.789Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 29,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.782Z"
+    },
+    {
+      "id": "L23310218",
+      "locateMongoId": "6af75c8aa2217d002d2bd5f5",
+      "locatAccount": "65333088c865f500544dd62c",
+      "courierId": "65333088c865f500544dd62c",
+      "courierName": "30علي عبدالله محمد السقاف",
+      "courierPhone": "+966508223362",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:٥٣ م",
+      "assignedAt": "2026-11-13T18:53:44.566Z",
+      "deliveryTime": "2026-11-13T19:07:59.130Z",
+      "createdAt": "2026-11-13T18:52:58.770Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 14,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.782Z"
+    },
+    {
+      "id": "L23309697",
+      "locateMongoId": "6af7599813f42b002dec6165",
+      "locatAccount": "6a73524b125fcd6c858b92fa",
+      "courierId": "6a73524b125fcd6c858b92fa",
+      "courierName": "30 ناظر عبدالفتاح عبدالرحمن عقلان",
+      "courierPhone": "+966504388258",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Cash",
+      "pickupTime": "٠٩:٤٠ م",
+      "assignedAt": "2026-11-13T18:40:33.712Z",
+      "deliveryTime": "2026-11-13T18:54:07.352Z",
+      "createdAt": "2026-11-13T18:40:24.851Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 13,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.782Z"
+    },
+    {
+      "id": "L23309647",
+      "locateMongoId": "6af7595f13f42b002dec610c",
+      "locatAccount": "6ad872a5dc1da1f527990c19",
+      "courierId": "6ad872a5dc1da1f527990c19",
+      "courierName": "30محمد محمد ياسين افضل",
+      "courierPhone": "+966558264781",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:٤٠ م",
+      "assignedAt": "2026-11-13T18:40:16.224Z",
+      "deliveryTime": "2026-11-13T19:05:02.864Z",
+      "createdAt": "2026-11-13T18:39:27.269Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 24,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.783Z"
+    },
+    {
+      "id": "L23308374",
+      "locateMongoId": "6af758c9be2baf002ea18bb0",
+      "locatAccount": "6a73524f125fcd6c858b92fe",
+      "courierId": "6a73524f125fcd6c858b92fe",
+      "courierName": "30 عبدالقادر محمد شمسان الدعيس",
+      "courierPhone": "+966533674850",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:٣٧ م",
+      "assignedAt": "2026-11-13T18:37:01.722Z",
+      "deliveryTime": "2026-11-13T19:07:23.582Z",
+      "createdAt": "2026-11-13T18:36:57.818Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 30,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.783Z"
+    },
+    {
+      "id": "L23308646",
+      "locateMongoId": "6af7588bd683e6002e4a5434",
+      "locatAccount": "6a73524e5c72355ebbc9c058",
+      "courierId": "6a73524e5c72355ebbc9c058",
+      "courierName": "30 وليد احمد فائد العنسي",
+      "courierPhone": "+966502445396",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:٣٥ م",
+      "assignedAt": "2026-11-13T18:35:59.215Z",
+      "deliveryTime": "2026-11-13T19:00:27.027Z",
+      "createdAt": "2026-11-13T18:35:55.552Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 24,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.783Z"
+    },
+    {
+      "id": "L23309278",
+      "locateMongoId": "6af75757a2217d002d2bcbb4",
+      "locatAccount": "65333088c865f500544dd62c",
+      "courierId": "65333088c865f500544dd62c",
+      "courierName": "30علي عبدالله محمد السقاف",
+      "courierPhone": "+966508223362",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "15",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:٣١ م",
+      "assignedAt": "2026-11-13T18:31:00.539Z",
+      "deliveryTime": "2026-11-13T18:47:56.104Z",
+      "createdAt": "2026-11-13T18:30:47.154Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 16,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.783Z"
+    },
+    {
+      "id": "L23309204",
+      "locateMongoId": "6af75711d683e6002e4a51ad",
+      "locatAccount": "6ad872af529a50ca50aae8dc",
+      "courierId": "6ad872af529a50ca50aae8dc",
+      "courierName": "30فواد عبده قائد سيف",
+      "courierPhone": "+966533983104",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "14",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:٢٩ م",
+      "assignedAt": "2026-11-13T18:29:40.979Z",
+      "deliveryTime": "2026-11-13T18:55:23.244Z",
+      "createdAt": "2026-11-13T18:29:37.136Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 25,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.783Z"
+    },
+    {
+      "id": "L23309045",
+      "locateMongoId": "6af756474860e4002d64c276",
+      "locatAccount": "6ad872a6dc1da1f527990c1b",
+      "courierId": "6ad872a6dc1da1f527990c1b",
+      "courierName": "30محمد عثمان محمد اقبال",
+      "courierPhone": "+966558285328",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:٢٦ م",
+      "assignedAt": "2026-11-13T18:26:19.034Z",
+      "deliveryTime": "2026-11-13T18:48:42.215Z",
+      "createdAt": "2026-11-13T18:26:15.043Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 22,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.783Z"
+    },
+    {
+      "id": "L23307179",
+      "locateMongoId": "6af752ddd683e6002e4a4862",
+      "locatAccount": "6ad872a1529a50ca50aae8d2",
+      "courierId": "6ad872a1529a50ca50aae8d2",
+      "courierName": "30محمد خالد سعيد عثمان المقطري",
+      "courierPhone": "+966504962371",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:١١ م",
+      "assignedAt": "2026-11-13T18:11:47.918Z",
+      "deliveryTime": "2026-11-13T18:33:30.746Z",
+      "createdAt": "2026-11-13T18:11:41.706Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 21,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.783Z"
+    },
+    {
+      "id": "L23308298",
+      "locateMongoId": "6af7522fa2217d002d2bc222",
+      "locatAccount": "6a7352425c72355ebbc9c050",
+      "courierId": "6a7352425c72355ebbc9c050",
+      "courierName": "30 أحمد عبدالكريم سرحان الكهالي",
+      "courierPhone": "+966553713177",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "17",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:١٠ م",
+      "assignedAt": "2026-11-13T18:10:21.262Z",
+      "deliveryTime": "2026-11-13T18:42:37.237Z",
+      "createdAt": "2026-11-13T18:08:47.585Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 32,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.783Z"
+    },
+    {
+      "id": "L23308286",
+      "locateMongoId": "6af7520613f42b002dec52b1",
+      "locatAccount": "6a735249125fcd6c858b92f6",
+      "courierId": "6a735249125fcd6c858b92f6",
+      "courierName": "30 حسام عبدالعزيز عبدالمجيد قايد",
+      "courierPhone": "+966505997240",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:١٠ م",
+      "assignedAt": "2026-11-13T18:10:06.676Z",
+      "deliveryTime": "2026-11-13T18:57:04.818Z",
+      "createdAt": "2026-11-13T18:08:06.115Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 46,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.783Z"
+    },
+    {
+      "id": "L23308078",
+      "locateMongoId": "6af750f7979de2002ebb86b5",
+      "locatAccount": "6a73524b125fcd6c858b92fa",
+      "courierId": "6a73524b125fcd6c858b92fa",
+      "courierName": "30 ناظر عبدالفتاح عبدالرحمن عقلان",
+      "courierPhone": "+966504388258",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:٠٣ م",
+      "assignedAt": "2026-11-13T18:03:42.299Z",
+      "deliveryTime": "2026-11-13T18:35:50.918Z",
+      "createdAt": "2026-11-13T18:03:35.281Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 32,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.783Z"
+    },
+    {
+      "id": "L23307995",
+      "locateMongoId": "6af750a64860e4002d64a826",
+      "locatAccount": "6a73524e5c72355ebbc9c058",
+      "courierId": "6a73524e5c72355ebbc9c058",
+      "courierName": "30 وليد احمد فائد العنسي",
+      "courierPhone": "+966502445396",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:٠٢ م",
+      "assignedAt": "2026-11-13T18:02:18.266Z",
+      "deliveryTime": "2026-11-13T18:31:25.670Z",
+      "createdAt": "2026-11-13T18:02:14.695Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 29,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.783Z"
+    },
+    {
+      "id": "L23307956",
+      "locateMongoId": "6af750324860e4002d64a72b",
+      "locatAccount": "6a73524d125fcd6c858b92fc",
+      "courierId": "6a73524d125fcd6c858b92fc",
+      "courierName": "30 عادل صبحاني غلام صابر",
+      "courierPhone": "+966550237349",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "18",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:٠١ م",
+      "assignedAt": "2026-11-13T18:01:36.384Z",
+      "deliveryTime": "2026-11-13T18:47:03.375Z",
+      "createdAt": "2026-11-13T18:00:18.714Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 45,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.783Z"
+    },
+    {
+      "id": "L23306233",
+      "locateMongoId": "6af74fecbe2baf002ea17afc",
+      "locatAccount": "6a73524f125fcd6c858b92fe",
+      "courierId": "6a73524f125fcd6c858b92fe",
+      "courierName": "30 عبدالقادر محمد شمسان الدعيس",
+      "courierPhone": "+966533674850",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "13",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٨:٥٩ م",
+      "assignedAt": "2026-11-13T17:59:14.209Z",
+      "deliveryTime": "2026-11-13T18:21:31.168Z",
+      "createdAt": "2026-11-13T17:59:08.155Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 22,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.784Z"
+    },
+    {
+      "id": "L23307862",
+      "locateMongoId": "6af74f8ebe2baf002ea17a5b",
+      "locatAccount": "6a73524d125fcd6c858b92fc",
+      "courierId": "6a73524d125fcd6c858b92fc",
+      "courierName": "30 عادل صبحاني غلام صابر",
+      "courierPhone": "+966550237349",
+      "restaurant": "متجر لوكيت",
+      "customerAddress": "",
+      "customerCoordinates": "26.42, 50.08",
+      "deliveryCost": "24",
+      "paymentMethod": "Card",
+      "pickupTime": "٠٩:٠١ م",
+      "assignedAt": "2026-11-13T18:01:57.023Z",
+      "deliveryTime": "2026-11-13T19:02:24.167Z",
+      "createdAt": "2026-11-13T17:57:34.103Z",
+      "isDelivered": true,
+      "isCanceled": false,
+      "elapsedMinutes": 60,
+      "status": "delivered",
+      "isDelayed": false,
+      "alertSentToCourier": false,
+      "alertSentToAdmin": false,
+      "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
+      "activeOrdersHeldByCourier": 1,
+      "lastUpdated": "2026-11-13T19:31:27.784Z"
+    },
     {
       "id": "L23307504",
       "locateMongoId": "6af74e86d683e6002e4a4005",
@@ -852,17 +1609,20 @@
       "paymentMethod": "Card",
       "pickupTime": "٠٨:٥٣ م",
       "assignedAt": "2026-11-13T17:53:24.126Z",
+      "deliveryTime": "2026-11-13T18:32:41.127Z",
       "createdAt": "2026-11-13T17:53:10.602Z",
-      "isDelivered": false,
+      "isDelivered": true,
       "isCanceled": false,
-      "elapsedMinutes": 1,
-      "status": "in_transit",
+      "elapsedMinutes": 39,
+      "status": "delivered",
       "isDelayed": false,
-      "alertSentToCourier": false,
+      "alertSentToCourier": true,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "courierAlertTime": "١٠:٢٩ م",
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.172Z"
+      "lastUpdated": "2026-11-13T19:31:27.784Z"
     },
     {
       "id": "L23307403",
@@ -878,17 +1638,20 @@
       "paymentMethod": "Card",
       "pickupTime": "٠٨:٥١ م",
       "assignedAt": "2026-11-13T17:51:21.158Z",
+      "deliveryTime": "2026-11-13T18:20:28.567Z",
       "createdAt": "2026-11-13T17:51:17.273Z",
-      "isDelivered": false,
+      "isDelivered": true,
       "isCanceled": false,
-      "elapsedMinutes": 3,
-      "status": "in_transit",
+      "elapsedMinutes": 29,
+      "status": "delivered",
       "isDelayed": false,
-      "alertSentToCourier": false,
+      "alertSentToCourier": true,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "courierAlertTime": "١٠:٢٩ م",
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.172Z"
+      "lastUpdated": "2026-11-13T19:31:27.784Z"
     },
     {
       "id": "L23306715",
@@ -904,17 +1667,20 @@
       "paymentMethod": "Card",
       "pickupTime": "٠٨:٤٧ م",
       "assignedAt": "2026-11-13T17:47:47.439Z",
+      "deliveryTime": "2026-11-13T18:03:51.756Z",
       "createdAt": "2026-11-13T17:47:38.148Z",
-      "isDelivered": false,
+      "isDelivered": true,
       "isCanceled": false,
-      "elapsedMinutes": 6,
-      "status": "in_transit",
+      "elapsedMinutes": 16,
+      "status": "delivered",
       "isDelayed": false,
-      "alertSentToCourier": false,
+      "alertSentToCourier": true,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "courierAlertTime": "١٠:٢٩ م",
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.173Z"
+      "lastUpdated": "2026-11-13T19:31:27.784Z"
     },
     {
       "id": "L23307170",
@@ -930,17 +1696,20 @@
       "paymentMethod": "Card",
       "pickupTime": "٠٨:٤٥ م",
       "assignedAt": "2026-11-13T17:45:10.529Z",
+      "deliveryTime": "2026-11-13T18:03:00.248Z",
       "createdAt": "2026-11-13T17:44:45.772Z",
-      "isDelivered": false,
+      "isDelivered": true,
       "isCanceled": false,
-      "elapsedMinutes": 9,
-      "status": "in_transit",
+      "elapsedMinutes": 17,
+      "status": "delivered",
       "isDelayed": false,
-      "alertSentToCourier": false,
+      "alertSentToCourier": true,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "courierAlertTime": "١٠:٢٩ م",
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.173Z"
+      "lastUpdated": "2026-11-13T19:31:27.784Z"
     },
     {
       "id": "L23307026",
@@ -956,17 +1725,20 @@
       "paymentMethod": "Card",
       "pickupTime": "٠٨:٤٦ م",
       "assignedAt": "2026-11-13T17:46:52.681Z",
+      "deliveryTime": "2026-11-13T18:11:54.831Z",
       "createdAt": "2026-11-13T17:41:30.947Z",
-      "isDelivered": false,
+      "isDelivered": true,
       "isCanceled": false,
-      "elapsedMinutes": 7,
-      "status": "in_transit",
+      "elapsedMinutes": 25,
+      "status": "delivered",
       "isDelayed": false,
-      "alertSentToCourier": false,
+      "alertSentToCourier": true,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "courierAlertTime": "١٠:٢٩ م",
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.173Z"
+      "lastUpdated": "2026-11-13T19:31:27.784Z"
     },
     {
       "id": "L23306917",
@@ -982,17 +1754,20 @@
       "paymentMethod": "Card",
       "pickupTime": "٠٨:٤١ م",
       "assignedAt": "2026-11-13T17:41:05.982Z",
+      "deliveryTime": "2026-11-13T18:10:53.045Z",
       "createdAt": "2026-11-13T17:38:32.621Z",
-      "isDelivered": false,
+      "isDelivered": true,
       "isCanceled": false,
-      "elapsedMinutes": 13,
-      "status": "in_transit",
+      "elapsedMinutes": 29,
+      "status": "delivered",
       "isDelayed": false,
-      "alertSentToCourier": false,
+      "alertSentToCourier": true,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "courierAlertTime": "١٠:٢٩ م",
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.173Z"
+      "lastUpdated": "2026-11-13T19:31:27.784Z"
     },
     {
       "id": "L23306865",
@@ -1008,17 +1783,20 @@
       "paymentMethod": "Card",
       "pickupTime": "٠٨:٣٨ م",
       "assignedAt": "2026-11-13T17:38:13.670Z",
+      "deliveryTime": "2026-11-13T17:59:55.819Z",
       "createdAt": "2026-11-13T17:37:27.973Z",
-      "isDelivered": false,
+      "isDelivered": true,
       "isCanceled": false,
-      "elapsedMinutes": 16,
-      "status": "in_transit",
+      "elapsedMinutes": 21,
+      "status": "delivered",
       "isDelayed": false,
-      "alertSentToCourier": false,
+      "alertSentToCourier": true,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "courierAlertTime": "١٠:٢٩ م",
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.173Z"
+      "lastUpdated": "2026-11-13T19:31:27.784Z"
     },
     {
       "id": "L23306274",
@@ -1044,8 +1822,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.173Z"
+      "lastUpdated": "2026-11-13T19:31:27.784Z"
     },
     {
       "id": "L23306212",
@@ -1071,8 +1850,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.173Z"
+      "lastUpdated": "2026-11-13T19:31:27.784Z"
     },
     {
       "id": "L23306124",
@@ -1098,8 +1878,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.174Z"
+      "lastUpdated": "2026-11-13T19:31:27.785Z"
     },
     {
       "id": "L23306113",
@@ -1115,18 +1896,20 @@
       "paymentMethod": "Card",
       "pickupTime": "٠٨:٢٣ م",
       "assignedAt": "2026-11-13T17:23:39.883Z",
+      "deliveryTime": "2026-11-13T18:11:17.326Z",
       "createdAt": "2026-11-13T17:21:18.941Z",
-      "isDelivered": false,
+      "isDelivered": true,
       "isCanceled": false,
-      "elapsedMinutes": 30,
-      "status": "delayed",
-      "isDelayed": true,
+      "elapsedMinutes": 47,
+      "status": "delivered",
+      "isDelayed": false,
       "alertSentToCourier": true,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
       "courierAlertTime": "٠٨:٥٣ م",
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.174Z"
+      "lastUpdated": "2026-11-13T19:31:27.785Z"
     },
     {
       "id": "L23306094",
@@ -1152,8 +1935,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.174Z"
+      "lastUpdated": "2026-11-13T19:31:27.785Z"
     },
     {
       "id": "L23306066",
@@ -1179,8 +1963,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.174Z"
+      "lastUpdated": "2026-11-13T19:31:27.785Z"
     },
     {
       "id": "L23305956",
@@ -1206,8 +1991,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.174Z"
+      "lastUpdated": "2026-11-13T19:31:27.785Z"
     },
     {
       "id": "L23304917",
@@ -1233,8 +2019,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.174Z"
+      "lastUpdated": "2026-11-13T19:31:27.785Z"
     },
     {
       "id": "L23305390",
@@ -1260,8 +2047,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.174Z"
+      "lastUpdated": "2026-11-13T19:31:27.785Z"
     },
     {
       "id": "L23305383",
@@ -1287,8 +2075,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.174Z"
+      "lastUpdated": "2026-11-13T19:31:27.785Z"
     },
     {
       "id": "L23305222",
@@ -1314,8 +2103,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.174Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23305184",
@@ -1341,8 +2131,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.174Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23305153",
@@ -1368,8 +2159,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.174Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23304994",
@@ -1395,8 +2187,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.175Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23304542",
@@ -1422,8 +2215,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.175Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23303889",
@@ -1449,8 +2243,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.175Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23304636",
@@ -1476,8 +2271,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.175Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23304441",
@@ -1503,8 +2299,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.175Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23304392",
@@ -1530,8 +2327,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.175Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23304191",
@@ -1557,8 +2355,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.175Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23303140",
@@ -1584,8 +2383,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.175Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23303857",
@@ -1611,8 +2411,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.175Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23303846",
@@ -1638,8 +2439,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.175Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23303697",
@@ -1665,8 +2467,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.175Z"
+      "lastUpdated": "2026-11-13T19:31:27.786Z"
     },
     {
       "id": "L23303670",
@@ -1692,8 +2495,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.175Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23303668",
@@ -1719,8 +2523,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.175Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23303296",
@@ -1746,8 +2551,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.176Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23303182",
@@ -1773,8 +2579,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.176Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23303162",
@@ -1800,8 +2607,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.176Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23303101",
@@ -1827,8 +2635,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.176Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23302894",
@@ -1854,8 +2663,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.176Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23302516",
@@ -1881,8 +2691,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.176Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23302285",
@@ -1908,8 +2719,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.176Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23302222",
@@ -1935,8 +2747,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.176Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23301960",
@@ -1962,8 +2775,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.176Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23301948",
@@ -1989,8 +2803,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.176Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23301534",
@@ -2016,8 +2831,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.176Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23301509",
@@ -2043,8 +2859,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.176Z"
+      "lastUpdated": "2026-11-13T19:31:27.787Z"
     },
     {
       "id": "L23301267",
@@ -2070,8 +2887,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.176Z"
+      "lastUpdated": "2026-11-13T19:31:27.788Z"
     },
     {
       "id": "L23300800",
@@ -2097,8 +2915,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.177Z"
+      "lastUpdated": "2026-11-13T19:31:27.788Z"
     },
     {
       "id": "L23300958",
@@ -2124,8 +2943,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.177Z"
+      "lastUpdated": "2026-11-13T19:31:27.788Z"
     },
     {
       "id": "L23300940",
@@ -2151,8 +2971,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.177Z"
+      "lastUpdated": "2026-11-13T19:31:27.788Z"
     },
     {
       "id": "L23300813",
@@ -2178,8 +2999,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.177Z"
+      "lastUpdated": "2026-11-13T19:31:27.788Z"
     },
     {
       "id": "L23300765",
@@ -2205,8 +3027,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.177Z"
+      "lastUpdated": "2026-11-13T19:31:27.788Z"
     },
     {
       "id": "L23300715",
@@ -2232,8 +3055,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.177Z"
+      "lastUpdated": "2026-11-13T19:31:27.788Z"
     },
     {
       "id": "L23300597",
@@ -2259,8 +3083,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.177Z"
+      "lastUpdated": "2026-11-13T19:31:27.788Z"
     },
     {
       "id": "L23300459",
@@ -2286,8 +3111,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.177Z"
+      "lastUpdated": "2026-11-13T19:31:27.788Z"
     },
     {
       "id": "L23300242",
@@ -2313,8 +3139,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.177Z"
+      "lastUpdated": "2026-11-13T19:31:27.788Z"
     },
     {
       "id": "L23300223",
@@ -2340,8 +3167,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.177Z"
+      "lastUpdated": "2026-11-13T19:31:27.788Z"
     },
     {
       "id": "L23300203",
@@ -2367,8 +3195,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.177Z"
+      "lastUpdated": "2026-11-13T19:31:27.789Z"
     },
     {
       "id": "L23299737",
@@ -2394,8 +3223,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.177Z"
+      "lastUpdated": "2026-11-13T19:31:27.789Z"
     },
     {
       "id": "L23300110",
@@ -2421,8 +3251,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.177Z"
+      "lastUpdated": "2026-11-13T19:31:27.789Z"
     },
     {
       "id": "L23300064",
@@ -2448,8 +3279,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.178Z"
+      "lastUpdated": "2026-11-13T19:31:27.789Z"
     },
     {
       "id": "L23299780",
@@ -2475,8 +3307,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.178Z"
+      "lastUpdated": "2026-11-13T19:31:27.789Z"
     },
     {
       "id": "L23299450",
@@ -2502,8 +3335,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.178Z"
+      "lastUpdated": "2026-11-13T19:31:27.789Z"
     },
     {
       "id": "L23299414",
@@ -2529,8 +3363,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.178Z"
+      "lastUpdated": "2026-11-13T19:31:27.789Z"
     },
     {
       "id": "L23299562",
@@ -2556,8 +3391,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.178Z"
+      "lastUpdated": "2026-11-13T19:31:27.789Z"
     },
     {
       "id": "L23299530",
@@ -2583,8 +3419,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.178Z"
+      "lastUpdated": "2026-11-13T19:31:27.789Z"
     },
     {
       "id": "L23299423",
@@ -2610,8 +3447,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.178Z"
+      "lastUpdated": "2026-11-13T19:31:27.789Z"
     },
     {
       "id": "L23299457",
@@ -2637,8 +3475,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.178Z"
+      "lastUpdated": "2026-11-13T19:31:27.789Z"
     },
     {
       "id": "L23298779",
@@ -2664,8 +3503,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.178Z"
+      "lastUpdated": "2026-11-13T19:31:27.789Z"
     },
     {
       "id": "L23299239",
@@ -2691,8 +3531,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.178Z"
+      "lastUpdated": "2026-11-13T19:31:27.789Z"
     },
     {
       "id": "L23299055",
@@ -2718,8 +3559,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.178Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23298963",
@@ -2745,8 +3587,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.178Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23298960",
@@ -2772,8 +3615,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.178Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23298845",
@@ -2799,8 +3643,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.179Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23298691",
@@ -2826,8 +3671,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.179Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23298404",
@@ -2853,8 +3699,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.179Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23298211",
@@ -2880,8 +3727,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.179Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23297886",
@@ -2907,8 +3755,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.179Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23297788",
@@ -2934,8 +3783,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.179Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23297772",
@@ -2961,8 +3811,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.179Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23297582",
@@ -2988,8 +3839,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.179Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23297573",
@@ -3015,8 +3867,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.179Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23297502",
@@ -3042,8 +3895,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.179Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23297509",
@@ -3069,8 +3923,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.179Z"
+      "lastUpdated": "2026-11-13T19:31:27.790Z"
     },
     {
       "id": "L23297498",
@@ -3096,8 +3951,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.180Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23297129",
@@ -3123,8 +3979,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.180Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23296862",
@@ -3150,8 +4007,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.180Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23296819",
@@ -3177,8 +4035,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.180Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23296723",
@@ -3204,8 +4063,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.180Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23296376",
@@ -3231,8 +4091,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.180Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23296371",
@@ -3258,8 +4119,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.180Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23296214",
@@ -3285,8 +4147,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.180Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23295934",
@@ -3312,8 +4175,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.180Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23295982",
@@ -3339,8 +4203,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.180Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23295789",
@@ -3366,8 +4231,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.181Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23295669",
@@ -3393,8 +4259,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.181Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23295592",
@@ -3420,8 +4287,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.181Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23295549",
@@ -3447,8 +4315,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.181Z"
+      "lastUpdated": "2026-11-13T19:31:27.791Z"
     },
     {
       "id": "L23295405",
@@ -3474,8 +4343,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.181Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23295242",
@@ -3501,8 +4371,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.181Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23295046",
@@ -3528,8 +4399,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.181Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23295004",
@@ -3555,8 +4427,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.181Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23294942",
@@ -3582,8 +4455,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.181Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23294724",
@@ -3609,8 +4483,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.181Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23294714",
@@ -3636,8 +4511,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.181Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23294587",
@@ -3663,8 +4539,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.182Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23294527",
@@ -3690,8 +4567,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.182Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23294507",
@@ -3717,8 +4595,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.182Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23294488",
@@ -3744,8 +4623,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.182Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23294201",
@@ -3771,8 +4651,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.182Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23294149",
@@ -3798,8 +4679,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.182Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23294111",
@@ -3825,8 +4707,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.182Z"
+      "lastUpdated": "2026-11-13T19:31:27.792Z"
     },
     {
       "id": "L23293839",
@@ -3852,8 +4735,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.182Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23293829",
@@ -3879,8 +4763,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.182Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23293751",
@@ -3906,8 +4791,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.182Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23293530",
@@ -3933,8 +4819,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.182Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23293064",
@@ -3960,8 +4847,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.182Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23293026",
@@ -3987,8 +4875,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.182Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23292892",
@@ -4014,8 +4903,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.183Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23292724",
@@ -4041,8 +4931,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.183Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23292554",
@@ -4068,8 +4959,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.183Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23292518",
@@ -4095,8 +4987,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.183Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23292136",
@@ -4122,8 +5015,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.183Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23292338",
@@ -4149,8 +5043,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.183Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23292156",
@@ -4176,8 +5071,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.183Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23291679",
@@ -4203,8 +5099,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.183Z"
+      "lastUpdated": "2026-11-13T19:31:27.793Z"
     },
     {
       "id": "L23291915",
@@ -4230,8 +5127,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.183Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23291864",
@@ -4257,8 +5155,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.183Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23291835",
@@ -4284,8 +5183,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.183Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23291724",
@@ -4311,8 +5211,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.183Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23291629",
@@ -4338,8 +5239,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23291600",
@@ -4365,8 +5267,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23291583",
@@ -4392,8 +5295,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23291556",
@@ -4419,8 +5323,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23291372",
@@ -4446,8 +5351,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23291418",
@@ -4473,8 +5379,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23291393",
@@ -4500,8 +5407,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23291330",
@@ -4527,8 +5435,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23291164",
@@ -4554,8 +5463,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23291031",
@@ -4581,8 +5491,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.794Z"
     },
     {
       "id": "L23290829",
@@ -4608,8 +5519,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23290768",
@@ -4635,8 +5547,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23290614",
@@ -4662,8 +5575,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23290387",
@@ -4689,8 +5603,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.184Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23289407",
@@ -4716,8 +5631,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23290356",
@@ -4743,8 +5659,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23290174",
@@ -4770,8 +5687,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23290052",
@@ -4797,8 +5715,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23290001",
@@ -4824,8 +5743,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23289974",
@@ -4851,8 +5771,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23289937",
@@ -4878,8 +5799,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23289822",
@@ -4905,8 +5827,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23289599",
@@ -4932,8 +5855,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23289531",
@@ -4959,8 +5883,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.795Z"
     },
     {
       "id": "L23289459",
@@ -4986,8 +5911,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.796Z"
     },
     {
       "id": "L23289495",
@@ -5013,8 +5939,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.796Z"
     },
     {
       "id": "L23289268",
@@ -5040,8 +5967,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.796Z"
     },
     {
       "id": "L23289239",
@@ -5067,8 +5995,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.185Z"
+      "lastUpdated": "2026-11-13T19:31:27.796Z"
     },
     {
       "id": "L23289229",
@@ -5094,8 +6023,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.796Z"
     },
     {
       "id": "L23289187",
@@ -5121,8 +6051,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.796Z"
     },
     {
       "id": "L23289186",
@@ -5148,8 +6079,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.796Z"
     },
     {
       "id": "L23288893",
@@ -5175,8 +6107,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.796Z"
     },
     {
       "id": "L23288858",
@@ -5202,8 +6135,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.796Z"
     },
     {
       "id": "L23288708",
@@ -5229,8 +6163,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.796Z"
     },
     {
       "id": "L23288378",
@@ -5256,8 +6191,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.796Z"
     },
     {
       "id": "L23288272",
@@ -5283,8 +6219,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.796Z"
     },
     {
       "id": "L23288077",
@@ -5310,8 +6247,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.796Z"
     },
     {
       "id": "L23287306",
@@ -5337,8 +6275,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23287591",
@@ -5364,8 +6303,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23287566",
@@ -5391,8 +6331,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23287511",
@@ -5418,8 +6359,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23287397",
@@ -5445,8 +6387,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.186Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23287296",
@@ -5472,8 +6415,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.187Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23287194",
@@ -5499,8 +6443,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.187Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23287113",
@@ -5526,8 +6471,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.187Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23286209",
@@ -5553,8 +6499,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.187Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23287043",
@@ -5580,8 +6527,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.187Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23286898",
@@ -5607,8 +6555,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.187Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23286694",
@@ -5634,8 +6583,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.187Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23286358",
@@ -5661,8 +6611,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.187Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23286277",
@@ -5688,8 +6639,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.188Z"
+      "lastUpdated": "2026-11-13T19:31:27.797Z"
     },
     {
       "id": "L23286144",
@@ -5715,8 +6667,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.188Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23286072",
@@ -5742,8 +6695,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.188Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23286066",
@@ -5769,8 +6723,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.188Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23286009",
@@ -5796,8 +6751,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.188Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23285985",
@@ -5823,8 +6779,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.188Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23285584",
@@ -5850,8 +6807,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.188Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23285811",
@@ -5877,8 +6835,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.188Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23285658",
@@ -5904,8 +6863,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.188Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23285470",
@@ -5931,8 +6891,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.189Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23285453",
@@ -5958,8 +6919,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.189Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23285368",
@@ -5985,8 +6947,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.189Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23285332",
@@ -6012,8 +6975,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.189Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23284980",
@@ -6039,8 +7003,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.189Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23284893",
@@ -6066,8 +7031,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.189Z"
+      "lastUpdated": "2026-11-13T19:31:27.798Z"
     },
     {
       "id": "L23284852",
@@ -6093,8 +7059,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.189Z"
+      "lastUpdated": "2026-11-13T19:31:27.799Z"
     },
     {
       "id": "L23284881",
@@ -6120,8 +7087,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.189Z"
+      "lastUpdated": "2026-11-13T19:31:27.799Z"
     },
     {
       "id": "L23284635",
@@ -6147,8 +7115,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.190Z"
+      "lastUpdated": "2026-11-13T19:31:27.799Z"
     },
     {
       "id": "L23284482",
@@ -6174,8 +7143,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.190Z"
+      "lastUpdated": "2026-11-13T19:31:27.799Z"
     },
     {
       "id": "L23284468",
@@ -6201,8 +7171,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.190Z"
+      "lastUpdated": "2026-11-13T19:31:27.799Z"
     },
     {
       "id": "L23284242",
@@ -6228,8 +7199,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.190Z"
+      "lastUpdated": "2026-11-13T19:31:27.799Z"
     },
     {
       "id": "L23284158",
@@ -6255,8 +7227,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.190Z"
+      "lastUpdated": "2026-11-13T19:31:27.799Z"
     },
     {
       "id": "L23283965",
@@ -6282,8 +7255,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.190Z"
+      "lastUpdated": "2026-11-13T19:31:27.799Z"
     },
     {
       "id": "L23283946",
@@ -6309,8 +7283,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.190Z"
+      "lastUpdated": "2026-11-13T19:31:27.799Z"
     },
     {
       "id": "L23283648",
@@ -6336,8 +7311,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.190Z"
+      "lastUpdated": "2026-11-13T19:31:27.799Z"
     },
     {
       "id": "L23283557",
@@ -6363,8 +7339,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.190Z"
+      "lastUpdated": "2026-11-13T19:31:27.800Z"
     },
     {
       "id": "L23283298",
@@ -6390,8 +7367,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.191Z"
+      "lastUpdated": "2026-11-13T19:31:27.800Z"
     },
     {
       "id": "L23282656",
@@ -6417,8 +7395,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.191Z"
+      "lastUpdated": "2026-11-13T19:31:27.800Z"
     },
     {
       "id": "L23283019",
@@ -6444,8 +7423,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.191Z"
+      "lastUpdated": "2026-11-13T19:31:27.800Z"
     },
     {
       "id": "L23282970",
@@ -6471,8 +7451,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.191Z"
+      "lastUpdated": "2026-11-13T19:31:27.800Z"
     },
     {
       "id": "L23282851",
@@ -6498,8 +7479,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.191Z"
+      "lastUpdated": "2026-11-13T19:31:27.800Z"
     },
     {
       "id": "L23282806",
@@ -6525,8 +7507,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.191Z"
+      "lastUpdated": "2026-11-13T19:31:27.800Z"
     },
     {
       "id": "L23282797",
@@ -6552,8 +7535,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.191Z"
+      "lastUpdated": "2026-11-13T19:31:27.800Z"
     },
     {
       "id": "L23282714",
@@ -6579,8 +7563,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.191Z"
+      "lastUpdated": "2026-11-13T19:31:27.801Z"
     },
     {
       "id": "L23282143",
@@ -6606,8 +7591,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.192Z"
+      "lastUpdated": "2026-11-13T19:31:27.801Z"
     },
     {
       "id": "L23281934",
@@ -6633,8 +7619,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.192Z"
+      "lastUpdated": "2026-11-13T19:31:27.801Z"
     },
     {
       "id": "L23281921",
@@ -6660,8 +7647,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.192Z"
+      "lastUpdated": "2026-11-13T19:31:27.801Z"
     },
     {
       "id": "L23281892",
@@ -6687,8 +7675,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.192Z"
+      "lastUpdated": "2026-11-13T19:31:27.801Z"
     },
     {
       "id": "L23281872",
@@ -6714,8 +7703,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.192Z"
+      "lastUpdated": "2026-11-13T19:31:27.801Z"
     },
     {
       "id": "L23281863",
@@ -6741,8 +7731,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.192Z"
+      "lastUpdated": "2026-11-13T19:31:27.801Z"
     },
     {
       "id": "L23280799",
@@ -6768,8 +7759,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.192Z"
+      "lastUpdated": "2026-11-13T19:31:27.801Z"
     },
     {
       "id": "L23281696",
@@ -6795,8 +7787,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.193Z"
+      "lastUpdated": "2026-11-13T19:31:27.801Z"
     },
     {
       "id": "L23281586",
@@ -6822,8 +7815,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.193Z"
+      "lastUpdated": "2026-11-13T19:31:27.802Z"
     },
     {
       "id": "L23281516",
@@ -6849,8 +7843,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.193Z"
+      "lastUpdated": "2026-11-13T19:31:27.802Z"
     },
     {
       "id": "L23281480",
@@ -6876,8 +7871,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.193Z"
+      "lastUpdated": "2026-11-13T19:31:27.802Z"
     },
     {
       "id": "L23281335",
@@ -6903,8 +7899,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.193Z"
+      "lastUpdated": "2026-11-13T19:31:27.802Z"
     },
     {
       "id": "L23281290",
@@ -6930,8 +7927,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.193Z"
+      "lastUpdated": "2026-11-13T19:31:27.802Z"
     },
     {
       "id": "L23281096",
@@ -6957,8 +7955,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.193Z"
+      "lastUpdated": "2026-11-13T19:31:27.802Z"
     },
     {
       "id": "L23280899",
@@ -6984,8 +7983,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.193Z"
+      "lastUpdated": "2026-11-13T19:31:27.802Z"
     },
     {
       "id": "L23280822",
@@ -7011,8 +8011,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.194Z"
+      "lastUpdated": "2026-11-13T19:31:27.802Z"
     },
     {
       "id": "L23280787",
@@ -7038,8 +8039,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.194Z"
+      "lastUpdated": "2026-11-13T19:31:27.802Z"
     },
     {
       "id": "L23280756",
@@ -7065,8 +8067,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.194Z"
+      "lastUpdated": "2026-11-13T19:31:27.803Z"
     },
     {
       "id": "L23280677",
@@ -7092,8 +8095,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.194Z"
+      "lastUpdated": "2026-11-13T19:31:27.803Z"
     },
     {
       "id": "L23280545",
@@ -7119,8 +8123,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.194Z"
+      "lastUpdated": "2026-11-13T19:31:27.803Z"
     },
     {
       "id": "L23280554",
@@ -7146,8 +8151,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.194Z"
+      "lastUpdated": "2026-11-13T19:31:27.803Z"
     },
     {
       "id": "L23280549",
@@ -7173,8 +8179,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.194Z"
+      "lastUpdated": "2026-11-13T19:31:27.803Z"
     },
     {
       "id": "L23280235",
@@ -7200,8 +8207,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.194Z"
+      "lastUpdated": "2026-11-13T19:31:27.803Z"
     },
     {
       "id": "L23280249",
@@ -7227,8 +8235,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.195Z"
+      "lastUpdated": "2026-11-13T19:31:27.803Z"
     },
     {
       "id": "L23280209",
@@ -7254,8 +8263,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.195Z"
+      "lastUpdated": "2026-11-13T19:31:27.803Z"
     },
     {
       "id": "L23280071",
@@ -7281,8 +8291,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.195Z"
+      "lastUpdated": "2026-11-13T19:31:27.803Z"
     },
     {
       "id": "L23279822",
@@ -7308,8 +8319,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.195Z"
+      "lastUpdated": "2026-11-13T19:31:27.803Z"
     },
     {
       "id": "L23279479",
@@ -7335,8 +8347,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.195Z"
+      "lastUpdated": "2026-11-13T19:31:27.804Z"
     },
     {
       "id": "L23279406",
@@ -7362,8 +8375,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.195Z"
+      "lastUpdated": "2026-11-13T19:31:27.804Z"
     },
     {
       "id": "L23279334",
@@ -7389,8 +8403,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.195Z"
+      "lastUpdated": "2026-11-13T19:31:27.804Z"
     },
     {
       "id": "L23279297",
@@ -7416,8 +8431,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.196Z"
+      "lastUpdated": "2026-11-13T19:31:27.804Z"
     },
     {
       "id": "L23279236",
@@ -7443,8 +8459,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.196Z"
+      "lastUpdated": "2026-11-13T19:31:27.804Z"
     },
     {
       "id": "L23279145",
@@ -7470,8 +8487,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.196Z"
+      "lastUpdated": "2026-11-13T19:31:27.804Z"
     },
     {
       "id": "L23279125",
@@ -7490,14 +8508,15 @@
       "createdAt": "2026-11-12T13:30:04.968Z",
       "isDelivered": false,
       "isCanceled": true,
-      "elapsedMinutes": 1704,
+      "elapsedMinutes": 1801,
       "status": "cancelled",
       "isDelayed": false,
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.196Z"
+      "lastUpdated": "2026-11-13T19:31:27.804Z"
     },
     {
       "id": "L23279110",
@@ -7523,8 +8542,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.196Z"
+      "lastUpdated": "2026-11-13T19:31:27.804Z"
     },
     {
       "id": "L23278859",
@@ -7550,8 +8570,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.196Z"
+      "lastUpdated": "2026-11-13T19:31:27.804Z"
     },
     {
       "id": "L23278856",
@@ -7577,8 +8598,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.196Z"
+      "lastUpdated": "2026-11-13T19:31:27.805Z"
     },
     {
       "id": "L23278765",
@@ -7604,8 +8626,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.196Z"
+      "lastUpdated": "2026-11-13T19:31:27.805Z"
     },
     {
       "id": "L23278642",
@@ -7631,8 +8654,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.197Z"
+      "lastUpdated": "2026-11-13T19:31:27.805Z"
     },
     {
       "id": "L23278533",
@@ -7658,8 +8682,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.197Z"
+      "lastUpdated": "2026-11-13T19:31:27.805Z"
     },
     {
       "id": "L23278375",
@@ -7685,8 +8710,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.197Z"
+      "lastUpdated": "2026-11-13T19:31:27.805Z"
     },
     {
       "id": "L23278342",
@@ -7712,8 +8738,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.197Z"
+      "lastUpdated": "2026-11-13T19:31:27.805Z"
     },
     {
       "id": "L23278334",
@@ -7739,8 +8766,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.197Z"
+      "lastUpdated": "2026-11-13T19:31:27.805Z"
     },
     {
       "id": "L23278292",
@@ -7766,8 +8794,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.197Z"
+      "lastUpdated": "2026-11-13T19:31:27.805Z"
     },
     {
       "id": "L23278180",
@@ -7793,8 +8822,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.197Z"
+      "lastUpdated": "2026-11-13T19:31:27.805Z"
     },
     {
       "id": "L23278150",
@@ -7820,8 +8850,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.198Z"
+      "lastUpdated": "2026-11-13T19:31:27.805Z"
     },
     {
       "id": "L23278143",
@@ -7847,8 +8878,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.198Z"
+      "lastUpdated": "2026-11-13T19:31:27.806Z"
     },
     {
       "id": "L23278129",
@@ -7874,8 +8906,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.198Z"
+      "lastUpdated": "2026-11-13T19:31:27.806Z"
     },
     {
       "id": "L23277542",
@@ -7901,8 +8934,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.198Z"
+      "lastUpdated": "2026-11-13T19:31:27.806Z"
     },
     {
       "id": "L23277653",
@@ -7928,8 +8962,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.198Z"
+      "lastUpdated": "2026-11-13T19:31:27.806Z"
     },
     {
       "id": "L23277577",
@@ -7955,8 +8990,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.198Z"
+      "lastUpdated": "2026-11-13T19:31:27.806Z"
     },
     {
       "id": "L23277489",
@@ -7982,8 +9018,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.199Z"
+      "lastUpdated": "2026-11-13T19:31:27.806Z"
     },
     {
       "id": "L23277190",
@@ -8009,8 +9046,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.199Z"
+      "lastUpdated": "2026-11-13T19:31:27.806Z"
     },
     {
       "id": "L23277323",
@@ -8036,8 +9074,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.199Z"
+      "lastUpdated": "2026-11-13T19:31:27.806Z"
     },
     {
       "id": "L23276978",
@@ -8063,8 +9102,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.199Z"
+      "lastUpdated": "2026-11-13T19:31:27.806Z"
     },
     {
       "id": "L23276828",
@@ -8090,8 +9130,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.199Z"
+      "lastUpdated": "2026-11-13T19:31:27.807Z"
     },
     {
       "id": "L23276700",
@@ -8117,8 +9158,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.199Z"
+      "lastUpdated": "2026-11-13T19:31:27.807Z"
     },
     {
       "id": "L23276549",
@@ -8144,8 +9186,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.199Z"
+      "lastUpdated": "2026-11-13T19:31:27.807Z"
     },
     {
       "id": "L23276539",
@@ -8171,8 +9214,9 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.199Z"
+      "lastUpdated": "2026-11-13T19:31:27.807Z"
     },
     {
       "id": "L23276535",
@@ -8198,740 +9242,180 @@
       "alertSentToCourier": false,
       "alertSentToAdmin": false,
       "alertSentToAdmin2": false,
+      "assignmentNotifiedToCourier": false,
       "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.200Z"
-    },
-    {
-      "id": "L23276497",
-      "locateMongoId": "6af59447dfef73002d0ff570",
-      "locatAccount": "6a7352445c72355ebbc9c052",
-      "courierId": "6a7352445c72355ebbc9c052",
-      "courierName": "30 عاصم حزام احمد مارش",
-      "courierPhone": "+966554940839",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Card",
-      "pickupTime": "٠١:٢٦ م",
-      "assignedAt": "2026-11-12T10:26:19.571Z",
-      "deliveryTime": "2026-11-12T10:47:56.145Z",
-      "createdAt": "2026-11-12T10:26:15.774Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 21,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.200Z"
-    },
-    {
-      "id": "L23276095",
-      "locateMongoId": "6af593ba997eb3002dc0e3a2",
-      "locatAccount": "6a735249125fcd6c858b92f6",
-      "courierId": "6a735249125fcd6c858b92f6",
-      "courierName": "30 حسام عبدالعزيز عبدالمجيد قايد",
-      "courierPhone": "+966505997240",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Card",
-      "pickupTime": "٠١:٢٤ م",
-      "assignedAt": "2026-11-12T10:24:19.873Z",
-      "deliveryTime": "2026-11-12T10:56:44.746Z",
-      "createdAt": "2026-11-12T10:23:54.695Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 32,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.200Z"
-    },
-    {
-      "id": "L23276316",
-      "locateMongoId": "6af5926f9c4512002dfe2186",
-      "locatAccount": "6ad872a1529a50ca50aae8d2",
-      "courierId": "6ad872a1529a50ca50aae8d2",
-      "courierName": "30محمد خالد سعيد عثمان المقطري",
-      "courierPhone": "+966504962371",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "16",
-      "paymentMethod": "Card",
-      "pickupTime": "٠١:٢٠ م",
-      "assignedAt": "2026-11-12T10:20:04.194Z",
-      "deliveryTime": "2026-11-12T10:51:11.635Z",
-      "createdAt": "2026-11-12T10:18:23.779Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 31,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.200Z"
-    },
-    {
-      "id": "L23276267",
-      "locateMongoId": "6af591f2dfef73002d0ff34a",
-      "locatAccount": "6a73524b125fcd6c858b92fa",
-      "courierId": "6a73524b125fcd6c858b92fa",
-      "courierName": "30 ناظر عبدالفتاح عبدالرحمن عقلان",
-      "courierPhone": "+966504388258",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Card",
-      "pickupTime": "٠١:١٦ م",
-      "assignedAt": "2026-11-12T10:16:22.432Z",
-      "deliveryTime": "2026-11-12T10:34:27.511Z",
-      "createdAt": "2026-11-12T10:16:18.483Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 18,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.200Z"
-    },
-    {
-      "id": "L23276207",
-      "locateMongoId": "6af591518e8818002e4f4a32",
-      "locatAccount": "6ad872a5dc1da1f527990c19",
-      "courierId": "6ad872a5dc1da1f527990c19",
-      "courierName": "30محمد محمد ياسين افضل",
-      "courierPhone": "+966558264781",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Points",
-      "pickupTime": "٠١:١٣ م",
-      "assignedAt": "2026-11-12T10:13:46.410Z",
-      "deliveryTime": "2026-11-12T10:38:42.690Z",
-      "createdAt": "2026-11-12T10:13:37.641Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 24,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.200Z"
-    },
-    {
-      "id": "L23276149",
-      "locateMongoId": "6af590cd6078b7002d7221c4",
-      "locatAccount": "6a73524e5c72355ebbc9c058",
-      "courierId": "6a73524e5c72355ebbc9c058",
-      "courierName": "30 وليد احمد فائد العنسي",
-      "courierPhone": "+966502445396",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "14",
-      "paymentMethod": "Card",
-      "pickupTime": "٠١:١١ م",
-      "assignedAt": "2026-11-12T10:11:35.703Z",
-      "deliveryTime": "2026-11-12T10:48:44.074Z",
-      "createdAt": "2026-11-12T10:11:25.230Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 37,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.200Z"
-    },
-    {
-      "id": "L23276053",
-      "locateMongoId": "6af58f77997eb3002dc0dfe4",
-      "locatAccount": "6addf40a8a96f2a1a4067b7f",
-      "courierId": "6addf40a8a96f2a1a4067b7f",
-      "courierName": "30مد اعرفان -",
-      "courierPhone": "+966572722400",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "15",
-      "paymentMethod": "Card",
-      "pickupTime": "٠١:٠٥ م",
-      "assignedAt": "2026-11-12T10:05:46.913Z",
-      "deliveryTime": "2026-11-12T10:26:46.672Z",
-      "createdAt": "2026-11-12T10:05:43.032Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 20,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.200Z"
-    },
-    {
-      "id": "L23276012",
-      "locateMongoId": "6af58f44997eb3002dc0dfbd",
-      "locatAccount": "6a73524a125fcd6c858b92f8",
-      "courierId": "6a73524a125fcd6c858b92f8",
-      "courierName": "30 نديم علي اكبرالله راكا",
-      "courierPhone": "+966507065560",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "18",
-      "paymentMethod": "Card",
-      "pickupTime": "٠١:٠٥ م",
-      "assignedAt": "2026-11-12T10:05:17.127Z",
-      "deliveryTime": "2026-11-12T10:20:34.010Z",
-      "createdAt": "2026-11-12T10:04:52.553Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 15,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.200Z"
-    },
-    {
-      "id": "L23275953",
-      "locateMongoId": "6af58e0b997eb3002dc0ded8",
-      "locatAccount": "6a735249125fcd6c858b92f6",
-      "courierId": "6a735249125fcd6c858b92f6",
-      "courierName": "30 حسام عبدالعزيز عبدالمجيد قايد",
-      "courierPhone": "+966505997240",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "16",
-      "paymentMethod": "Cash",
-      "pickupTime": "١٢:٥٩ م",
-      "assignedAt": "2026-11-12T09:59:46.012Z",
-      "deliveryTime": "2026-11-12T10:23:26.582Z",
-      "createdAt": "2026-11-12T09:59:39.447Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 23,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.201Z"
-    },
-    {
-      "id": "L23275783",
-      "locateMongoId": "6af58c43997eb3002dc0dd4b",
-      "locatAccount": "6addf40a8a96f2a1a4067b7f",
-      "courierId": "6addf40a8a96f2a1a4067b7f",
-      "courierName": "30مد اعرفان -",
-      "courierPhone": "+966572722400",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Card",
-      "pickupTime": "١٢:٥٢ م",
-      "assignedAt": "2026-11-12T09:52:08.028Z",
-      "deliveryTime": "2026-11-12T10:05:25.703Z",
-      "createdAt": "2026-11-12T09:52:03.706Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 13,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.201Z"
-    },
-    {
-      "id": "L23275743",
-      "locateMongoId": "6af58baddfef73002d0fee64",
-      "locatAccount": "6a73524c5c72355ebbc9c056",
-      "courierId": "6a73524c5c72355ebbc9c056",
-      "courierName": "30 مصطفى ابراهيم احمد ونس",
-      "courierPhone": "+966533526290",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "14",
-      "paymentMethod": "Card",
-      "pickupTime": "١٢:٤٩ م",
-      "assignedAt": "2026-11-12T09:49:37.381Z",
-      "deliveryTime": "2026-11-12T10:06:54.385Z",
-      "createdAt": "2026-11-12T09:49:33.671Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 17,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.201Z"
-    },
-    {
-      "id": "L23275456",
-      "locateMongoId": "6af58b06dfef73002d0fee00",
-      "locatAccount": "6a7352445c72355ebbc9c052",
-      "courierId": "6a7352445c72355ebbc9c052",
-      "courierName": "30 عاصم حزام احمد مارش",
-      "courierPhone": "+966554940839",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Card",
-      "pickupTime": "١٢:٤٦ م",
-      "assignedAt": "2026-11-12T09:46:50.354Z",
-      "deliveryTime": "2026-11-12T10:13:33.939Z",
-      "createdAt": "2026-11-12T09:46:46.451Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 26,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.201Z"
-    },
-    {
-      "id": "L23275576",
-      "locateMongoId": "6af589b9d78e7e002df8ed9e",
-      "locatAccount": "6a73524a125fcd6c858b92f8",
-      "courierId": "6a73524a125fcd6c858b92f8",
-      "courierName": "30 نديم علي اكبرالله راكا",
-      "courierPhone": "+966507065560",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "16",
-      "paymentMethod": "Card",
-      "pickupTime": "١٢:٤١ م",
-      "assignedAt": "2026-11-12T09:41:37.875Z",
-      "deliveryTime": "2026-11-12T09:59:53.063Z",
-      "createdAt": "2026-11-12T09:41:13.171Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 18,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.201Z"
-    },
-    {
-      "id": "L23275264",
-      "locateMongoId": "6af585179c4512002dfe172b",
-      "locatAccount": "6a73524b125fcd6c858b92fa",
-      "courierId": "6a73524b125fcd6c858b92fa",
-      "courierName": "30 ناظر عبدالفتاح عبدالرحمن عقلان",
-      "courierPhone": "+966504388258",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "14",
-      "paymentMethod": "Card",
-      "pickupTime": "١٢:٢١ م",
-      "assignedAt": "2026-11-12T09:21:31.407Z",
-      "deliveryTime": "2026-11-12T09:44:30.047Z",
-      "createdAt": "2026-11-12T09:21:27.494Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 22,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.201Z"
-    },
-    {
-      "id": "L23274980",
-      "locateMongoId": "6af580ce6078b7002d72178a",
-      "locatAccount": "6a73524c5c72355ebbc9c056",
-      "courierId": "6a73524c5c72355ebbc9c056",
-      "courierName": "30 مصطفى ابراهيم احمد ونس",
-      "courierPhone": "+966533526290",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "14",
-      "paymentMethod": "Card",
-      "pickupTime": "١٢:٠٣ م",
-      "assignedAt": "2026-11-12T09:03:14.230Z",
-      "deliveryTime": "2026-11-12T09:34:36.549Z",
-      "createdAt": "2026-11-12T09:03:10.415Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 31,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.201Z"
-    },
-    {
-      "id": "L23274865",
-      "locateMongoId": "6af57d239c4512002dfe131b",
-      "locatAccount": "6a73524c5c72355ebbc9c056",
-      "courierId": "6a73524c5c72355ebbc9c056",
-      "courierName": "30 مصطفى ابراهيم احمد ونس",
-      "courierPhone": "+966533526290",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Card",
-      "pickupTime": "١١:٤٧ ص",
-      "assignedAt": "2026-11-12T08:47:35.768Z",
-      "deliveryTime": "2026-11-12T08:59:50.593Z",
-      "createdAt": "2026-11-12T08:47:31.893Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 12,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.202Z"
-    },
-    {
-      "id": "L23274710",
-      "locateMongoId": "6af577036078b7002d72143e",
-      "locatAccount": "6a73524c5c72355ebbc9c056",
-      "courierId": "6a73524c5c72355ebbc9c056",
-      "courierName": "30 مصطفى ابراهيم احمد ونس",
-      "courierPhone": "+966533526290",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Card",
-      "pickupTime": "١١:٢١ ص",
-      "assignedAt": "2026-11-12T08:21:28.043Z",
-      "deliveryTime": "2026-11-12T08:46:56.334Z",
-      "createdAt": "2026-11-12T08:21:23.975Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 25,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.202Z"
-    },
-    {
-      "id": "L23274703",
-      "locateMongoId": "6af576939c4512002dfe1192",
-      "locatAccount": "6a73524d125fcd6c858b92fc",
-      "courierId": "6a73524d125fcd6c858b92fc",
-      "courierName": "30 عادل صبحاني غلام صابر",
-      "courierPhone": "+966550237349",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "15",
-      "paymentMethod": "Card",
-      "pickupTime": "١١:١٩ ص",
-      "assignedAt": "2026-11-12T08:19:35.029Z",
-      "deliveryTime": "2026-11-12T08:45:03.936Z",
-      "createdAt": "2026-11-12T08:19:31.073Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 25,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.202Z"
-    },
-    {
-      "id": "L23274695",
-      "locateMongoId": "6af576589c4512002dfe1185",
-      "locatAccount": "6a73524e5c72355ebbc9c058",
-      "courierId": "6a73524e5c72355ebbc9c058",
-      "courierName": "30 وليد احمد فائد العنسي",
-      "courierPhone": "+966502445396",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "16",
-      "paymentMethod": "Card",
-      "pickupTime": "١١:١٨ ص",
-      "assignedAt": "2026-11-12T08:18:43.297Z",
-      "deliveryTime": "2026-11-12T08:39:31.994Z",
-      "createdAt": "2026-11-12T08:18:32.443Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 20,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.202Z"
-    },
-    {
-      "id": "L23274584",
-      "locateMongoId": "6af56fbf8e8818002e4f376b",
-      "locatAccount": "6a73524c5c72355ebbc9c056",
-      "courierId": "6a73524c5c72355ebbc9c056",
-      "courierName": "30 مصطفى ابراهيم احمد ونس",
-      "courierPhone": "+966533526290",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Card",
-      "pickupTime": "١٠:٥٠ ص",
-      "assignedAt": "2026-11-12T07:50:27.857Z",
-      "deliveryTime": "2026-11-12T08:02:51.139Z",
-      "createdAt": "2026-11-12T07:50:23.637Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 12,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.202Z"
-    },
-    {
-      "id": "L23274583",
-      "locateMongoId": "6af56fb38e8818002e4f3769",
-      "locatAccount": "6a73524d125fcd6c858b92fc",
-      "courierId": "6a73524d125fcd6c858b92fc",
-      "courierName": "30 عادل صبحاني غلام صابر",
-      "courierPhone": "+966550237349",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Card",
-      "pickupTime": "١٠:٥٠ ص",
-      "assignedAt": "2026-11-12T07:50:16.111Z",
-      "deliveryTime": "2026-11-12T08:17:10.832Z",
-      "createdAt": "2026-11-12T07:50:11.900Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 26,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.202Z"
-    },
-    {
-      "id": "L23274401",
-      "locateMongoId": "6af567c29c4512002dfe0cf8",
-      "locatAccount": "6a73524d125fcd6c858b92fc",
-      "courierId": "6a73524d125fcd6c858b92fc",
-      "courierName": "30 عادل صبحاني غلام صابر",
-      "courierPhone": "+966550237349",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "14",
-      "paymentMethod": "Card",
-      "pickupTime": "١٠:١٦ ص",
-      "assignedAt": "2026-11-12T07:16:22.200Z",
-      "deliveryTime": "2026-11-12T07:41:57.734Z",
-      "createdAt": "2026-11-12T07:16:18.499Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 25,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.202Z"
-    },
-    {
-      "id": "L23274397",
-      "locateMongoId": "6af5661f8e8818002e4f351e",
-      "locatAccount": "6a73524c5c72355ebbc9c056",
-      "courierId": "6a73524c5c72355ebbc9c056",
-      "courierName": "30 مصطفى ابراهيم احمد ونس",
-      "courierPhone": "+966533526290",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "17",
-      "paymentMethod": "Card",
-      "pickupTime": "١٠:٠٩ ص",
-      "assignedAt": "2026-11-12T07:09:44.665Z",
-      "deliveryTime": "2026-11-12T07:36:22.460Z",
-      "createdAt": "2026-11-12T07:09:19.899Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 26,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.202Z"
-    },
-    {
-      "id": "L23274322",
-      "locateMongoId": "6af562c8997eb3002dc0ce63",
-      "locatAccount": "6a73524e5c72355ebbc9c058",
-      "courierId": "6a73524e5c72355ebbc9c058",
-      "courierName": "30 وليد احمد فائد العنسي",
-      "courierPhone": "+966502445396",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Card",
-      "pickupTime": "٠٩:٥٥ ص",
-      "assignedAt": "2026-11-12T06:55:07.701Z",
-      "deliveryTime": "2026-11-12T07:16:14.167Z",
-      "createdAt": "2026-11-12T06:55:04.023Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 21,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.202Z"
-    },
-    {
-      "id": "L23274222",
-      "locateMongoId": "6af55ed18e8818002e4f32a9",
-      "locatAccount": "6a735249125fcd6c858b92f6",
-      "courierId": "6a735249125fcd6c858b92f6",
-      "courierName": "30 حسام عبدالعزيز عبدالمجيد قايد",
-      "courierPhone": "+966505997240",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Card",
-      "pickupTime": "٠٩:٣٨ ص",
-      "assignedAt": "2026-11-12T06:38:13.617Z",
-      "deliveryTime": "2026-11-12T07:01:57.324Z",
-      "createdAt": "2026-11-12T06:38:09.777Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 23,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.203Z"
-    },
-    {
-      "id": "L23274138",
-      "locateMongoId": "6af55dfcd78e7e002df8d740",
-      "locatAccount": "6a8fe72a4835642e4be2c572",
-      "courierId": "6a8fe72a4835642e4be2c572",
-      "courierName": "30محمد اظهر ال اسلام",
-      "courierPhone": "+966554053347",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Card",
-      "pickupTime": "٠٩:٣٤ ص",
-      "assignedAt": "2026-11-12T06:34:39.873Z",
-      "deliveryTime": "2026-11-12T06:59:49.061Z",
-      "createdAt": "2026-11-12T06:34:36.182Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 25,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.203Z"
-    },
-    {
-      "id": "L23274104",
-      "locateMongoId": "6af55a52dfef73002d0fdb7f",
-      "locatAccount": "6a73524e5c72355ebbc9c058",
-      "courierId": "6a73524e5c72355ebbc9c058",
-      "courierName": "30 وليد احمد فائد العنسي",
-      "courierPhone": "+966502445396",
-      "restaurant": "متجر لوكيت",
-      "customerAddress": "",
-      "customerCoordinates": "26.42, 50.08",
-      "deliveryCost": "13",
-      "paymentMethod": "Card",
-      "pickupTime": "٠٩:١٩ ص",
-      "assignedAt": "2026-11-12T06:19:02.663Z",
-      "deliveryTime": "2026-11-12T06:40:10.177Z",
-      "createdAt": "2026-11-12T06:18:58.862Z",
-      "isDelivered": true,
-      "isCanceled": false,
-      "elapsedMinutes": 21,
-      "status": "delivered",
-      "isDelayed": false,
-      "alertSentToCourier": false,
-      "alertSentToAdmin": false,
-      "alertSentToAdmin2": false,
-      "activeOrdersHeldByCourier": 1,
-      "lastUpdated": "2026-11-13T17:54:34.203Z"
+      "lastUpdated": "2026-11-13T19:31:27.807Z"
     }
   ],
   "alerts": [
+    {
+      "id": "alt-1794598259136-9m55",
+      "timestamp": "2026-11-13T19:30:59.136Z",
+      "recipientType": "courier",
+      "recipientName": "30علي عبدالله محمد السقاف",
+      "recipientPhone": "+966508223362",
+      "orderId": "L23311666",
+      "elapsedMinutes": 0,
+      "activeOrdersCount": 0,
+      "message": "🌟 يا هلا يا بطل، رزقك جايك في الطريق!\nعندك طلب جديد جاهز الآن (رقم الطلب: L23311666). انطلق وبارك الله في جهودك، موفق يا غالي!\n⏰ وقت الطلب الحالي: ١٠:٣٠ م",
+      "status": "sent",
+      "waLink": "https://wa.me/966508223362?text=%F0%9F%8C%9F%20%D9%8A%D8%A7%20%D9%87%D9%84%D8%A7%20%D9%8A%D8%A7%20%D8%A8%D8%B7%D9%84%D8%8C%20%D8%B1%D8%B2%D9%82%D9%83%20%D8%AC%D8%A7%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82!%0A%D8%B9%D9%86%D8%AF%D9%83%20%D8%B7%D9%84%D8%A8%20%D8%AC%D8%AF%D9%8A%D8%AF%20%D8%AC%D8%A7%D9%87%D8%B2%20%D8%A7%D9%84%D8%A2%D9%86%20(%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%3A%20L23311666).%20%D8%A7%D9%86%D8%B7%D9%84%D9%82%20%D9%88%D8%A8%D8%A7%D8%B1%D9%83%20%D8%A7%D9%84%D9%84%D9%87%20%D9%81%D9%8A%20%D8%AC%D9%87%D9%88%D8%AF%D9%83%D8%8C%20%D9%85%D9%88%D9%81%D9%82%20%D9%8A%D8%A7%20%D8%BA%D8%A7%D9%84%D9%8A!%0A%E2%8F%B0%20%D9%88%D9%82%D8%AA%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%20%D8%A7%D9%84%D8%AD%D8%A7%D9%84%D9%8A%3A%20%D9%A1%D9%A0%3A%D9%A3%D9%A0%20%D9%85",
+      "delayAppliedSeconds": 7
+    },
+    {
+      "id": "alt-1794598252135-5dc5",
+      "timestamp": "2026-11-13T19:30:52.135Z",
+      "recipientType": "courier",
+      "recipientName": "30 وليد احمد فائد العنسي",
+      "recipientPhone": "+966502445396",
+      "orderId": "L23310604",
+      "elapsedMinutes": 0,
+      "activeOrdersCount": 0,
+      "message": "🌟 يا هلا يا بطل، رزقك جايك في الطريق!\nعندك طلب جديد جاهز الآن (رقم الطلب: L23310604). انطلق وبارك الله في جهودك، موفق يا غالي!\n⏰ وقت الطلب الحالي: ١٠:٢٩ م",
+      "status": "sent",
+      "waLink": "https://wa.me/966502445396?text=%F0%9F%8C%9F%20%D9%8A%D8%A7%20%D9%87%D9%84%D8%A7%20%D9%8A%D8%A7%20%D8%A8%D8%B7%D9%84%D8%8C%20%D8%B1%D8%B2%D9%82%D9%83%20%D8%AC%D8%A7%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82!%0A%D8%B9%D9%86%D8%AF%D9%83%20%D8%B7%D9%84%D8%A8%20%D8%AC%D8%AF%D9%8A%D8%AF%20%D8%AC%D8%A7%D9%87%D8%B2%20%D8%A7%D9%84%D8%A2%D9%86%20(%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%3A%20L23310604).%20%D8%A7%D9%86%D8%B7%D9%84%D9%82%20%D9%88%D8%A8%D8%A7%D8%B1%D9%83%20%D8%A7%D9%84%D9%84%D9%87%20%D9%81%D9%8A%20%D8%AC%D9%87%D9%88%D8%AF%D9%83%D8%8C%20%D9%85%D9%88%D9%81%D9%82%20%D9%8A%D8%A7%20%D8%BA%D8%A7%D9%84%D9%8A!%0A%E2%8F%B0%20%D9%88%D9%82%D8%AA%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%20%D8%A7%D9%84%D8%AD%D8%A7%D9%84%D9%8A%3A%20%D9%A1%D9%A0%3A%D9%A2%D9%A9%20%D9%85",
+      "delayAppliedSeconds": 6
+    },
+    {
+      "id": "alt-1794598246134-85r3",
+      "timestamp": "2026-11-13T19:30:46.134Z",
+      "recipientType": "courier",
+      "recipientName": "30 عبدالقادر محمد شمسان الدعيس",
+      "recipientPhone": "+966533674850",
+      "orderId": "L23310921",
+      "elapsedMinutes": 0,
+      "activeOrdersCount": 0,
+      "message": "🌟 يا هلا يا بطل، رزقك جايك في الطريق!\nعندك طلب جديد جاهز الآن (رقم الطلب: L23310921). انطلق وبارك الله في جهودك، موفق يا غالي!\n⏰ وقت الطلب الحالي: ١٠:٢٩ م",
+      "status": "sent",
+      "waLink": "https://wa.me/966533674850?text=%F0%9F%8C%9F%20%D9%8A%D8%A7%20%D9%87%D9%84%D8%A7%20%D9%8A%D8%A7%20%D8%A8%D8%B7%D9%84%D8%8C%20%D8%B1%D8%B2%D9%82%D9%83%20%D8%AC%D8%A7%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82!%0A%D8%B9%D9%86%D8%AF%D9%83%20%D8%B7%D9%84%D8%A8%20%D8%AC%D8%AF%D9%8A%D8%AF%20%D8%AC%D8%A7%D9%87%D8%B2%20%D8%A7%D9%84%D8%A2%D9%86%20(%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%3A%20L23310921).%20%D8%A7%D9%86%D8%B7%D9%84%D9%82%20%D9%88%D8%A8%D8%A7%D8%B1%D9%83%20%D8%A7%D9%84%D9%84%D9%87%20%D9%81%D9%8A%20%D8%AC%D9%87%D9%88%D8%AF%D9%83%D8%8C%20%D9%85%D9%88%D9%81%D9%82%20%D9%8A%D8%A7%20%D8%BA%D8%A7%D9%84%D9%8A!%0A%E2%8F%B0%20%D9%88%D9%82%D8%AA%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%20%D8%A7%D9%84%D8%AD%D8%A7%D9%84%D9%8A%3A%20%D9%A1%D9%A0%3A%D9%A2%D9%A9%20%D9%85",
+      "delayAppliedSeconds": 8
+    },
+    {
+      "id": "alt-1794598238132-dbfe",
+      "timestamp": "2026-11-13T19:30:38.132Z",
+      "recipientType": "courier",
+      "recipientName": "30محمد عثمان محمد اقبال",
+      "recipientPhone": "+966558285328",
+      "orderId": "L23310981",
+      "elapsedMinutes": 0,
+      "activeOrdersCount": 0,
+      "message": "🌟 يا هلا يا بطل، رزقك جايك في الطريق!\nعندك طلب جديد جاهز الآن (رقم الطلب: L23310981). انطلق وبارك الله في جهودك، موفق يا غالي!\n⏰ وقت الطلب الحالي: ١٠:٢٩ م",
+      "status": "sent",
+      "waLink": "https://wa.me/966558285328?text=%F0%9F%8C%9F%20%D9%8A%D8%A7%20%D9%87%D9%84%D8%A7%20%D9%8A%D8%A7%20%D8%A8%D8%B7%D9%84%D8%8C%20%D8%B1%D8%B2%D9%82%D9%83%20%D8%AC%D8%A7%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82!%0A%D8%B9%D9%86%D8%AF%D9%83%20%D8%B7%D9%84%D8%A8%20%D8%AC%D8%AF%D9%8A%D8%AF%20%D8%AC%D8%A7%D9%87%D8%B2%20%D8%A7%D9%84%D8%A2%D9%86%20(%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%3A%20L23310981).%20%D8%A7%D9%86%D8%B7%D9%84%D9%82%20%D9%88%D8%A8%D8%A7%D8%B1%D9%83%20%D8%A7%D9%84%D9%84%D9%87%20%D9%81%D9%8A%20%D8%AC%D9%87%D9%88%D8%AF%D9%83%D8%8C%20%D9%85%D9%88%D9%81%D9%82%20%D9%8A%D8%A7%20%D8%BA%D8%A7%D9%84%D9%8A!%0A%E2%8F%B0%20%D9%88%D9%82%D8%AA%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%20%D8%A7%D9%84%D8%AD%D8%A7%D9%84%D9%8A%3A%20%D9%A1%D9%A0%3A%D9%A2%D9%A9%20%D9%85",
+      "delayAppliedSeconds": 5
+    },
+    {
+      "id": "alt-1794598233130-8acn",
+      "timestamp": "2026-11-13T19:30:33.130Z",
+      "recipientType": "courier",
+      "recipientName": "30 ناظر عبدالفتاح عبدالرحمن عقلان",
+      "recipientPhone": "+966504388258",
+      "orderId": "L23311526",
+      "elapsedMinutes": 0,
+      "activeOrdersCount": 0,
+      "message": "🌟 يا هلا يا بطل، رزقك جايك في الطريق!\nعندك طلب جديد جاهز الآن (رقم الطلب: L23311526). انطلق وبارك الله في جهودك، موفق يا غالي!\n⏰ وقت الطلب الحالي: ١٠:٢٩ م",
+      "status": "sent",
+      "waLink": "https://wa.me/966504388258?text=%F0%9F%8C%9F%20%D9%8A%D8%A7%20%D9%87%D9%84%D8%A7%20%D9%8A%D8%A7%20%D8%A8%D8%B7%D9%84%D8%8C%20%D8%B1%D8%B2%D9%82%D9%83%20%D8%AC%D8%A7%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82!%0A%D8%B9%D9%86%D8%AF%D9%83%20%D8%B7%D9%84%D8%A8%20%D8%AC%D8%AF%D9%8A%D8%AF%20%D8%AC%D8%A7%D9%87%D8%B2%20%D8%A7%D9%84%D8%A2%D9%86%20(%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%3A%20L23311526).%20%D8%A7%D9%86%D8%B7%D9%84%D9%82%20%D9%88%D8%A8%D8%A7%D8%B1%D9%83%20%D8%A7%D9%84%D9%84%D9%87%20%D9%81%D9%8A%20%D8%AC%D9%87%D9%88%D8%AF%D9%83%D8%8C%20%D9%85%D9%88%D9%81%D9%82%20%D9%8A%D8%A7%20%D8%BA%D8%A7%D9%84%D9%8A!%0A%E2%8F%B0%20%D9%88%D9%82%D8%AA%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%20%D8%A7%D9%84%D8%AD%D8%A7%D9%84%D9%8A%3A%20%D9%A1%D9%A0%3A%D9%A2%D9%A9%20%D9%85",
+      "delayAppliedSeconds": 9
+    },
+    {
+      "id": "alt-1794598224130-vbhz",
+      "timestamp": "2026-11-13T19:30:24.130Z",
+      "recipientType": "courier",
+      "recipientName": "30 عادل صبحاني غلام صابر",
+      "recipientPhone": "+966550237349",
+      "orderId": "L23306865",
+      "elapsedMinutes": 0,
+      "activeOrdersCount": 0,
+      "message": "☕ الله يعطيك العافية ويقويك يا رب..\nملاحظين إن الطلب رقم L23306865 أخذ وقت أطول شوي. عسى ما شر؟ هل تواجه أي مشكلة أو ظرف في الطريق نقدر نساعدك فيه؟ طمنا عليك.",
+      "status": "sent",
+      "waLink": "https://wa.me/966550237349?text=%E2%98%95%20%D8%A7%D9%84%D9%84%D9%87%20%D9%8A%D8%B9%D8%B7%D9%8A%D9%83%20%D8%A7%D9%84%D8%B9%D8%A7%D9%81%D9%8A%D8%A9%20%D9%88%D9%8A%D9%82%D9%88%D9%8A%D9%83%20%D9%8A%D8%A7%20%D8%B1%D8%A8..%0A%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D9%8A%D9%86%20%D8%A5%D9%86%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%20%D8%B1%D9%82%D9%85%20L23306865%20%D8%A3%D8%AE%D8%B0%20%D9%88%D9%82%D8%AA%20%D8%A3%D8%B7%D9%88%D9%84%20%D8%B4%D9%88%D9%8A.%20%D8%B9%D8%B3%D9%89%20%D9%85%D8%A7%20%D8%B4%D8%B1%D8%9F%20%D9%87%D9%84%20%D8%AA%D9%88%D8%A7%D8%AC%D9%87%20%D8%A3%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D8%A3%D9%88%20%D8%B8%D8%B1%D9%81%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82%20%D9%86%D9%82%D8%AF%D8%B1%20%D9%86%D8%B3%D8%A7%D8%B9%D8%AF%D9%83%20%D9%81%D9%8A%D9%87%D8%9F%20%D8%B7%D9%85%D9%86%D8%A7%20%D8%B9%D9%84%D9%8A%D9%83.",
+      "delayAppliedSeconds": 7
+    },
+    {
+      "id": "alt-1794598217128-0e7m",
+      "timestamp": "2026-11-13T19:30:17.128Z",
+      "recipientType": "courier",
+      "recipientName": "30محمد عثمان محمد اقبال",
+      "recipientPhone": "+966558285328",
+      "orderId": "L23306917",
+      "elapsedMinutes": 0,
+      "activeOrdersCount": 0,
+      "message": "☕ الله يعطيك العافية ويقويك يا رب..\nملاحظين إن الطلب رقم L23306917 أخذ وقت أطول شوي. عسى ما شر؟ هل تواجه أي مشكلة أو ظرف في الطريق نقدر نساعدك فيه؟ طمنا عليك.",
+      "status": "sent",
+      "waLink": "https://wa.me/966558285328?text=%E2%98%95%20%D8%A7%D9%84%D9%84%D9%87%20%D9%8A%D8%B9%D8%B7%D9%8A%D9%83%20%D8%A7%D9%84%D8%B9%D8%A7%D9%81%D9%8A%D8%A9%20%D9%88%D9%8A%D9%82%D9%88%D9%8A%D9%83%20%D9%8A%D8%A7%20%D8%B1%D8%A8..%0A%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D9%8A%D9%86%20%D8%A5%D9%86%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%20%D8%B1%D9%82%D9%85%20L23306917%20%D8%A3%D8%AE%D8%B0%20%D9%88%D9%82%D8%AA%20%D8%A3%D8%B7%D9%88%D9%84%20%D8%B4%D9%88%D9%8A.%20%D8%B9%D8%B3%D9%89%20%D9%85%D8%A7%20%D8%B4%D8%B1%D8%9F%20%D9%87%D9%84%20%D8%AA%D9%88%D8%A7%D8%AC%D9%87%20%D8%A3%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D8%A3%D9%88%20%D8%B8%D8%B1%D9%81%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82%20%D9%86%D9%82%D8%AF%D8%B1%20%D9%86%D8%B3%D8%A7%D8%B9%D8%AF%D9%83%20%D9%81%D9%8A%D9%87%D8%9F%20%D8%B7%D9%85%D9%86%D8%A7%20%D8%B9%D9%84%D9%8A%D9%83.",
+      "delayAppliedSeconds": 6
+    },
+    {
+      "id": "alt-1794598211127-4sh9",
+      "timestamp": "2026-11-13T19:30:11.127Z",
+      "recipientType": "courier",
+      "recipientName": "30عبد الرواف علي قاسم الجنيدي",
+      "recipientPhone": "+966573479604",
+      "orderId": "L23307026",
+      "elapsedMinutes": 0,
+      "activeOrdersCount": 0,
+      "message": "☕ الله يعطيك العافية ويقويك يا رب..\nملاحظين إن الطلب رقم L23307026 أخذ وقت أطول شوي. عسى ما شر؟ هل تواجه أي مشكلة أو ظرف في الطريق نقدر نساعدك فيه؟ طمنا عليك.",
+      "status": "sent",
+      "waLink": "https://wa.me/966573479604?text=%E2%98%95%20%D8%A7%D9%84%D9%84%D9%87%20%D9%8A%D8%B9%D8%B7%D9%8A%D9%83%20%D8%A7%D9%84%D8%B9%D8%A7%D9%81%D9%8A%D8%A9%20%D9%88%D9%8A%D9%82%D9%88%D9%8A%D9%83%20%D9%8A%D8%A7%20%D8%B1%D8%A8..%0A%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D9%8A%D9%86%20%D8%A5%D9%86%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%20%D8%B1%D9%82%D9%85%20L23307026%20%D8%A3%D8%AE%D8%B0%20%D9%88%D9%82%D8%AA%20%D8%A3%D8%B7%D9%88%D9%84%20%D8%B4%D9%88%D9%8A.%20%D8%B9%D8%B3%D9%89%20%D9%85%D8%A7%20%D8%B4%D8%B1%D8%9F%20%D9%87%D9%84%20%D8%AA%D9%88%D8%A7%D8%AC%D9%87%20%D8%A3%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D8%A3%D9%88%20%D8%B8%D8%B1%D9%81%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82%20%D9%86%D9%82%D8%AF%D8%B1%20%D9%86%D8%B3%D8%A7%D8%B9%D8%AF%D9%83%20%D9%81%D9%8A%D9%87%D8%9F%20%D8%B7%D9%85%D9%86%D8%A7%20%D8%B9%D9%84%D9%8A%D9%83.",
+      "delayAppliedSeconds": 7
+    },
+    {
+      "id": "alt-1794598204126-kb34",
+      "timestamp": "2026-11-13T19:30:04.126Z",
+      "recipientType": "courier",
+      "recipientName": "30 ناظر عبدالفتاح عبدالرحمن عقلان",
+      "recipientPhone": "+966504388258",
+      "orderId": "L23307170",
+      "elapsedMinutes": 0,
+      "activeOrdersCount": 0,
+      "message": "☕ الله يعطيك العافية ويقويك يا رب..\nملاحظين إن الطلب رقم L23307170 أخذ وقت أطول شوي. عسى ما شر؟ هل تواجه أي مشكلة أو ظرف في الطريق نقدر نساعدك فيه؟ طمنا عليك.",
+      "status": "sent",
+      "waLink": "https://wa.me/966504388258?text=%E2%98%95%20%D8%A7%D9%84%D9%84%D9%87%20%D9%8A%D8%B9%D8%B7%D9%8A%D9%83%20%D8%A7%D9%84%D8%B9%D8%A7%D9%81%D9%8A%D8%A9%20%D9%88%D9%8A%D9%82%D9%88%D9%8A%D9%83%20%D9%8A%D8%A7%20%D8%B1%D8%A8..%0A%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D9%8A%D9%86%20%D8%A5%D9%86%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%20%D8%B1%D9%82%D9%85%20L23307170%20%D8%A3%D8%AE%D8%B0%20%D9%88%D9%82%D8%AA%20%D8%A3%D8%B7%D9%88%D9%84%20%D8%B4%D9%88%D9%8A.%20%D8%B9%D8%B3%D9%89%20%D9%85%D8%A7%20%D8%B4%D8%B1%D8%9F%20%D9%87%D9%84%20%D8%AA%D9%88%D8%A7%D8%AC%D9%87%20%D8%A3%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D8%A3%D9%88%20%D8%B8%D8%B1%D9%81%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82%20%D9%86%D9%82%D8%AF%D8%B1%20%D9%86%D8%B3%D8%A7%D8%B9%D8%AF%D9%83%20%D9%81%D9%8A%D9%87%D8%9F%20%D8%B7%D9%85%D9%86%D8%A7%20%D8%B9%D9%84%D9%8A%D9%83.",
+      "delayAppliedSeconds": 8
+    },
+    {
+      "id": "alt-1794598196126-j2nw",
+      "timestamp": "2026-11-13T19:29:56.126Z",
+      "recipientType": "courier",
+      "recipientName": "30محمد خالد سعيد عثمان المقطري",
+      "recipientPhone": "+966504962371",
+      "orderId": "L23306715",
+      "elapsedMinutes": 0,
+      "activeOrdersCount": 0,
+      "message": "☕ الله يعطيك العافية ويقويك يا رب..\nملاحظين إن الطلب رقم L23306715 أخذ وقت أطول شوي. عسى ما شر؟ هل تواجه أي مشكلة أو ظرف في الطريق نقدر نساعدك فيه؟ طمنا عليك.",
+      "status": "sent",
+      "waLink": "https://wa.me/966504962371?text=%E2%98%95%20%D8%A7%D9%84%D9%84%D9%87%20%D9%8A%D8%B9%D8%B7%D9%8A%D9%83%20%D8%A7%D9%84%D8%B9%D8%A7%D9%81%D9%8A%D8%A9%20%D9%88%D9%8A%D9%82%D9%88%D9%8A%D9%83%20%D9%8A%D8%A7%20%D8%B1%D8%A8..%0A%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D9%8A%D9%86%20%D8%A5%D9%86%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%20%D8%B1%D9%82%D9%85%20L23306715%20%D8%A3%D8%AE%D8%B0%20%D9%88%D9%82%D8%AA%20%D8%A3%D8%B7%D9%88%D9%84%20%D8%B4%D9%88%D9%8A.%20%D8%B9%D8%B3%D9%89%20%D9%85%D8%A7%20%D8%B4%D8%B1%D8%9F%20%D9%87%D9%84%20%D8%AA%D9%88%D8%A7%D8%AC%D9%87%20%D8%A3%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D8%A3%D9%88%20%D8%B8%D8%B1%D9%81%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82%20%D9%86%D9%82%D8%AF%D8%B1%20%D9%86%D8%B3%D8%A7%D8%B9%D8%AF%D9%83%20%D9%81%D9%8A%D9%87%D8%9F%20%D8%B7%D9%85%D9%86%D8%A7%20%D8%B9%D9%84%D9%8A%D9%83.",
+      "delayAppliedSeconds": 8
+    },
+    {
+      "id": "alt-1794598188125-f7f9",
+      "timestamp": "2026-11-13T19:29:48.125Z",
+      "recipientType": "courier",
+      "recipientName": "30فواد عبده قائد سيف",
+      "recipientPhone": "+966533983104",
+      "orderId": "L23307403",
+      "elapsedMinutes": 0,
+      "activeOrdersCount": 0,
+      "message": "☕ الله يعطيك العافية ويقويك يا رب..\nملاحظين إن الطلب رقم L23307403 أخذ وقت أطول شوي. عسى ما شر؟ هل تواجه أي مشكلة أو ظرف في الطريق نقدر نساعدك فيه؟ طمنا عليك.",
+      "status": "sent",
+      "waLink": "https://wa.me/966533983104?text=%E2%98%95%20%D8%A7%D9%84%D9%84%D9%87%20%D9%8A%D8%B9%D8%B7%D9%8A%D9%83%20%D8%A7%D9%84%D8%B9%D8%A7%D9%81%D9%8A%D8%A9%20%D9%88%D9%8A%D9%82%D9%88%D9%8A%D9%83%20%D9%8A%D8%A7%20%D8%B1%D8%A8..%0A%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D9%8A%D9%86%20%D8%A5%D9%86%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%20%D8%B1%D9%82%D9%85%20L23307403%20%D8%A3%D8%AE%D8%B0%20%D9%88%D9%82%D8%AA%20%D8%A3%D8%B7%D9%88%D9%84%20%D8%B4%D9%88%D9%8A.%20%D8%B9%D8%B3%D9%89%20%D9%85%D8%A7%20%D8%B4%D8%B1%D8%9F%20%D9%87%D9%84%20%D8%AA%D9%88%D8%A7%D8%AC%D9%87%20%D8%A3%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D8%A3%D9%88%20%D8%B8%D8%B1%D9%81%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82%20%D9%86%D9%82%D8%AF%D8%B1%20%D9%86%D8%B3%D8%A7%D8%B9%D8%AF%D9%83%20%D9%81%D9%8A%D9%87%D8%9F%20%D8%B7%D9%85%D9%86%D8%A7%20%D8%B9%D9%84%D9%8A%D9%83.",
+      "delayAppliedSeconds": 5
+    },
+    {
+      "id": "alt-1794598183124-0gvh",
+      "timestamp": "2026-11-13T19:29:43.124Z",
+      "recipientType": "courier",
+      "recipientName": "30محمد محمد ياسين افضل",
+      "recipientPhone": "+966558264781",
+      "orderId": "L23307504",
+      "elapsedMinutes": 0,
+      "activeOrdersCount": 0,
+      "message": "☕ الله يعطيك العافية ويقويك يا رب..\nملاحظين إن الطلب رقم L23307504 أخذ وقت أطول شوي. عسى ما شر؟ هل تواجه أي مشكلة أو ظرف في الطريق نقدر نساعدك فيه؟ طمنا عليك.",
+      "status": "sent",
+      "waLink": "https://wa.me/966558264781?text=%E2%98%95%20%D8%A7%D9%84%D9%84%D9%87%20%D9%8A%D8%B9%D8%B7%D9%8A%D9%83%20%D8%A7%D9%84%D8%B9%D8%A7%D9%81%D9%8A%D8%A9%20%D9%88%D9%8A%D9%82%D9%88%D9%8A%D9%83%20%D9%8A%D8%A7%20%D8%B1%D8%A8..%0A%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D9%8A%D9%86%20%D8%A5%D9%86%20%D8%A7%D9%84%D8%B7%D9%84%D8%A8%20%D8%B1%D9%82%D9%85%20L23307504%20%D8%A3%D8%AE%D8%B0%20%D9%88%D9%82%D8%AA%20%D8%A3%D8%B7%D9%88%D9%84%20%D8%B4%D9%88%D9%8A.%20%D8%B9%D8%B3%D9%89%20%D9%85%D8%A7%20%D8%B4%D8%B1%D8%9F%20%D9%87%D9%84%20%D8%AA%D9%88%D8%A7%D8%AC%D9%87%20%D8%A3%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D8%A9%20%D8%A3%D9%88%20%D8%B8%D8%B1%D9%81%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82%20%D9%86%D9%82%D8%AF%D8%B1%20%D9%86%D8%B3%D8%A7%D8%B9%D8%AF%D9%83%20%D9%81%D9%8A%D9%87%D8%9F%20%D8%B7%D9%85%D9%86%D8%A7%20%D8%B9%D9%84%D9%8A%D9%83.",
+      "delayAppliedSeconds": 5
+    },
     {
       "id": "alt-1794592435362-1g15",
       "timestamp": "2026-11-13T17:53:55.362Z",
@@ -8954,6 +9438,7 @@
     "adminName": "مدير العمليات",
     "adminPhone2": "",
     "adminName2": "",
+    "autoNotifyOrderAssignment": true,
     "autoAlertCourier": true,
     "autoAlertAdmin": true,
     "autoAlertAdmin2": true,
@@ -8974,7 +9459,7 @@
     "locateCompanyId": "6a672b5fe5e1cb002e48c259",
     "locateAccessToken": "eyJhbGciOiJIUzI1NiJ9.NmE2NzJjMDhkNWE4YmIwMDJlNDM5MTAw.z8rAI9NB3MXza0XcGXrm4581RJ4tRf6Ll28d_rgGt2Y",
     "enableCloudAutoSync": true,
-    "lastCloudSyncTimestamp": "2026-11-13T17:54:34.260Z",
+    "lastCloudSyncTimestamp": "2026-11-13T19:31:27.883Z",
     "lastCloudSyncCount": 300
   },
   "customCourierPhones": {},

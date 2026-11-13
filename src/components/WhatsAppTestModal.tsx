@@ -65,6 +65,7 @@ export const WhatsAppTestModal: React.FC<WhatsAppTestModalProps> = ({
   const [isRenderEnv, setIsRenderEnv] = useState<boolean>(false);
   const [renderExternalUrl, setRenderExternalUrl] = useState<string | null>(null);
   const [hasBrowserBackup, setHasBrowserBackup] = useState<boolean>(false);
+  const [isStandaloneMode, setIsStandaloneMode] = useState<boolean>(false);
   const [backupLoading, setBackupLoading] = useState<boolean>(false);
   const [backupMessage, setBackupMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const [importJsonText, setImportJsonText] = useState<string>('');
@@ -157,6 +158,7 @@ export const WhatsAppTestModal: React.FC<WhatsAppTestModalProps> = ({
       const data = await res.json();
       if (data.success) {
         setConnectionState(data.whatsappState);
+        setIsStandaloneMode(Boolean(data.isStandalone));
         if (data.terminalQr) setTerminalQr(data.terminalQr);
         if (typeof data.hasSavedSession === 'boolean') setHasSavedSession(data.hasSavedSession);
         if (data.sessionDir) setSessionDir(data.sessionDir);
@@ -645,11 +647,24 @@ export const WhatsAppTestModal: React.FC<WhatsAppTestModalProps> = ({
                       <span>الرمز حي ومحدث تلقائياً</span>
                     </div>
                   </div>
+                ) : isStandaloneMode ? (
+                  <div className="text-center py-8 px-4 space-y-2.5">
+                    <Smartphone className="w-8 h-8 text-amber-500 mx-auto" />
+                    <div className="text-xs font-bold text-slate-800">النظام يعمل حالياً بالوضع المحلي المستقل (بدون خادم Node)</div>
+                    <p className="text-[11px] text-slate-500 leading-relaxed max-w-xs">
+                      توليد رمز QR يتطلب تشغيل الخادم المحلي أو السحابي. يمكنك الإرسال مباشرة عبر الروابط السريعة أو ربط رابط Webhook من تبويب &quot;أرقام التواصل والرابط&quot;.
+                    </p>
+                  </div>
                 ) : (
                   <div className="text-center py-12 px-4 space-y-3">
                     <RefreshCw className="w-8 h-8 text-slate-400 animate-spin mx-auto" />
                     <div className="text-xs font-bold text-slate-700">جاري تهيئة جلسة Baileys واستخراج الرمز...</div>
-                    <p className="text-[11px] text-slate-500">إذا تأخر ظهور الرمز، اضغط على زر "تحديث الرمز" أعلاه</p>
+                    <p className="text-[11px] text-slate-500">إذا تأخر ظهور الرمز، اضغط على زر &quot;تحديث الرمز&quot; أعلاه</p>
+                    {connectionState.lastError && (
+                      <p className="text-[11px] text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-2.5 py-1.5">
+                        {connectionState.lastError}
+                      </p>
+                    )}
                   </div>
                 )}
               </div>
