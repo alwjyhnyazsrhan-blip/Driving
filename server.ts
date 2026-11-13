@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express';
 import path from 'path';
 import fs from 'fs';
+import os from 'os';
 import QRCode from 'qrcode';
 import pino from 'pino';
 import makeWASocket, {
@@ -484,6 +485,9 @@ async function connectToWhatsApp(forceNew: boolean = false) {
 
         // Transient disconnect (515 restartRequired, 428 connectionClosed, 408 timedOut, network lag)
         // NEVER destroy auth credentials!
+        if (!hasExistingCreds && (statusCode === 405 || statusCode === 428)) {
+          cachedWaVersion = null;
+        }
         whatsappState.status = 'reconnecting';
         whatsappState.lastError = `انقطع الاتصال المؤقت (رمز: ${statusCode || 'شبكة'}). جاري استعادة الاتصال التلقائي...`;
 
@@ -1986,6 +1990,22 @@ app.get('/api/health', (req: Request, res: Response) => {
   });
 });
 
+function getLanUrls(): string[] {
+  const urls: string[] = [];
+  try {
+    const ifaces = os.networkInterfaces();
+    for (const entries of Object.values(ifaces)) {
+      if (!entries) continue;
+      for (const info of entries) {
+        if (info.family === 'IPv4' && !info.internal) {
+          urls.push(`http://${info.address}:${PORT}`);
+        }
+      }
+    }
+  } catch {}
+  return urls;
+}
+
 // 5b. Direct WhatsApp Baileys Status & Session Management API
 app.get('/api/whatsapp/status', async (req: Request, res: Response) => {
   const hasSavedSession = fs.existsSync(path.join(AUTH_DIR, 'creds.json'));
@@ -2007,6 +2027,7 @@ app.get('/api/whatsapp/status', async (req: Request, res: Response) => {
     sessionBackup: whatsappSessionBackup,
     isRender: Boolean(process.env.RENDER || process.env.RENDER_EXTERNAL_URL),
     renderExternalUrl: process.env.RENDER_EXTERNAL_URL || null,
+    lanUrls: getLanUrls(),
     cooldownMinutes: settings.alertCooldownMinutes,
     antiBanMinDelay: settings.antiBanMinDelaySeconds,
     antiBanMaxDelay: settings.antiBanMaxDelaySeconds,
@@ -2073,6 +2094,47 @@ app.post('/api/whatsapp/logout', async (req: Request, res: Response) => {
     message: 'تم مسح ملفات الجلسة وإعادة توليد رمز QR جديد',
     whatsappState,
   });
+});
+
+app.post('/api/whatsapp/pairing-code', async (req: Request, res: Response) => {
+  const rawPhone = String(req.body?.phone || '').trim();
+  const cleanPhone = formatPhoneForWhatsApp(rawPhone);
+  if (!cleanPhone || cleanPhone.length < 9) {
+    res.status(400).json({ success: false, message: 'يرجى إدخال رقم جوال صحيح مع رمز الدولة (مثال: 9665XXXXXXXX)' });
+    return;
+  }
+
+  try {
+    if (whatsappState.isLoggedIn) {
+      res.status(400).json({ success: false, message: 'جلسة الواتساب متصلة بالفعل ولا تحتاج إلى ربط جديد.' });
+      return;
+    }
+    if (!sock) {
+      connectToWhatsApp(false);
+      await new Promise((r) => setTimeout(r, 2500));
+    }
+    if (!sock || typeof sock.requestPairingCode !== 'function') {
+      res.status(503).json({ success: false, message: 'محرك الواتساب قيد التهيئة حالياً، يرجى المحاولة بعد ثوانٍ.' });
+      return;
+    }
+
+    const code = await sock.requestPairingCode(cleanPhone);
+    const formattedCode = code && code.length === 8 ? `${code.slice(0, 4)}-${code.slice(4)}` : code;
+    console.log(`[Baileys Pairing] 🔑 تم توليد كود الربط برقم الجوال ${cleanPhone}: ${formattedCode}`);
+    res.json({
+      success: true,
+      code,
+      formattedCode,
+      phone: cleanPhone,
+      message: 'تم توليد كود الربط بنجاح! أدخله في تطبيق واتساب > الأجهزة المرتبطة > ربط برقم الهاتف.',
+    });
+  } catch (err: any) {
+    console.error('[Baileys Pairing Error]', err?.message);
+    res.status(500).json({
+      success: false,
+      message: `تعذر توليد كود الربط: ${err?.message || 'حاول تحديث الجلسة ثم أعد المحاولة'}`,
+    });
+  }
 });
 
 app.post('/api/whatsapp/send-test', async (req: Request, res: Response) => {

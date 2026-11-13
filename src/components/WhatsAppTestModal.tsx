@@ -28,6 +28,7 @@ import {
   Cpu,
 } from 'lucide-react';
 import { SystemSettings, Courier, WhatsAppConnectionState } from '../types';
+import { getEngineConfig, probeBackendHealth, updateEngineMode } from '../services/apiBridge';
 
 interface WhatsAppTestModalProps {
   isOpen: boolean;
@@ -66,6 +67,14 @@ export const WhatsAppTestModal: React.FC<WhatsAppTestModalProps> = ({
   const [renderExternalUrl, setRenderExternalUrl] = useState<string | null>(null);
   const [hasBrowserBackup, setHasBrowserBackup] = useState<boolean>(false);
   const [isStandaloneMode, setIsStandaloneMode] = useState<boolean>(false);
+  const [lanUrls, setLanUrls] = useState<string[]>([]);
+  const [serverUrlInput, setServerUrlInput] = useState<string>(() => getEngineConfig().localServerUrl || 'http://127.0.0.1:3000');
+  const [connectingServer, setConnectingServer] = useState<boolean>(false);
+  const [serverConnectError, setServerConnectError] = useState<string | null>(null);
+  const [pairingPhone, setPairingPhone] = useState<string>('');
+  const [pairingCode, setPairingCode] = useState<string | null>(null);
+  const [pairingLoading, setPairingLoading] = useState<boolean>(false);
+  const [pairingError, setPairingError] = useState<string | null>(null);
   const [backupLoading, setBackupLoading] = useState<boolean>(false);
   const [backupMessage, setBackupMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const [importJsonText, setImportJsonText] = useState<string>('');
@@ -159,6 +168,8 @@ export const WhatsAppTestModal: React.FC<WhatsAppTestModalProps> = ({
       if (data.success) {
         setConnectionState(data.whatsappState);
         setIsStandaloneMode(Boolean(data.isStandalone));
+        if (Array.isArray(data.lanUrls)) setLanUrls(data.lanUrls);
+        if (!data.isStandalone) setServerConnectError(null);
         if (data.terminalQr) setTerminalQr(data.terminalQr);
         if (typeof data.hasSavedSession === 'boolean') setHasSavedSession(data.hasSavedSession);
         if (data.sessionDir) setSessionDir(data.sessionDir);
@@ -344,6 +355,63 @@ export const WhatsAppTestModal: React.FC<WhatsAppTestModalProps> = ({
       console.error(err);
     } finally {
       setActionLoading(false);
+    }
+  };
+
+  // Connect Android APK / standalone UI to a running server (PC .exe LAN URL, Termux 127.0.0.1:3000, or Cloud URL)
+  const handleConnectToEngineUrl = async (overrideUrl?: string) => {
+    let raw = (overrideUrl ?? serverUrlInput).trim().replace(/\/+$/, '');
+    if (!raw) {
+      setServerConnectError('يرجى إدخال عنوان الخادم أو الكمبيوتر');
+      return;
+    }
+    if (!raw.startsWith('http://') && !raw.startsWith('https://')) {
+      raw = `http://${raw}`;
+    }
+    setServerUrlInput(raw);
+    setConnectingServer(true);
+    setServerConnectError(null);
+    try {
+      const ok = await probeBackendHealth(raw);
+      if (!ok) {
+        setServerConnectError(`تعذر الوصول للخادم على ${raw}. تأكد من تشغيل البرنامج على الكمبيوتر أو السيرفر ومن اتصال الهاتف بنفس الشبكة.`);
+        return;
+      }
+      updateEngineMode('local_server', raw);
+      await fetchStatus();
+    } catch (e: any) {
+      setServerConnectError(e?.message || 'فشل الاتصال بالخادم');
+    } finally {
+      setConnectingServer(false);
+    }
+  };
+
+  // Request 8-digit phone pairing code (useful on a single phone without needing a 2nd camera for QR)
+  const handleRequestPairingCode = async () => {
+    const clean = pairingPhone.trim();
+    if (!clean) {
+      setPairingError('أدخل رقم الواتساب أولاً (مثال: 05XXXXXXXX أو 9665XXXXXXXX)');
+      return;
+    }
+    setPairingLoading(true);
+    setPairingError(null);
+    setPairingCode(null);
+    try {
+      const res = await fetch('/api/whatsapp/pairing-code', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ phone: clean }),
+      });
+      const data = await res.json();
+      if (data.success && (data.formattedCode || data.code)) {
+        setPairingCode(data.formattedCode || data.code);
+      } else {
+        setPairingError(data.message || 'تعذر توليد كود الربط');
+      }
+    } catch {
+      setPairingError('فشل الاتصال بمحرك الواتساب لتوليد الكود');
+    } finally {
+      setPairingLoading(false);
     }
   };
 
@@ -648,12 +716,47 @@ export const WhatsAppTestModal: React.FC<WhatsAppTestModalProps> = ({
                     </div>
                   </div>
                 ) : isStandaloneMode ? (
-                  <div className="text-center py-8 px-4 space-y-2.5">
+                  <div className="text-center py-4 px-2 space-y-3 w-full">
                     <Smartphone className="w-8 h-8 text-amber-500 mx-auto" />
-                    <div className="text-xs font-bold text-slate-800">النظام يعمل حالياً بالوضع المحلي المستقل (بدون خادم Node)</div>
-                    <p className="text-[11px] text-slate-500 leading-relaxed max-w-xs">
-                      توليد رمز QR يتطلب تشغيل الخادم المحلي أو السحابي. يمكنك الإرسال مباشرة عبر الروابط السريعة أو ربط رابط Webhook من تبويب &quot;أرقام التواصل والرابط&quot;.
+                    <div className="text-xs font-bold text-slate-900">التطبيق يعمل بالوضع المستقل (بدون اتصال بخادم الباركود)</div>
+                    <p className="text-[11px] text-slate-600 leading-relaxed">
+                      لإظهار الباركود هنا في تطبيق الأندرويد، اربطه بعنوان برنامج الكمبيوتر (على نفس Wi-Fi) أو Termux أو رابط السيرفر:
                     </p>
+                    <div className="space-y-2 text-right">
+                      <input
+                        type="url"
+                        value={serverUrlInput}
+                        onChange={(e) => setServerUrlInput(e.target.value)}
+                        placeholder="http://192.168.1.10:3000"
+                        className="w-full font-mono text-xs px-3 py-2 bg-slate-50 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                        dir="ltr"
+                      />
+                      <div className="flex flex-wrap gap-1.5">
+                        <button
+                          type="button"
+                          onClick={() => handleConnectToEngineUrl()}
+                          disabled={connectingServer}
+                          className="flex-1 px-3 py-2 bg-emerald-600 hover:bg-emerald-700 disabled:bg-slate-300 text-white rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition"
+                        >
+                          <RefreshCw className={`w-3.5 h-3.5 ${connectingServer ? 'animate-spin' : ''}`} />
+                          <span>{connectingServer ? 'جاري الاتصال...' : 'اتصال وعرض الباركود الآن'}</span>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => handleConnectToEngineUrl('http://127.0.0.1:3000')}
+                          disabled={connectingServer}
+                          className="px-2.5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-[11px] font-bold transition"
+                          title="الاتصال بالمحرك المحلي على نفس الهاتف (Termux)"
+                        >
+                          127.0.0.1
+                        </button>
+                      </div>
+                      {serverConnectError && (
+                        <div className="p-2 rounded-lg bg-rose-50 border border-rose-200 text-rose-800 text-[11px] leading-relaxed">
+                          {serverConnectError}
+                        </div>
+                      )}
+                    </div>
                   </div>
                 ) : (
                   <div className="text-center py-12 px-4 space-y-3">
@@ -669,32 +772,89 @@ export const WhatsAppTestModal: React.FC<WhatsAppTestModalProps> = ({
                 )}
               </div>
 
-              {/* Instructions */}
+              {/* Instructions & Phone Pairing Code */}
               <div className="space-y-3 text-xs">
                 <h4 className="font-bold text-slate-900 text-sm flex items-center gap-1.5">
                   <Smartphone className="w-4 h-4 text-emerald-600" />
                   <span>خطوات الربط السريع من الهاتف:</span>
                 </h4>
                 
-                <ol className="space-y-2.5 text-slate-700 leading-relaxed list-decimal list-inside pr-1 font-medium">
-                  <li className="bg-white p-2.5 rounded-lg border border-slate-200 shadow-2xs">
-                    افتح تطبيق <strong>واتساب</strong> على هاتفك المحمول.
+                <ol className="space-y-2 text-slate-700 leading-relaxed list-decimal list-inside pr-1 font-medium">
+                  <li className="bg-white p-2 rounded-lg border border-slate-200 shadow-2xs">
+                    افتح <strong>واتساب</strong> &gt; <strong>الأجهزة المرتبطة (Linked Devices)</strong> &gt; <strong>ربط جهاز</strong>.
                   </li>
-                  <li className="bg-white p-2.5 rounded-lg border border-slate-200 shadow-2xs">
-                    اضغط على <strong>الإعدادات (أو القائمة ⋮)</strong> ثم اختر <strong>الأجهزة المرتبطة (Linked Devices)</strong>.
-                  </li>
-                  <li className="bg-white p-2.5 rounded-lg border border-slate-200 shadow-2xs">
-                    اضغط على زر <strong>ربط جهاز (Link a device)</strong>.
-                  </li>
-                  <li className="bg-white p-2.5 rounded-lg border border-slate-200 shadow-2xs">
-                    وجّه كاميرا الهاتف نحو رمز الـ <strong>QR Code</strong> المجاور.
+                  <li className="bg-white p-2 rounded-lg border border-slate-200 shadow-2xs">
+                    وجّه الكاميرا نحو الـ <strong>QR Code</strong>، أو اختر <strong>&quot;الربط برقم الهاتف&quot;</strong> بالأسفل.
                   </li>
                 </ol>
+
+                {!isStandaloneMode && !connectionState.isLoggedIn && (
+                  <div className="p-3 bg-white border border-slate-200 rounded-xl space-y-2 shadow-2xs">
+                    <div className="font-bold text-slate-900 text-[11px] flex items-center gap-1.5">
+                      <Key className="w-3.5 h-3.5 text-emerald-600" />
+                      <span>أو الربط برقم الجوال (بدون كاميرا - لنفس الهاتف):</span>
+                    </div>
+                    <div className="flex gap-1.5">
+                      <input
+                        type="tel"
+                        value={pairingPhone}
+                        onChange={(e) => setPairingPhone(e.target.value)}
+                        placeholder="05XXXXXXXX أو 9665XXXXXXXX"
+                        className="flex-1 font-mono text-xs px-2.5 py-1.5 bg-slate-50 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                        dir="ltr"
+                      />
+                      <button
+                        type="button"
+                        onClick={handleRequestPairingCode}
+                        disabled={pairingLoading}
+                        className="px-3 py-1.5 bg-slate-900 hover:bg-slate-800 disabled:bg-slate-400 text-white rounded-lg text-[11px] font-bold shrink-0 transition"
+                      >
+                        {pairingLoading ? 'جاري...' : 'استخراج الكود'}
+                      </button>
+                    </div>
+                    {pairingCode && (
+                      <div className="p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg flex items-center justify-between">
+                        <div>
+                          <div className="text-[10px] text-emerald-700 font-bold">أدخل هذا الكود في واتساب:</div>
+                          <div className="text-base font-black font-mono text-emerald-900 tracking-widest" dir="ltr">
+                            {pairingCode}
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => copyToClipboard(pairingCode)}
+                          className="px-2.5 py-1 bg-white border border-emerald-300 text-emerald-800 rounded-md text-[11px] font-bold flex items-center gap-1"
+                        >
+                          {copied ? <Check className="w-3 h-3" /> : <Copy className="w-3 h-3" />}
+                          <span>{copied ? 'تم' : 'نسخ'}</span>
+                        </button>
+                      </div>
+                    )}
+                    {pairingError && (
+                      <div className="text-[11px] text-rose-700 bg-rose-50 border border-rose-200 rounded-lg px-2 py-1">
+                        {pairingError}
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {lanUrls.length > 0 && (
+                  <div className="p-2.5 bg-slate-100 border border-slate-200 rounded-xl text-[11px] text-slate-700 space-y-1">
+                    <div className="font-bold text-slate-900">عنوان الربط من تطبيق الجوال على نفس الشبكة:</div>
+                    <div className="flex flex-wrap gap-1.5" dir="ltr">
+                      {lanUrls.map((url) => (
+                        <code key={url} className="bg-white px-2 py-0.5 rounded border border-slate-300 font-mono text-[11px] text-emerald-800 select-all">
+                          {url}
+                        </code>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 <div className="p-3 bg-emerald-50/70 border border-emerald-200/80 rounded-xl text-emerald-800 text-[11px] leading-relaxed flex items-start gap-2">
                   <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>
-                    <strong>ملاحظة هامة:</strong> جلسة Baileys تُحفظ بشكل دائم في ملفات السيرفر، وتظل متصلة ومستمرة حتى بعد إعادة تشغيل السيرفر على Render أو VPS دون الحاجة لإعادة المسح المتكرر.
+                    <strong>ملاحظة هامة:</strong> جلسة Baileys تُحفظ بشكل دائم في ملفات السيرفر، وتظل متصلة ومستمرة حتى بعد إعادة تشغيل السيرفر دون الحاجة لإعادة المسح المتكرر.
                   </span>
                 </div>
               </div>

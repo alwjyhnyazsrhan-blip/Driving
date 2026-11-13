@@ -73,8 +73,31 @@ export function installApiBridge() {
   nativeFetchRef = window.fetch.bind(window);
   const originalFetch = nativeFetchRef;
 
-  ensureLocalEngineInitialized().then(() => {
+  ensureLocalEngineInitialized().then(async () => {
     startStandaloneBackgroundRunners();
+    // If running inside Capacitor APK or static bundle without embedded backend, auto-probe local Node engine (e.g. Termux on 127.0.0.1:3000)
+    if (currentConfig.mode === 'auto') {
+      const originOk = await probeBackendHealth('');
+      if (!originOk) {
+        const localCandidates = Array.from(new Set([
+          currentConfig.localServerUrl && currentConfig.localServerUrl !== 'http://localhost:3000' ? currentConfig.localServerUrl : '',
+          'http://127.0.0.1:3000',
+        ].filter(Boolean)));
+        for (const candidate of localCandidates) {
+          const ok = await probeBackendHealth(candidate);
+          if (ok) {
+            currentConfig = saveEngineConfig({
+              mode: 'local_server',
+              localServerUrl: candidate,
+              activeBackend: 'local_server',
+              lastFallbackReason: undefined,
+            });
+            notifyListeners();
+            break;
+          }
+        }
+      }
+    }
   });
 
   const bridgedFetch = async (input: RequestInfo | URL, init?: RequestInit): Promise<Response> => {
@@ -113,14 +136,23 @@ export function installApiBridge() {
       return handleLocalApiRequest(pathname, method, parsedBody);
     }
 
-    // Mode 2: Explicit Local Server Mode (e.g., user running start-local.bat at http://localhost:3000)
+    // Mode 2: Explicit Local Server Mode (e.g., PC .exe on LAN, Termux 127.0.0.1:3000, or Render/VPS URL)
+    const relativeWithQuery = rawUrl.startsWith('/')
+      ? rawUrl
+      : rawUrl.startsWith(window.location.origin)
+      ? rawUrl.slice(window.location.origin.length)
+      : pathname;
     const targetUrl =
       currentConfig.mode === 'local_server'
-        ? `${currentConfig.localServerUrl}${rawUrl.startsWith('/') ? rawUrl : pathname}`
+        ? `${currentConfig.localServerUrl}${relativeWithQuery}`
         : input;
 
     // Mode 3: Auto mode (try server, mirror to IndexedDB, auto-fallback to standalone if server stops/sleeps)
-    const isLongSync = pathname.includes('cloud-login') || pathname.includes('cloud-sync-now');
+    const isLongSync =
+      pathname.includes('cloud-login') ||
+      pathname.includes('cloud-sync-now') ||
+      pathname.includes('whatsapp/pairing-code') ||
+      pathname.includes('whatsapp/reconnect');
     const timeoutMs = isLongSync ? 18000 : 5000;
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
